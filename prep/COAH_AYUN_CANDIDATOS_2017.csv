@@ -1,0 +1,520 @@
+ID_ESTADO,ID_MUNICIPIO_LOCAL,PARTIDO_CI,CANDIDATO_PROPIETARIO
+5,1,PAN,Rosa Elia Landeros Lucio
+5,1,PRI,Herlinda García Treviño
+5,1,PVEM,Herlinda García Treviño
+5,1,UDC,Rosa Elia Landeros Lucio
+5,1,PNA,Herlinda García Treviño
+5,1,SDI,Herlinda García Treviño
+5,1,PPC,Rosa Elia Landeros Lucio
+5,1,PJ,Herlinda García Treviño
+5,1,PRC,Herlinda García Treviño
+5,1,PCP,Herlinda García Treviño
+5,1,MORENA,Olga Alicia Díaz Suarez
+5,1,ES,Rosa Elia Landeros Lucio
+5,2,PAN,Roberto De Los Santos Vázquez
+5,2,PRI,Cuauhtémoc Arzola Hernández
+5,2,PRD,Dora Edilia Tanaka Cervantes
+5,2,PT,María Leonor Aguilar Torres
+5,2,PVEM,Cuauhtémoc Arzola Hernández
+5,2,UDC,Roberto De Los Santos Vázquez
+5,2,PNA,Cuauhtémoc Arzola Hernández
+5,2,SDI,Cuauhtémoc Arzola Hernández
+5,2,PPC,Roberto De Los Santos Vázquez
+5,2,PJ,Cuauhtémoc Arzola Hernández
+5,2,PRC,Cuauhtémoc Arzola Hernández
+5,2,PCP,Cuauhtémoc Arzola Hernández
+5,2,MORENA,Mirosalba Alejandra Pérez García
+5,2,ES,Roberto De Los Santos Vázquez
+5,3,PAN,Antero Alberto Alvarado Saldívar
+5,3,PRI,Esteban Barrón Zulaica
+5,3,PRD,David Eron Turrubiate Obregón
+5,3,PT,María Avelina Luévano Reyes
+5,3,UDC,Antero Alberto Alvarado Saldívar
+5,3,PNA,Francisco Carreón Bernal
+5,3,SDI,María Del Rosario Nevares Maravilla
+5,3,PPC,Antero Alberto Alvarado Saldívar
+5,3,MORENA,Nidia Verónica Hernández López
+5,3,ES,Antero Alberto Alvarado Saldívar
+5,4,PAN,Roxman Abelardo Valdés Duran
+5,4,PRI,Everardo Duran Flores
+5,4,PRD,Lorena Martínez Soto
+5,4,PT,Mayra Leticia Aguilar Martínez
+5,4,PVEM,Everardo Duran Flores
+5,4,UDC,Roxman Abelardo Valdés Duran
+5,4,PMC,Diana Guadalupe Tapia Martínez
+5,4,PNA,Everardo Duran Flores
+5,4,SDI,Everardo Duran Flores
+5,4,PPC,Roxman Abelardo Valdés Duran
+5,4,PJ,Everardo Duran Flores
+5,4,PRC,Everardo Duran Flores
+5,4,PCP,Everardo Duran Flores
+5,4,MORENA,Claudia Isela Lumbreras Orsua
+5,4,ES,Roxman Abelardo Valdés Duran
+5,4,CI1,José Agustín Lobo Salazar
+5,5,PAN,Aracelia Jasso Vaquera
+5,5,PRI,Marcos Amador Garza González
+5,5,PVEM,Marcos Amador Garza González
+5,5,UDC,Aracelia Jasso Vaquera
+5,5,PNA,Marcos Amador Garza González
+5,5,SDI,Marcos Amador Garza González
+5,5,PPC,Aracelia Jasso Vaquera
+5,5,PJ,Marcos Amador Garza González
+5,5,PRC,Marcos Amador Garza González
+5,5,PCP,Marcos Amador Garza González
+5,5,MORENA,Alejandro Alfredo Solar Reyna
+5,5,ES,Aracelia Jasso Vaquera
+5,6,PAN,Irasema Aracely González Treviño
+5,6,PRI,Enrique Soto Ojeda
+5,6,PRD,Rodrigo Luciano Pérez Hernández
+5,6,PT,Andrés Ordoñez Cardoza
+5,6,PVEM,Enrique Soto Ojeda
+5,6,UDC,Irasema Aracely González Treviño
+5,6,PMC,Paola Viviana García González
+5,6,PNA,Enrique Soto Ojeda
+5,6,SDI,Enrique Soto Ojeda
+5,6,PPC,Irasema Aracely González Treviño
+5,6,PJ,Enrique Soto Ojeda
+5,6,PRC,Enrique Soto Ojeda
+5,6,PCP,Enrique Soto Ojeda
+5,6,MORENA,David Hernández Torres
+5,6,ES,Irasema Aracely González Treviño
+5,7,PAN,Yolanda Cantú Moncada
+5,7,PRI,José Luis Fernández Hernández
+5,7,PRD,Alicia Guadalupe Alvarado Ceja
+5,7,PT,Regino Valdez García
+5,7,PVEM,José Luis Fernández Hernández
+5,7,UDC,Yolanda Cantú Moncada
+5,7,PMC,Pablo Garza Lugo
+5,7,PNA,José Luis Fernández Hernández
+5,7,SDI,José Luis Fernández Hernández
+5,7,PPC,Yolanda Cantú Moncada
+5,7,PJ,José Luis Fernández Hernández
+5,7,PRC,José Luis Fernández Hernández
+5,7,PCP,José Luis Fernández Hernández
+5,7,MORENA,Herón Cabello Hinojos
+5,7,ES,Yolanda Cantú Moncada
+5,7,CI1,Ramiro Rodríguez Rosas
+5,8,PAN,Crescencio Ibarra Alfaro
+5,8,PRI,Dulce Belén De La Rosa Segura
+5,8,PRD,Norberto Hernández Rodríguez
+5,8,PVEM,Dulce Belén De La Rosa Segura
+5,8,UDC,Crescencio Ibarra Alfaro
+5,8,PNA,Dulce Belén De La Rosa Segura
+5,8,SDI,Dulce Belén De La Rosa Segura
+5,8,PPC,Crescencio Ibarra Alfaro
+5,8,PJ,Dulce Belén De La Rosa Segura
+5,8,PRC,Dulce Belén De La Rosa Segura
+5,8,PCP,Dulce Belén De La Rosa Segura
+5,8,MORENA,Susana Pérez Rodríguez
+5,8,ES,Crescencio Ibarra Alfaro
+5,9,PAN,Luis Carlos  Cepeda Andrade
+5,9,PRI,Modesto Alcalá Martínez
+5,9,PRD,Juan Carlos Moreno Hernández
+5,9,PT,Tania Angélica González Legorreta
+5,9,PVEM,Marisa Ubaldo Benavides
+5,9,UDC,Luis Carlos  Cepeda Andrade
+5,9,PMC,José Alfredo Galván Martínez
+5,9,PNA,Jesús Cruz De Anda Acosta
+5,9,SDI,Juan Antonio Borrego Rosales
+5,9,PPC,Luis Carlos  Cepeda Andrade
+5,9,PJ,Juan Antonio Marrufo López
+5,9,PRC,Alejandro Ortiz Andrade
+5,9,PCP,Irma Hernández Saucedo
+5,9,MORENA,Manuel De Jesús Meza Navarro
+5,9,ES,Luis Carlos  Cepeda Andrade
+5,10,PAN,José Armando Pruneda Valdez
+5,10,PRI,Florencio Siller Linaje
+5,10,PRD,Jessica Janeth Ponce Ramírez
+5,10,PT,Víctor Hugo Macías Hernández
+5,10,PVEM,Ma. Esther Herrera Ventura
+5,10,UDC,José Armando Pruneda Valdez
+5,10,PMC,Leticia Noriega Del Valle
+5,10,PNA,Ana María Romero García
+5,10,SDI,Guadalupe Valadez Galaviz
+5,10,PPC,José Armando Pruneda Valdez
+5,10,PJ,Pedro Alfonso Campos Alonso
+5,10,MORENA,María Candelaria Martínez Reyez
+5,10,ES,José Armando Pruneda Valdez
+5,10,CI1,Rosalba Segura Campos
+5,10,CI2,José Briones Martínez
+5,10,CI3,Román Márquez Rodríguez
+5,11,PAN,Juan Gilberto Salas Aguirre
+5,11,PRI,Glenda Alejandra Alemán Cuevas
+5,11,PRD,María Del Carmen Almaguer Rodríguez
+5,11,UDC,Juan Gilberto Salas Aguirre
+5,11,PMC,Diana Concepción López Lerma
+5,11,PNA,Jorge Luis Zamora Rodríguez
+5,11,PPC,Juan Gilberto Salas Aguirre
+5,11,PJ,Lizeth Viridiana Meléndez Hernández
+5,11,PRC,María Guadalupe Salazar Urbina
+5,11,PCP,Eduardo Javier Alonzo Navarro
+5,11,MORENA,Benjamín Téllez López
+5,11,ES,Juan Gilberto Salas Aguirre
+5,12,PAN,Matilde Estrada Torres
+5,12,PRI,Araceli Pérez Luna
+5,12,PVEM,Araceli Pérez Luna
+5,12,UDC,Matilde Estrada Torres
+5,12,PNA,Araceli Pérez Luna
+5,12,SDI,Araceli Pérez Luna
+5,12,PPC,Matilde Estrada Torres
+5,12,PJ,Araceli Pérez Luna
+5,12,PRC,Araceli Pérez Luna
+5,12,PCP,Araceli Pérez Luna
+5,12,MORENA,Abelino Cervera Barrera
+5,12,ES,Matilde Estrada Torres
+5,13,PAN,Mario Alberto Cruz Gutiérrez
+5,13,PRI,José Alfredo Favela Castorena
+5,13,PVEM,José Alfredo Favela Castorena
+5,13,UDC,Mario Alberto Cruz Gutiérrez
+5,13,PNA,José Alfredo Favela Castorena
+5,13,SDI,José Alfredo Favela Castorena
+5,13,PPC,Mario Alberto Cruz Gutiérrez
+5,13,PJ,José Alfredo Favela Castorena
+5,13,PRC,José Alfredo Favela Castorena
+5,13,PCP,José Alfredo Favela Castorena
+5,13,MORENA,Wendy Nallely García Mercado
+5,13,ES,Mario Alberto Cruz Gutiérrez
+5,14,PAN,Rolando Olivo Reyes
+5,14,PRI,Raúl Pecina Villarreal
+5,14,PRD,Deyadira Gómez Muñoz
+5,14,PT,Gilberto Pinales Sánchez
+5,14,UDC,Rolando Olivo Reyes
+5,14,SDI,Adrián Alberto Pérez González
+5,14,PPC,Rolando Olivo Reyes
+5,14,PJ,Mario Robles Molina
+5,14,MORENA,Santiago Niño Goytia
+5,14,ES,Rolando Olivo Reyes
+5,15,PAN,María Antonia Rodríguez Ortiz
+5,15,PRI,Olga Gabriela Kobel Lara
+5,15,PRD,María Del Carmen Durón Olivares
+5,15,PVEM,Olga Gabriela Kobel Lara
+5,15,UDC,María Antonia Rodríguez Ortiz
+5,15,PMC,Emiliano Corona Hernández
+5,15,PNA,Olga Gabriela Kobel Lara
+5,15,SDI,Olga Gabriela Kobel Lara
+5,15,PPC,María Antonia Rodríguez Ortiz
+5,15,PJ,Olga Gabriela Kobel Lara
+5,15,PRC,Olga Gabriela Kobel Lara
+5,15,PCP,Olga Gabriela Kobel Lara
+5,15,MORENA,Sergio Manuel Santos Ruiz
+5,15,ES,María Antonia Rodríguez Ortiz
+5,16,PAN,Andrés Fernando Vázquez Garza
+5,16,PRI,Sonia Argelia De Los Santos Olveda
+5,16,PRD,Jesús Pedro Romo Gaytán
+5,16,PVEM,Sonia Argelia De Los Santos Olveda
+5,16,UDC,Andrés Fernando Vázquez Garza
+5,16,PNA,Sonia Argelia De Los Santos Olveda
+5,16,SDI,Sonia Argelia De Los Santos Olveda
+5,16,PPC,Andrés Fernando Vázquez Garza
+5,16,PJ,Sonia Argelia De Los Santos Olveda
+5,16,PRC,Sonia Argelia De Los Santos Olveda
+5,16,PCP,Sonia Argelia De Los Santos Olveda
+5,16,MORENA,Petra Rosales Favela
+5,16,ES,Andrés Fernando Vázquez Garza
+5,17,PAN,Leonel Contreras Pámanes
+5,17,PRI,Juan Carlos Ayup Guerrero
+5,17,PRD,Magdalena Hernández Aguilar
+5,17,PT,Adriana Elida Adame Mejía
+5,17,PVEM,Juan Carlos Ayup Guerrero
+5,17,UDC,Leonel Contreras Pámanes
+5,17,PNA,Juan Carlos Ayup Guerrero
+5,17,SDI,Juan Carlos Ayup Guerrero
+5,17,PPC,Leonel Contreras Pámanes
+5,17,PJ,Juan Carlos Ayup Guerrero
+5,17,PRC,Juan Carlos Ayup Guerrero
+5,17,PCP,Juan Carlos Ayup Guerrero
+5,17,MORENA,Josué Abraham Crispín García
+5,17,ES,Leonel Contreras Pámanes
+5,17,CI1,Horacio Piña Ávila
+5,17,CI2,Javier Alejandro Adame Ayup
+5,18,PAN,Jesús Alfredo Paredes López
+5,18,PRI,María Guadalupe Oyervides Valdez
+5,18,PRD,Alejandro De Jesús Minor Torres
+5,18,PT,Harold Hal Pape Felan
+5,18,PVEM,Armando Javier De La Garza Gaytán
+5,18,UDC,Jesús Alfredo Paredes López
+5,18,PMC,Karla Denisse Rodríguez Padilla
+5,18,PNA,María Del Refugio Ortegón Menchaca
+5,18,SDI,Adoración María Guadalupe De La Torre Garza
+5,18,PPC,Jesús Alfredo Paredes López
+5,18,PRC,Patricia Magaly Carmona Flores
+5,18,MORENA,Claudia Garza Del Toro
+5,18,ES,Jesús Alfredo Paredes López
+5,18,CI1,Jaime Alejandro Díaz Colunga
+5,19,PAN,María Blanca Estela Garza Calderón.
+5,19,PRI,Virginia Gabriela Zertuche Flores
+5,19,PRD,Rodolfo Gutiérrez Mata
+5,19,PT,Cynthia Yazmín Limón Guzmán
+5,19,PVEM,Virginia Gabriela Zertuche Flores
+5,19,UDC,María Blanca Estela Garza Calderón.
+5,19,PNA,Virginia Gabriela Zertuche Flores
+5,19,SDI,Virginia Gabriela Zertuche Flores
+5,19,PPC,María Blanca Estela Garza Calderón.
+5,19,PJ,Virginia Gabriela Zertuche Flores
+5,19,PRC,Virginia Gabriela Zertuche Flores
+5,19,PCP,Virginia Gabriela Zertuche Flores
+5,19,MORENA,Aurora Pizarro Hernández
+5,19,ES,María Blanca Estela Garza Calderón.
+5,20,PAN,Tania Vanessa Flores Guerra
+5,20,PRI,Luisa Alejandra Del Carmen Santos Cadena
+5,20,PRD,María Del Rosario Lara Ramos
+5,20,PT,Sergio Cervantes Rodríguez
+5,20,PVEM,Luisa Alejandra Del Carmen Santos Cadena
+5,20,UDC,Tania Vanessa Flores Guerra
+5,20,PMC,Indalecio Guadalupe Quintero Elizalde
+5,20,PNA,Luisa Alejandra Del Carmen Santos Cadena
+5,20,SDI,Luisa Alejandra Del Carmen Santos Cadena
+5,20,PPC,Tania Vanessa Flores Guerra
+5,20,PJ,Luisa Alejandra Del Carmen Santos Cadena
+5,20,PRC,Luisa Alejandra Del Carmen Santos Cadena
+5,20,PCP,Luisa Alejandra Del Carmen Santos Cadena
+5,20,MORENA,María Del Consuelo Ramos Jiménez
+5,20,ES,Tania Vanessa Flores Guerra
+5,21,PAN,Israel Rodríguez Guerrero
+5,21,PRI,Abraham Segundo González Ruiz
+5,21,PRD,Rubén Cuevas Ramos
+5,21,PT,José Luis Castillo Enríquez
+5,21,UDC,Israel Rodríguez Guerrero
+5,21,PMC,Sonia Edith Aguilera Carreón
+5,21,PNA,Erika Yunet Díaz Leija
+5,21,PPC,Israel Rodríguez Guerrero
+5,21,PJ,Iris Idalia Decena Cepeda
+5,21,MORENA,Alma Judith Reyes Gloria
+5,21,ES,Israel Rodríguez Guerrero
+5,22,PAN,Rosa María Luna Montalvo
+5,22,PRI,Sergio Zenón Velázquez Vázquez
+5,22,PRD,Juan Moncada Balderas
+5,22,PT,Roxana Arellano Hernández
+5,22,PVEM,Sergio Zenón Velázquez Vázquez
+5,22,UDC,Rosa María Luna Montalvo
+5,22,PMC,Jorje Luis Medina Ojeda
+5,22,PNA,Sergio Zenón Velázquez Vázquez
+5,22,SDI,Sergio Zenón Velázquez Vázquez
+5,22,PPC,Rosa María Luna Montalvo
+5,22,PJ,Sergio Zenón Velázquez Vázquez
+5,22,PRC,Sergio Zenón Velázquez Vázquez
+5,22,PCP,Sergio Zenón Velázquez Vázquez
+5,22,MORENA,Rosa Aradillas Barrón
+5,22,ES,Rosa María Luna Montalvo
+5,23,PAN,María Francisca Vázquez Rodríguez
+5,23,PRI,Viridina Nieto Solís
+5,23,PRD,Arturo Valdez Vaquera
+5,23,PVEM,Viridina Nieto Solís
+5,23,UDC,María Francisca Vázquez Rodríguez
+5,23,PMC,Arsedalia Ramírez Gaytán
+5,23,PNA,Viridina Nieto Solís
+5,23,SDI,Viridina Nieto Solís
+5,23,PPC,María Francisca Vázquez Rodríguez
+5,23,PJ,Viridina Nieto Solís
+5,23,PRC,Viridina Nieto Solís
+5,23,PCP,Viridina Nieto Solís
+5,23,MORENA,Gustavo Enrique De La Rosa Ramírez
+5,23,ES,María Francisca Vázquez Rodríguez
+5,24,PAN,Patricia Aguirre Melo
+5,24,PRD,Luis Horacio Palacios Chaires
+5,24,PT,Blanca Esthela Moreno López
+5,24,PVEM,Evaristo Armando Madero Marcos
+5,24,UDC,Patricia Aguirre Melo
+5,24,PMC,María José Vázquez Gómez
+5,24,PNA,Ignacio Segura Teniente
+5,24,SDI,Celia Ávila Valenzuela
+5,24,PPC,Patricia Aguirre Melo
+5,24,PJ,Karla Luz Enríquez Morales
+5,24,PCP,Ramiro Pérez Arciniega
+5,24,MORENA,Elia Sandra Jiménez Segura
+5,24,ES,Patricia Aguirre Melo
+5,25,PAN,Lariza Montiel Luis
+5,25,PRI,Sonia Villarreal Pérez
+5,25,PRD,María Del Carmen Gutiérrez Barrera
+5,25,PT,Romero Jorge Luis De Alba Pérez
+5,25,PVEM,Sonia Villarreal Pérez
+5,25,UDC,Lariza Montiel Luis
+5,25,PMC,Roberto Pizzarro Hernández
+5,25,PNA,Sonia Villarreal Pérez
+5,25,SDI,Sonia Villarreal Pérez
+5,25,PPC,Lariza Montiel Luis
+5,25,PJ,Sonia Villarreal Pérez
+5,25,PRC,Sonia Villarreal Pérez
+5,25,PCP,Sonia Villarreal Pérez
+5,25,MORENA,Víctor Manuel García Mejía
+5,25,ES,Lariza Montiel Luis
+5,25,CI1,Lorenzo Menera Sierra
+5,26,PAN,Manuela Rodríguez Esparza
+5,26,PRI,Selene Margarita Lugo Vázquez
+5,26,PRD,Francisco Javier Escobedo González
+5,26,PVEM,Selene Margarita Lugo Vázquez
+5,26,UDC,Manuela Rodríguez Esparza
+5,26,PNA,Selene Margarita Lugo Vázquez
+5,26,SDI,Selene Margarita Lugo Vázquez
+5,26,PPC,Manuela Rodríguez Esparza
+5,26,PJ,Selene Margarita Lugo Vázquez
+5,26,PRC,Selene Margarita Lugo Vázquez
+5,26,PCP,Selene Margarita Lugo Vázquez
+5,26,MORENA,Martha Casilda Fraga Estrada
+5,26,ES,Manuela Rodríguez Esparza
+5,27,PAN,Yolanda Saucedo Valdés
+5,27,PRI,Lilia María Flores Boardman
+5,27,PRD,José Arturo Nuncio López
+5,27,PT,Ana Cecilia Romero Corral
+5,27,PVEM,Lilia María Flores Boardman
+5,27,UDC,Yolanda Saucedo Valdés
+5,27,PNA,Lilia María Flores Boardman
+5,27,SDI,Lilia María Flores Boardman
+5,27,PPC,Yolanda Saucedo Valdés
+5,27,PJ,Lilia María Flores Boardman
+5,27,PRC,Lilia María Flores Boardman
+5,27,PCP,Lilia María Flores Boardman
+5,27,MORENA,Ana Laura Ochoa Molina
+5,27,ES,Yolanda Saucedo Valdés
+5,27,CI1,Ramón Oceguera Ramírez
+5,28,PAN,Cuauhtémoc Rodríguez Villarreal
+5,28,PRI,Luis Alfonso Rodriguez Garza
+5,28,PRD,Cleotilde Dueñas Soria
+5,28,PT,Zayde Lizzeth Herrera Bustamante
+5,28,PVEM,Luis Alfonso Rodriguez Garza
+5,28,UDC,Cuauhtémoc Rodríguez Villarreal
+5,28,PNA,Luis Alfonso Rodriguez Garza
+5,28,SDI,Luis Alfonso Rodriguez Garza
+5,28,PPC,Cuauhtémoc Rodríguez Villarreal
+5,28,PJ,Luis Alfonso Rodriguez Garza
+5,28,PRC,Luis Alfonso Rodriguez Garza
+5,28,PCP,Luis Alfonso Rodriguez Garza
+5,28,MORENA,Jesús Gauna Márquez
+5,28,ES,Cuauhtémoc Rodríguez Villarreal
+5,28,CI1,Luis Fernando Rivera Medina
+5,29,PAN,Karina Judith Rodríguez García
+5,29,PRI,Silvia Berenice Ovalle Reyna
+5,29,PRD,Ema Rodríguez Zúñiga
+5,29,PT,Rosa María Alfaro García
+5,29,PVEM,Silvia Berenice Ovalle Reyna
+5,29,UDC,Karina Judith Rodríguez García
+5,29,PNA,Silvia Berenice Ovalle Reyna
+5,29,SDI,Silvia Berenice Ovalle Reyna
+5,29,PPC,Karina Judith Rodríguez García
+5,29,PJ,Silvia Berenice Ovalle Reyna
+5,29,PRC,Silvia Berenice Ovalle Reyna
+5,29,PCP,Silvia Berenice Ovalle Reyna
+5,29,MORENA,Gloria Irma Ortiz Romo
+5,29,ES,Karina Judith Rodríguez García
+5,29,CI1,Manuel Rodríguez González
+5,30,PAN,Esther Quintana Salinas
+5,30,PRI,Manolo Jiménez Salinas
+5,30,PRD,Irma Guadalupe Barrios López
+5,30,PT,José Arturo González Sánchez
+5,30,PVEM,Manolo Jiménez Salinas
+5,30,UDC,Esther Quintana Salinas
+5,30,PMC,Fernando Moreno Garibay
+5,30,PNA,Manolo Jiménez Salinas
+5,30,SDI,Manolo Jiménez Salinas
+5,30,PPC,Esther Quintana Salinas
+5,30,PJ,Manolo Jiménez Salinas
+5,30,PRC,Manolo Jiménez Salinas
+5,30,PCP,Manolo Jiménez Salinas
+5,30,MORENA,Rodolfo Garza Gutiérrez
+5,30,ES,Esther Quintana Salinas
+5,30,CI1,Alfonso Danao De La Peña Villareal
+5,30,CI2,Fausto Destenave Kuri
+5,31,PAN,Adriana González Sánchez
+5,31,PRI,Glays Ayala Fores
+5,31,PRD,Juanita Guadalupe Lara Castellano
+5,31,PT,Ismael García Cabral
+5,31,UDC,Adriana González Sánchez
+5,31,PNA,José Manuel Rodríguez Romero
+5,31,PPC,Adriana González Sánchez
+5,31,MORENA,Elías Lugo Gámez
+5,31,ES,Adriana González Sánchez
+5,32,PAN,Julio Iván Long Hernández
+5,32,PRI,Ana María Boone Godoy
+5,32,PRD,Martha Nelly Ramírez Castillo
+5,32,PT,Miguel Angel Sánchez García
+5,32,PVEM,Ana María Boone Godoy
+5,32,UDC,Julio Iván Long Hernández
+5,32,PMC,Brenda Elizabeth Flores Flores
+5,32,PNA,Ana María Boone Godoy
+5,32,SDI,Ana María Boone Godoy
+5,32,PPC,Julio Iván Long Hernández
+5,32,PJ,Ana María Boone Godoy
+5,32,PRC,Ana María Boone Godoy
+5,32,PCP,Ana María Boone Godoy
+5,32,MORENA,Lorenzo Alejandro Berrones Aguilar
+5,32,ES,Julio Iván Long Hernández
+5,33,PAN,Martha Amelia Wong Garduño
+5,33,PRI,Ana Isabel Durán Piña
+5,33,PRD,Rubén Castillo Cárdenas
+5,33,PT,Juana María Deyanira Seturnino Alcalá
+5,33,PVEM,Ana Isabel Durán Piña
+5,33,UDC,Martha Amelia Wong Garduño
+5,33,PMC,Iris Cervantes Vega
+5,33,PNA,Ana Isabel Durán Piña
+5,33,SDI,Ana Isabel Durán Piña
+5,33,PPC,Martha Amelia Wong Garduño
+5,33,PJ,Ana Isabel Durán Piña
+5,33,PRC,Ana Isabel Durán Piña
+5,33,PCP,Ana Isabel Durán Piña
+5,33,MORENA,María Angélica Sánchez Quistan
+5,33,ES,Martha Amelia Wong Garduño
+5,34,PAN,Edgar Ramón Tavarez Olivas
+5,34,PRI,Araceli Jaquelina Rojas Tovar
+5,34,PVEM,Araceli Jaquelina Rojas Tovar
+5,34,UDC,Edgar Ramón Tavarez Olivas
+5,34,PMC,Ramiro Rodríguez Castro
+5,34,PNA,Araceli Jaquelina Rojas Tovar
+5,34,SDI,Araceli Jaquelina Rojas Tovar
+5,34,PPC,Edgar Ramón Tavarez Olivas
+5,34,PJ,Araceli Jaquelina Rojas Tovar
+5,34,PRC,Araceli Jaquelina Rojas Tovar
+5,34,PCP,Araceli Jaquelina Rojas Tovar
+5,34,MORENA,Oscar García Ramírez
+5,34,ES,Edgar Ramón Tavarez Olivas
+5,35,PAN,Jorge Zermeño Infante
+5,35,PRI,Miguel Felipe Mery Ayup
+5,35,PRD,Carlos Alberto Centeno Aranda
+5,35,PT,Jesús Alberto Delgado Cuellar
+5,35,PVEM,Miguel Felipe Mery Ayup
+5,35,UDC,Jorge Zermeño Infante
+5,35,PMC,José Luis Dovalina Romero
+5,35,PNA,Miguel Felipe Mery Ayup
+5,35,SDI,Miguel Felipe Mery Ayup
+5,35,PPC,Jorge Zermeño Infante
+5,35,PJ,Miguel Felipe Mery Ayup
+5,35,PRC,Miguel Felipe Mery Ayup
+5,35,PCP,Miguel Felipe Mery Ayup
+5,35,MORENA,Guillermo Gutiérrez del Bosque
+5,35,ES,Jorge Zermeño Infante
+5,36,PAN,Héctor Ordaz Jaramillo
+5,36,PRI,Oscar Jaramillo Muruaga
+5,36,PRD,Rito Ramírez Colunga
+5,36,PVEM,Claudia Gerardina De La Rosa Lara
+5,36,UDC,Héctor Ordaz Jaramillo
+5,36,PNA,Laura Adriana Muñoz Castor
+5,36,SDI,Manuela Cecilia Gómez Delgado
+5,36,PPC,Héctor Ordaz Jaramillo
+5,36,PJ,Alberto Fernández González
+5,36,PRC,Gerardo Coronado Domínguez
+5,36,PCP,Minerva Adame Morales
+5,36,MORENA,Ana Luisa Baltazar Marín
+5,36,ES,Héctor Ordaz Jaramillo
+5,37,PAN,Narcedalia Padrón Arizpe
+5,37,PRI,Sergio Cardenas Chapa
+5,37,PRD,Yazmín Ramírez Del Valle
+5,37,PVEM,Sergio Cardenas Chapa
+5,37,UDC,Narcedalia Padrón Arizpe
+5,37,PNA,Sergio Cardenas Chapa
+5,37,SDI,Sergio Cardenas Chapa
+5,37,PPC,Narcedalia Padrón Arizpe
+5,37,PJ,Sergio Cardenas Chapa
+5,37,PRC,Sergio Cardenas Chapa
+5,37,PCP,Sergio Cardenas Chapa
+5,37,MORENA,Ulises Zovek González Sánchez
+5,37,ES,Narcedalia Padrón Arizpe
+5,38,PAN,José Faustino Bocanegra Galindo
+5,38,PRI,Ángeles Eloísa Flores Torres
+5,38,PRD,Prisma Villarreal Peña
+5,38,UDC,José Faustino Bocanegra Galindo
+5,38,PMC,Emiliano Corona Hernández
+5,38,PNA,Romelia Liliana Lozano Nandin
+5,38,SDI,Everardo Medrano Solís
+5,38,PPC,José Faustino Bocanegra Galindo
+5,38,PJ,Socorro Puente Regalado
+5,38,MORENA,Cosme Dionicio Maldonado Martínez
+5,38,ES,José Faustino Bocanegra Galindo

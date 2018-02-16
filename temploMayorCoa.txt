@@ -1,0 +1,13 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+Templo Mayor | Reforma
+ 
+¡Qué curioso! A pesar del largo proceso de evaluación de 151 aspirantes, todo indica que en la designación de tres consejeros del INE, oootra vez, prevalecerá el reparto de cuotas entre los partidos políticos. En cada una de las tres listas que dio a conocer la Cámara de Diputados, hay un claro favorito. Es el caso de Flavio Galván, quien cuenta con todo el respaldo del PRI, luego de su paso como magistrado en el Tribunal Electoral federal. La única que podría hacerle sombra, dicen, es Dania Ravel Cuevas, muy cercana al consejero Marco Antonio Baños y, por añadidura, de corazón tricolor. En otra lista está Beatriz Zavala, quien llegó a ser presidenta del IEDF, impulsada por el PRD y actualmente labora en el TEPJF. Se da por hecho su llegada, a menos que de última hora la derrote Rosa María Cano, ex directora jurídica del INE. Y en la tercera lista aparece Carla Humphrey, quien ha intentado varias veces llegar al INE bajo el auspicio del PAN y que en el Tribunal Electoral fue secretaria de estudio y cuenta de la magistrada Maricarmen Alanís tan querida en Los Pinos. Pero, bueno, no sean malpensados en esto no hay dados cargados. Nomás tantito.
+
+Donde también hay finalistas es en la selección del Fiscal Anticorrupción, proceso que se lleva a cabo en el Senado. Los seleccionados son César Alejandro Chávez Flores, José Bernardo Rafael Espino del Castillo Barrón, Miguel Ángel González Félix y Manuel Luciano Hallivis Pelayo, quien tiene el plus de haber sido presidente del Tribunal de Justicia Administrativa, por lo que algo le sabe al tema. Aunque no hay un plazo fatal para la designación final, se espera que los senadores se apuren, a fin de que el flamante fiscal pueda participar en la primera reunión del Comité de Coordinación del Sistema Nacional Anticorrupción, el 4 de abril.
+
+Los que andan sentidos con Enrique Ochoa son los priistas de Baja California, pues su líder anduvo por Tijuana el jueves pasado... ¡y no los peló! El presidente nacional del PRI fue de pisa y corre a grabar un comercial en la franja fronteriza, pero dicen que al menos se hubiera dado tiempo para saludar a los suyos.
+
+Éramos muchos ¡y parió la bad abuela! Si de por sí Donald Trump ve a los mexicanos como el peor de los males, que haya sido un connacional quien se robó el jersey de Tom Brady viene a empeorar las cosas. Cosa de ver que se trata de la trifecta del mal de Trump: bad hombre, mexicano y ¡periodista! ¡Oh, God!

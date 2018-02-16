@@ -1,0 +1,9 @@
+setwd("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/reelec/coa2017/prep")
+
+tmp <- readLines("COAH_AYUN_2017.csv") # all lines, including ine's comments
+tmp <- tmp[-1:-5]                      # drop comments
+ay <- read.csv(textConnection(tmp), stringsAsFactors=FALSE)
+
+# keep only municipios 25 and 33
+sel <- which(ay$ID_MUNICIPIO_LOCAL==25 | ay$ID_MUNICIPIO_LOCAL==33)
+ay <- ay[sel,]

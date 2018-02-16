@@ -1,0 +1,10 @@
+| Ocupante  | Perdido | Conservado | Adquirido | Huizachal | Total |
+| Lily      |       0 |         56 |         0 |       952 | 1,008 |
+| Javier    |       0 |         56 |         0 |       952 | 1,008 |
+| Gina      |       0 |         70 |         0 |       938 | 1,008 |
+| AnaIsabel |       0 |         42 |         0 |       966 | 1,008 |
+| Sonia     |       0 |         56 |         0 |       952 | 1,008 |
+| Lariza    |       0 |         42 |         0 |       966 | 1,008 |
+| Armando   |       0 |         42 |         0 |       966 | 1,008 |
+| Leonel    |       0 |         42 |         0 |       966 | 1,008 |
+| Lencho    |       0 |         28 |         0 |       980 | 1,008 |

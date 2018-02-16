@@ -1,0 +1,418 @@
+\documentclass[letter,12pt]{article}
+\usepackage[letterpaper,right=1.25in,left=1.25in,top=1in,bottom=1in]{geometry}
+\usepackage{setspace}
+
+\usepackage[utf8]{inputenc}   % allows input of special characters from keyboard (input encoding)
+\usepackage[T1]{fontenc}      % what fonts to use when printing characters       (output encoding)
+\usepackage{amsmath}          % facilitates writing math formulas and improves the typographical quality of their output
+\usepackage[hyphens]{url}     % adds line breaks to long urls
+\usepackage[pdftex]{graphicx} % enhanced support for graphics
+\usepackage{tikz}             % Easier syntax to draw pgf files (invokes pgf automatically)
+\usetikzlibrary{arrows}
+
+\usepackage{mathptmx}           % set font type to Times
+\usepackage[scaled=.90]{helvet} % set font type to Times (Helvetica for some special characters)
+\usepackage{courier}            % set font type to Times (Courier for other special characters)
+
+\usepackage{rotating}         % sideway tables and figures that take a full page
+\usepackage{caption}          % allows multipage figures and tables with same caption (\ContinuedFloat)
+
+\usepackage{dcolumn}          % needed for apsrtable and stargazer tables from R to compile
+\usepackage{arydshln}         % dashed lines in tables (hdashline, cdashline{3-4}, 
+                              %see http://tex.stackexchange.com/questions/20140/can-a-table-include-a-horizontal-dashed-line)
+                              % must be loaded AFTER dcolumn, 
+                              %see http://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict
+
+%FOR SPANISH FORMATTING (HYPHENATION ETC.)
+\usepackage[spanish]{babel}
+\addto\captionsspanish{\renewcommand{\figurename}{Diagrama}} % cambia Figura por Diagrama
+
+\usepackage[longnamesfirst, sort]{natbib}\bibpunct[]{(}{)}{,}{a}{}{;} % handles biblio and references 
+\AtBeginDocument{\renewcommand\harvardand{y}} % change 'author and author' by Spanish 'author y author'
+
+
+\newcommand{\mc}{\multicolumn}
+
+%% TO ADD NOTES IN TEXT, PUT % BEFORE THE ONE YOU WANT DISBALED
+%\usepackage[disable]{todonotes}                            % notes not showed
+\usepackage[colorinlistoftodos, textsize=small]{todonotes} % show notes
+\newcommand{\emm}[1]{\todo[color=red!15, inline]{\textbf{Eric:} #1}}
+\newcommand{\am}[1]{\todo[color=green!15, inline]{\textbf{Alejandro:} #1}}
+
+\begin{document}
+
+\title{\emph{Name recognition} en la elección de Coahuila, 2017\thanks{Agradecemos el apoyo de la Asociación Mexicana de Cultura A.C.\ así como del Sistema Nacional de Investigadores del CONACYT. Los autores somos responsables de los errores y limitaciones del estudio.}}
+\author{Eric Magar  \\ ITAM \and
+        Alejandro Moreno \\ ITAM 
+}
+\date{\today}
+\maketitle
+
+%\begin{center} \textbf{$\rightarrow$~~Preliminary draft~~$\leftarrow$} \\ (please inquire for new version, \small{\url{emagar@itam.mx}})  \end{center}
+
+\begin{abstract}
+\noindent Estudiamos el reconocimiento del nombre de candidatos al Congreso estatal de Coahuila en 2017.
+\end{abstract}
+
+
+\onehalfspacing
+
+\section{Introducción}
+
+\section{La ambición política como motor democrático}
+
+\noindent El estudio legislativo moderno ha solido generar sus hipótesis a partir del prototipo de legislador de \citet{mayhew.1974}. La obra clásica de la conexión electoral de los congresistas de EE.UU. representa al legislador como un autómata monomotivado. La premisa del argumento es que a los representantes los mueve el resorte de la ambición por reelegirse un periodo más. Sin poner en duda que otras preocupaciones puedan quitarle el sueño a los ocupantes (\emph{incumbents})---darle sustento legal a un programa, ascender en la jerarquía cameral o pasar a la historia son algunos ejemplos obvios---Mayhew aduce que ninguna tendría remedio si el ocupante fuera derrotado en su intento por reelegirse. No obstante su parsimonia, el modelo consigue explicar la parte medular de la conducta de los representates. 
+
+Otra premisa es que la reelección depende de la reputación del ocupante entre sus votantes. En sistemas personalistas como el norteamericano la reputación es sobretodo individual, al grado que Mayhew descarta que los heterogéneos partidos norteamericanos puedan ser teóricamente interesantes \citep[aunque el revisionismo ha recuperado la relevancia de los partidos,][]{cox.mccubbins.1993,aldrich.1995}. Tres comentarios sobre esta premisa.
+
+No se trata de todos los votantes sino de grupos sin quienes ganar el distrito se vuelve mucho más difícil. \citet{cox.mccubbins.1986} los llaman \emph{core constituents} o núcleo. 
+
+Como en toda relación humana, el juego de percepciones importa tanto como la sustancia: el núcleo debe adscribir a su representate entre los responsables del resultado. 
+
+El ocupante tiene agencia para conseguirlo. 
+
+Con bienes de producción colectiva donde el esfuerzo de cada quien no es evidente de inmediato---como mucha de la política pública---la adscripción de responsabilidad está lejos de ser automática. ``La victoria tiene cien padres'' reza el proverbio. De aquí el interés que despiertan los llamados bienes particularistas, en contraposición con los más universalistas. Lo que distringue a esta clase de bienes es que su producción y/o entrega depende del esfuerzo personal del legislador \citep{haggard.mccubbins.2001}. Los ejemplos clásicos vienen de \citet{cain.etal.1987}: la gestoría distrital (\emph{service responsiveness}) y los recursos etiquetados para el distrito en el presupuesto (\emph{allocation responsiveness} o \emph{pork}). El legislador tiene el control para canalizarlos a donde indique la lógica política, creando (esto es crucial) un vínculo claro de responsabilidad.
+
+En la medida que la lógica de Mayhew se intereste con problemas de adscripción es de esperar legisladores que dediquen una parte sustancial de su esfuerzo a cultivar su voto personal mediante bienes particularistas. El resultado debería ser un vínculo más cercano con su núcleo de representados que con el resto de la ciudadanía. En consecuencia, se espera también un mayor reconicimiento en el distrito que fuera de él. 
+
+La noción de ambición política de Mayhew es apropiada para el sistema mayoritario norteamericano, con su característico acceso competitivo y descentralizado a la boleta y carrerismo legislativo. Pero no es necesariamente apropiada para otros sistemas. Pero estos no son rasgos universales. 
+
+\citet{schlesinger.1966} revisó el modelo para distinguir dos clases de ambición relevantes para el estudio, la estática y la progresiva. En Mayhew hay sólo estática (permanecer en el Congreso), pero también hay políticos que aspiran a elegirse en puestos distintos. Hay evidencia de que el esfuerzo por cultivar votantes coincide con la ambición del ocupante \citep{micozzi.accountability.2013,samuels.2003}. 
+
+Usaremos estos elementos teóricos para guiar nuestro estudio de los candidatos a diputado local de Coahuila.
+
+\section{La redistritación de Coahuila como fuente de hipótesis}
+
+Un dato relevante para el estudio del caso de Coahuila es la redistritación. El Instituto Nacional Electoral elaboró un nuevo mapa de los dieciséis distritos de mayoría de Coahuila en 2015 \citep{trelles.etalDatosabiertos.pyg.2016}. Por ello, los ocupantes con ambición estática en 2017 debieron contender en distritos más o menos alterados, con grados variables de cambio en sus electorados. Para dar una idea del cambio de fronteras distritales usamos el índice de similitud distrital o ISD \citep{cox.katz.2002}.
+
+Para obtenerlo se identifica primero el distrito de cada mapa (el abandonado y el adoptado) que mayor número de votantes comparten entre sí. Con esta pareja, comparamos la relación de votantes que tienen en común y de votantes que ambos reúnen---la encuesta identifica la sección de registro del entrevistado, y usamos esto para el índice. Así, si $\text{secciones}_\text{padre}$ y $\text{secciones}_\text{hijo}$ denotan el número de secciones de los distritos padre e hijo, respectivamente, la calificación del distrito $i$ es $\text{ISD}_i = \frac{\text{secciones}_\text{padre} \cap \text{secciones}_\text{hijo}}{\text{secciones}_\text{padre} \cup \text{secciones}_\text{hijo}}$. El rango del índice va de cero (cuando padre e hijo no se intersecten en lo absoluto) a uno (cuando son idénticos). El valor es intuitivo, arroja la proporción de secciones compartidas. El Cuadro \ref{T:isd} reporta la similitud distrital de Coahuila.
+
+
+\begin{table}
+  \centering
+\begin{tabular}{llrcc}
+  Distrito padre             & Distrito hijo               &       &          &          \\ [-.5ex]
+  (2014)                     & (2017)                      &  ISD  & Ocupante            & Ambición \\ \hline
+\\ [-1.2ex]
+%% \begin{tabular}{lcrc}
+%%   Distrito 2017     & Padre 2014 &  ISD & Ocupante en la boleta \\ \hline
+%%   xi-Torreón        & vii        & .150 & No \\
+%%   xv-Saltillo       & ii         & .199 & No \\
+%%   viii-Torreón      & ix         & .283 & No \\
+%%   vi-Frontera       & xi         & .377 & No \\
+%%   v-Monclova        & xii        & .408 & No \\
+%%   iv-San Pedro      & x          & .444 & No \\
+%%   xiii-Saltillo     & iv         & .459 & No \\
+%%   iii-Sabinas       & xiii       & .551 & No \\
+%%   xvi-Saltillo      & ii         & .553 & No \\
+%%   vii-Matamoros     & vi         & .618 & No \\
+%%   ix-Torreón        & viii       & .650 & No \\
+%%   xiv-Saltillo      & i          & .700 & Sí \\
+%%   x-Torreón         & vii        & .705 & No \\
+%%   ii-Piedras Negras & xvi        & .791 & No \\
+%%   i-Acuña           & xv         & .798 & Sí \\
+%%   xii-Ramos Arizpe  & v          & .000 & Sí \\
+%% \end{tabular}
+ \textsc{xiv}-Sabinas        & \textsc{iii}-Sabinas        &  .197 & Martha Morales I.      & nula         \\ 
+ \textsc{ix}-Torreón         & \textsc{ix}-Torreón         &  .204 & Luis Gurza J.          & nula         \\ 
+ \textsc{iii}-Saltillo       & \textsc{xiii}-Saltillo      &  .236 & José María Fraustro S. & nula         \\ 
+ \textsc{xi}-Frontera        & \textsc{vi}-Frontera        &  .377 & F. `Lencho' Siller     & progresiva   \\ 
+ \textsc{xii}-Monclova       & \textsc{v}-Monclova         &  .408 & Melchor Sánchez F.     & nula         \\ 
+ \textsc{x}-San Pedro        & \textsc{iv}-San pedro       &  .444 & Ana Isabel D.          & progresiva   \\ 
+ \textsc{iv}-Saltillo        & \textsc{xiii}-Saltillo      &  .459 & Martha Garay C.        & nula         \\ 
+ \textsc{xiii}-Múzquiz       & \textsc{iii}-Sabinas        &  .551 & Antonio Nerio M.       & nula         \\ 
+ \textsc{ii}-Saltillo        & \textsc{xvi}-Saltillo       &  .553 & Francisco Tobías H.    & nula         \\ 
+ \textsc{vi}-Torreón         & \textsc{vii}-Matamoros      &  .618 & Verónica Martínez G.   & nula         \\ 
+ \textsc{viii}-Torreón       & \textsc{ix}-Torreón         &  .650 & Irma Castaño O.        & nula         \\ 
+ \textsc{i}-Saltillo         & \textsc{xiv}-Saltillo       &  .700 & Javier Díaz G.         & estática     \\ 
+ \textsc{vii}-Torreón        & \textsc{x}-Matamoros        &  .705 & Shamir Fernández H.    & nula         \\ 
+ \textsc{xvi}-Piedras Negras & \textsc{ii}-Piedras Negras  &  .791 & Sonia Villarreal P.    & progresiva   \\ 
+ \textsc{xv}-Acuña           & \textsc{i}-Acuña            &  .798 & Georgina Cano T.       & estática     \\ 
+ \textsc{v}-Ramos Arizpe     & \textsc{xii}-Ramos Arizpe   & 1.000 & Lily Gutiérrez B.      & estática     \\ \\ [-1.2ex] \hline
+\end{tabular}
+\caption{Indice de similitud distrital de Coahuila}\label{T:isd}
+\end{table}
+
+El distrito padre mediano comparte 55 por ciento de secciones con su hijo, una proporción que se antoja baja. Si el ocupante aspirara a la reelección, se enfrentaría a poco más de la mitad solamente de los electores que lo votaron originalmente. 
+
+> summary(dsi$dsi)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.1970  0.4002  0.5520  0.5432  0.7013  1.0000 
+
+
+\begin{table}
+  \centering
+  \begin{tabular}{lrrrr}
+               & \mc{2}{c}{Contendió de nuevo}           &           &       \\ [-.5ex]
+    Diputado   &        en un distrito & en un municipio & Se retiró & Total \\ \hline
+    de mayoría &                     3 &            3    &        10 &    16 \\
+    de RP      &                     0 &            3    &         6 &     9 \\ \hline
+  \end{tabular}
+  \caption{Ocupantes con ambición estática, progresiva o ninguna} \label{T:ambition}
+\end{table}
+
+El Cuadro \ref{T:ambition} resume la ambición revelada por los legisladores en funciones en Coahuila en 2017. De los dieciséis diputados que representaban un distrito (todos del PRI, que ganó un carro completo en 2014), tres aspiraron a reelegirse como diputados, tres a elegirse como alcaldes, y diez se retiraron. Y tres de nueve diputados de lista aspiraron a volverse alcaldes. A pesar de la posibilidad que abrió la reforma, entre los diputados que no se retiraron, los de ambición progresiva duplicaron a los de ambición estática mostraron ambición progresiva---transitaron la ruta tradicional del llamado ``chapulineo'', que antes era la única disponible.
+
+\begin{figure}
+  \centering
+    \usetikzlibrary{calc}
+    \begin{tikzpicture}
+      \draw (0,0)  ellipse (3 and 2);
+      \node[sloped,above] at ($(0,0)+(90:3 and 2)$) {\emph{dis14}};
+      \draw (3,0) ellipse (3 and 2);
+      \node[sloped,above] at ($(3,0)+(90:3 and 2)$) {\emph{dis17}};
+      \draw (-3.5,-3) rectangle (6.5,3);
+      \node [text width=2cm, text centered] at (-1.25,0)   {$p=$ terreno perdido};
+      \node [text width=2cm, text centered] at (4.25,0)    {$a=$ terreno adquirido};
+      \node [text width=2cm, text centered] at (1.5,0)  {$c=$ terreno conservado};
+      \node at (1.5,-2.5) {$h=$ huizachal};
+    \end{tikzpicture}
+    \caption{Cuatro terrenos claros y distintos producidos por la redistritación}\label{F:venn}
+\end{figure}
+
+Terminología: ocupante es un candidato que ha representado un territorio en el periodo que concluye tras la elección y que compite por la reelección; rival es todo candidato que no es ocupante.  
+
+\begin{table}
+  \centering
+  \begin{tabular}{ccc}
+    & \mc{2}{c}{Efecto} \\ [-.5ex]
+    & del ocupante & de la campaña \\ \hline
+    1 & $c>a$   & $c=a$  \\
+    2 & $c>p$   & $c>p$  \\
+    3 & $c>h$   & $c>h$  \\
+    4 & $p~?~a$ & $p<a$  \\
+    5 & $p>h$   & $p=h$  \\
+    6 & $a>h$   & $a>h$  \\ \hline
+  \end{tabular}
+  \caption{Efectos de ocupante y de campaña sobre el reconocimiento (hipótesis). Las entradas refieren la relación esperada en el reconocimiento de nombre de un candidato en los terrenos que identifica el Diagrama \ref{F:venn}. Así, en la primera fila, el efecto de ocupante provoca una reconocimiento del candidato mayor entre los votantes del terreno conservado que entre los del terreno adquirido, diferencia que no provoca el efecto de campaña. Los ocupantes repostulados experimentan la suma de los efectos (idéntica a las relaciones de la columna izquierda), los rivales experimentan sólo los efectos de campaña. Vea el texto.}\label{T:hyps}
+\end{table}
+
+
+\singlespacing
+
+%% \begin{description}
+%%   \item [Hipótesis 1] Manteniendo lo demás constante, el reconocimiento de un ocupante sigue los patrones siguientes:
+%%     \begin{enumerate}
+%%       \item es mayor entre votantes del terreno $c$ que entre los del $h$
+%%       \item es mayor entre votantes del terreno $c$ que entre los del $p$
+%%       \item es mayor entre votantes del terreno $c$ que entre los del $a$
+%%       \item es mayor entre votantes del terreno $p$ que entre los del $h$
+%%       \item es mayor entre votantes del terreno $a$ que entre los del $h$
+%%       \item es mayor entre votantes del terreno $p$ que entre los del $a$
+%%     \end{enumerate}
+%% \end{description}
+
+%% \onehalfspacing
+
+%% \singlespacing
+
+%% \begin{description}
+%%   \item [Hipótesis 2] Manteniendo lo demás constante, el reconocimiento de un rival sigue los patrones siguientes:
+%%     \begin{enumerate}
+%%       \item es menor entre votantes del terreno $h$ que entre los demás
+%%       \item no muestra diferencias significativas entre votantes de los terrenos $p$, $c$ y $a$. 
+%%     \end{enumerate}
+%% \end{description}
+
+%% \onehalfspacing
+
+
+\section{La encuesta y sus reactivos}
+
+\section{Una debilidad fundamental}
+
+Dos problemas de diseño. No contemplé medir el reconocimiento del rival de un ocupante. Tampoco incluí open seats para servir de punto de comparación. 
+
+En principio el diferencial entre $c$ y los demás terrenos daría perspectiva para dilucidar efectos de ocupante. Pero no contaba con el modo como se diseñan las muestras de una encuesta. Todos los entrevistados de los distritos seleccionados recaen en el terreno $c$, de modo tal que los subconjuntos $p$ y $a$ están vacíos.
+
+\begin{table}
+  \centering
+  \begin{tabular}{clclcrrrrr}
+%      & Ocupante  & Tipo                  & Perdido & Conservado & Adquirido & Huizachal & Total \\ \hline
+      & Ocupante        & \mc{2}{c}{Tipo (cabecera)}              & margen               & $p$ & $c$ & $a$ & $h$ & Total \\ \hline
+    1 & Lily--PRI      & dist$\rightarrow$dist & (Ramos Arispe)   & \color{green}{$+14$} &   0 &  56 &  0  & 952 & 1,008 \\
+    2 & Javier--PRI    & dist$\rightarrow$dist & (Saltillo)       &   \color{red}{$-12$} &   0 &  56 &  0  & 952 & 1,008 \\
+    3 & Gina--PRI      & dist$\rightarrow$dist & (Acuña)          &   \color{red}{$-17$} &   0 &  70 &  0  & 938 & 1,008 \\ \hdashline
+    4 & AnaIsabel--PRI & dist$\rightarrow$mun  & (San Pedro)      &  \color{green}{$+3$} &   0 &  42 &  0  & 966 & 1,008 \\
+    5 & Sonia--PRI     & dist$\rightarrow$mun  & (Piedras Negras) & \color{green}{$+12$} &   0 &  56 &  0  & 952 & 1,008 \\
+    6 & Lencho--PRI    & dist$\rightarrow$mun  & (Frontera)       &  \color{green}{$+8$} &   0 &  28 &  0  & 980 & 1,008 \\ \hdashline
+    7 & Lariza--PAN    & rp$\rightarrow$mun    & (Piedras Negras) &   \color{red}{$-12$} &   0 &  42 &  0  & 966 & 1,008 \\
+    8 & Armando--PAN   & rp$\rightarrow$mun    & (Frontera)       &    \color{red}{$-8$} &   0 &  42 &  0  & 966 & 1,008 \\
+    9 & Leonel--PPC    & rp$\rightarrow$mun    & (Matamoros)      &    \color{red}{$-7$} &   0 &  42 &  0  & 966 & 1,008 \\ \hline
+  \end{tabular}
+  \caption{Los ocupantes y su terreno. El tipo distingue ocupantes de mayoría (dist) o representación proporcional y si contendieron nuevamente para la legislatura (dist) o una alcaldía (mun). El margen es la diferencia porcentual que separa segundo lugar del ganador, positivo si el ocupante ganó, negativo si perdió. Las columnas $p$, $c$, $a$, $h$ reportan el número de secciones electorales en cada una de las categorías de terreno.}\label{T:terrenos}
+\end{table}
+
+Conjugados, los dos errores de diseño impedirán distringuir entre efectos de campaña y efectos de \emph{incumbency}. 
+
+
+
+\section{Las regresiones}
+
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Fri, Oct 06, 2017 - 10:33:11 AM
+% Requires LaTeX packages: dcolumn 
+\begin{sidewaystable}[!htbp] \centering 
+  \caption{Resultados logit} 
+  \label{T:regs} 
+\begin{tabular}{l|rrr|rrr|rrr} 
+%\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+%\\[-1.8ex]\hline 
+%\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} & \multicolumn{1}{c}{(6)} & \multicolumn{1}{c}{(7)} & \multicolumn{1}{c}{(8)} & \multicolumn{1}{c}{(9)}\\ 
+\hline \\[-1.8ex] 
+ dconservado & 1.813^{***} & 2.372^{***} & 4.912^{***} & 4.491^{***} & 3.021^{***} & 3.002^{***} & -.220 & 1.104^{*} & 2.928^{***} \\ 
+%  & p < .001 & p < .001 & p < .001 & p < .001 & p < .001 & p < .001 & p = .770 & p = .059 & p < .001 \\ 
+  & & & & & & & & & \\ 
+ dhaHecho & .868^{***} & .764^{***} & 1.462^{***} & .309 & .926^{***} & .465 & .855^{***} & .509 & .264 \\ 
+%  & p < .001 & p = .005 & p < .001 & p = .360 & p < .001 & p = .119 & p = .002 & p = .166 & p = .427 \\ 
+  & & & & & & & & & \\ 
+ dinteresaPol & .352 & 1.028^{***} & 1.342^{***} & .750^{**} & .524^{**} & .864^{***} & .275 & .706^{**} & .571^{*} \\ 
+%  & p = .150 & p < .001 & p < .001 & p = .023 & p = .047 & p = .003 & p = .306 & p = .049 & p = .063 \\ 
+  & & & & & & & & & \\ 
+ dsmartPh & -.266 & .371 & -.180 & -.045 & .214 & -.496^{*} & .262 & -.432 & -.425 \\ 
+%  & p = .269 & p = .165 & p = .559 & p = .886 & p = .419 & p = .073 & p = .339 & p = .222 & p = .154 \\ 
+  & & & & & & & & & \\ 
+ dpan & .147 & -.110 & -.034 & .717 & .015 & 1.199^{***} & .336 & .776^{*} & 1.145^{***} \\ 
+%  & p = .704 & p = .790 & p = .949 & p = .101 & p = .971 & p < .001 & p = .387 & p = .098 & p = .006 \\ 
+  & & & & & & & & & \\ 
+ dpri & .351 & .151 & -.014 & .635^{*} & .175 & -.180 & .194 & .432 & .155 \\ 
+%  & p = .202 & p = .619 & p = .971 & p = .072 & p = .553 & p = .623 & p = .529 & p = .291 & p = .689 \\ 
+  & & & & & & & & & \\ 
+ dmorena & -.104 & .589 & .257 & -15.198 & -1.171 & .768 & -1.006 & -.255 & .877 \\ 
+%  & p = .869 & p = .248 & p = .729 & p = .988 & p = .263 & p = .157 & p = .330 & p = .809 & p = .115 \\ 
+  & & & & & & & & & \\ 
+ Constant & -2.994^{***} & -3.820^{***} & -4.445^{***} & -3.878^{***} & -3.487^{***} & -3.387^{***} & -3.291^{***} & -3.872^{***} & -3.582^{***} \\ 
+%  & p < .001 & p < .001 & p < .001 & p < .001 & p < .001 & p < .001 & p < .001 & p < .001 & p < .001 \\ 
+  & & & & & & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} \\ 
+Log Likelihood & \multicolumn{1}{c}{-264} & \multicolumn{1}{c}{-231} & \multicolumn{1}{c}{-170} & \multicolumn{1}{c}{-175} & \multicolumn{1}{c}{-235} & \multicolumn{1}{c}{-209} & \multicolumn{1}{c}{-230} & \multicolumn{1}{c}{-147} & \multicolumn{1}{c}{-183} \\ 
+%Akaike Inf. Crit. & \multicolumn{1}{c}{543.509} & \multicolumn{1}{c}{478.688} & \multicolumn{1}{c}{355.675} & \multicolumn{1}{c}{366.759} & \multicolumn{1}{c}{486.405} & \multicolumn{1}{c}{433.297} & \multicolumn{1}{c}{475.701} & \multicolumn{1}{c}{310.206} & \multicolumn{1}{c}{381.772} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{9}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{sidewaystable} 
+
+\section{Lo que sigue}
+
+Los efectos son consistentes con la teoría. Pero resulta imposible separar el efecto de campaña del que nos interesa. 
+
+%% \begin{table}
+%% \centering
+%% \caption{One proposal and two amendments}\label{T:example}
+%% \noindent \begin{tabular}{llc}
+%%        & original version                   & amendment                                        \\ \hline
+%% Art 1. & appropriate \$200                  & \$300                                            \\
+%% Art 2. & split in two equal parts $(\frac{1}{2}, \frac{1}{2})$          & $(\frac{1}{4}, \frac{3}{4})$ split \\
+%% Art 3. & one for students, one for teachers & ---                                              \\
+%% \end{tabular}
+%% \end{table}
+
+%% \begin{figure}
+%%   \centering
+%%     \caption{The president rules game. The dashed branch may be practicable, or not.}\label{F:game}
+%%     \tikzstyle{mid}=[circle,draw]
+%%     \begin{tikzpicture}
+%%       % \node[rectangle,draw] (n) at (0,0) {Nature};
+%%       %\node (n) at (0,0) {\footnotesize{(Nature): $\pi$}};
+%%       \node[mid] at (1.5,-0.25) (c) {\emph{C}};
+%%       \node[mid] at (4,1) (p) {\emph{P}};
+%%       \node[mid] at (6.5,1) (f) {\emph{F}};
+%%       \node at (4,-1.5) (ce) {$q$};
+%%       \node at (6.5,2.25) (pe1) {$x_F$};
+%%       \node at (6.5,-0.25) (pe2) {$q$};
+%%       \node at (9,2.25) (fe1) {$x_C$};
+%%       \node at (9,-0.25) (fe2) {$q$};
+%%       % \node at (0,0.7) {\small{Strategies:}}; \node at (2,0.7)
+%%       % {\footnotesize{---}}; \node at (4,0.7) {\footnotesize{$x^*$}};
+%%       % \node at (6,0.7) {\footnotesize{$y^*(x)$}}; \node at (8,0.7)
+%%       % {\footnotesize{$z^*(x)$}}; \node at (0,-1.7)
+%%       % {\small{Outcomes:}};
+%%       %\path[->] (n) edge (c);
+%%       \path[-] (c) edge node [above, sloped] {\footnotesize{report}} (p)
+%%                (p) edge node [above, sloped] {\footnotesize{ur-}} (f)
+%%                    edge node [below, sloped] {\footnotesize{gent}} (f);
+%%       % \path[] (n) edge node [below] {\footnotesize{$\pi$}} (c)
+%%       \path[] (c) edge node [below, sloped] {\footnotesize{$x_C$}} (p);
+%%       \path[-o] (c) edge node [below, sloped] {\footnotesize{not}} (ce)
+%%                 (p) edge node [above, sloped] {\footnotesize{standard}} (pe1)
+%% %                    edge node [below, sloped] {\footnotesize{feto}} (pe2)
+%%                 (f) edge node [above, sloped] {\footnotesize{accept}} (fe1)
+%%                     %edge node [above, sloped] {\footnotesize{ofer-}} (fe2)
+%%                     edge node [below, sloped] {\footnotesize{reject}} (fe2);
+%%       \path[-o, dashed] (p) edge node [below, sloped] {\footnotesize{veto}} (pe2);
+%%     \end{tikzpicture}
+%% \end{figure}
+
+
+% next command removes proportional font in table's superscripts
+%(eval-after-load "tex-mode" '(fset 'tex-font-lock-suscript 'ignore)) 
+
+% dv12 controlling for comm chair, executive bills only
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Wed, Aug 23, 2017 - 09:15:00 AM
+% Requires LaTeX packages: dcolumn 
+%% \begin{table}%[!htbp]
+%%   \centering 
+%%   \caption{Executive bill urgency predictors. Model 3 includes fixed Legislatura effects (not reported). Model 4 estimates separate error terms by Legislatura. Method of estimation: generalized linear model (model 4), others with logit.}\label{t:urgenLogit}
+%%   \begin{tabular}{@{\extracolsep{0pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+%%     \hline \\[-1.8ex] 
+%%     & \multicolumn{4}{c}{DV: Bill received urgency (1) or not (0)} \\ 
+%%     \\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)}\\ 
+%%     \\ [-1.8ex] 
+%%     \hline \\[-1.8ex] 
+%%     \emph{Co-partisan}     &  .333^{***} &  &  &                                        \\
+%%     \emph{comm.~chair}     & (.009) &  &  &                                             \\ [.75ex]
+%%     \emph{Coalition}       &  & 1.056^{***} & 1.139^{***} & 1.110^{***}                 \\
+%%     \emph{comm.~chair}     &  & (<.001) & (<.001) & (<.001)                             \\ [.75ex]
+%%     \emph{Multiple}        &  .603^{***} &  .623^{***} &  .631^{***} &  .631^{***}      \\
+%%     \emph{referrals}       & (<.001) & (<.001) & (<.001) & (<.001)                      \\ [.75ex]
+%%     \emph{Hacienda}        & 1.403^{***} & 1.324^{***} & 1.304^{***} & 1.308^{***}      \\
+%%     \emph{referral}        & (<.001) & (<.001) & (<.001) & (<.001)                      \\ [.75ex]
+%%     \emph{Pres.}           &  -.015 &  -.041 &  .029 &  .005                            \\
+%%     \emph{approval}        & (.837) & (.567) & (.710) & (.945)                          \\ [.75ex]
+%%     \emph{Introduced}      &  -.747^{***} &  -.733^{***} &  -.784^{***} &  -.771^{***}  \\
+%%     \emph{in Senate}       & (<.001) & (<.001) & (<.001) & (<.001)                      \\ [.75ex]
+%%     \emph{Senate}          &  -.303 &  -.382^{*} &  &                                   \\
+%%     \emph{majority}        & (.136) & (.057) &  &                                       \\ [.75ex]
+%%     \emph{Year}            &  .028 &  .020 &  .001 &  .002                              \\
+%%     \emph{remaining}       & (.627) & (.737) & (.983) & (.974)                          \\ [.75ex]
+%%     \emph{(Year}           &  -.242^{***} &  -.259^{***} &  -.275^{***} &  -.273^{***}  \\
+%%     \emph{remaining)$^2$}  & (<.001) & (<.001) & (<.001) & (<.001)                      \\ [.75ex]
+%%     \emph{Relax}           &  .647^{**} &  .591^{**} &  &                               \\
+%%     \emph{deadlines}       & (.012) & (.018) &  &                                       \\ [.75ex]
+%%     %% \emph{2002-06 Leg.} &  &  &  -.203 &                                             \\
+%%     %%                     &  &  & (.298) &                                             \\ [.75ex]
+%%     %% \emph{2006-10 Leg.} &  &  &  .302^{*} &                                          \\
+%%     %%                     &  &  & (.097) &                                             \\ [.75ex]
+%%     %% \emph{2010-14 Leg.} &  &  & 1.200^{***} &                                        \\
+%%     %%                     &  &  & (<.001) &                                            \\ [.75ex]
+%%     Intercept              &  -.743^{***} & -1.465^{***} & -1.977^{***} & -1.627^{***}  \\
+%%                            & (.002) & (<.001) & (<.001) & (<.001)                       \\ [.75ex]
+%%     \hline \\[-1.8ex] 
+%%     Effects & \multicolumn{1}{c}{none} & \multicolumn{1}{c}{none} & \multicolumn{1}{c}{fixed} & \multicolumn{1}{c}{mixed} \\ 
+%%     Observations & \multicolumn{1}{c}{1,461} & \multicolumn{1}{c}{1,461} & \multicolumn{1}{c}{1,461} & \multicolumn{1}{c}{1,461} \\ 
+%%     Log$L$ & \multicolumn{1}{c}{-864} & \multicolumn{1}{c}{-860} & \multicolumn{1}{c}{-849} & \multicolumn{1}{c}{-857} \\ 
+%%     \% correct & \multicolumn{1}{c}{90} & \multicolumn{1}{c}{90} & \multicolumn{1}{c}{90} & \multicolumn{1}{c}{90} \\ 
+%% %%Akaike Inf. Crit. & \multicolumn{1}{c}{1,748.896} & \multicolumn{1}{c}{1,740.400} & \multicolumn{1}{c}{1,719.057} & \multicolumn{1}{c}{1,731.050} \\ 
+%% %%Bayesian Inf. Crit. &  &  &  & \multicolumn{1}{c}{1,778.632} \\ 
+%%     \\ [-1.8ex] 
+%%     \hline \\[-1.8ex] 
+%%     & \multicolumn{4}{r}{\footnotesize $^{*}$p$<$.1; $^{**}$p$<$.05; $^{***}$p$<$.01 (p-values in parentheses)} \\ 
+%%   \end{tabular} 
+%% \end{table} 
+
+
+%% \begin{figure}
+%%   \centering
+%%     \caption{Average marginal effects from model 3. Dots report how the probability of an urgent bill changes in response to a unit change in each independent variable, all else at mean values; bars are 95-percent confidence intervals.}\label{F:avgMg}
+%%     \includegraphics[width=.8\columnwidth]{../graphs/avgMgEffects.pdf}
+%% \end{figure}
+
+\bibliographystyle{apsrInitials}
+\bibliography{/home/eric/Dropbox/mydocs/magar}
+
+\end{document}
