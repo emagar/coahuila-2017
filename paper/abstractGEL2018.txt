@@ -1,0 +1,6 @@
+Title: Name recognition in Nuevo León's state elections
+
+Authors: Eric Magar and Alejandro Moreno (ITAM)
+
+Abstract: We investigate name recognition of candidates to Nuevo León's state assembly in the 2018 election---the first since 1930 allowing state incumbents in the ballot. Name recognition has been associated with representatives' efforts to preserve or enhance their reelectability. Our research design offers leverage to separate incumbency from more standard campaign effects. Two (hopefully three) pre-election surveys will provide evidence to verify systematic differentials in starting-level name recognition (much higher for incumbents than challengers) and their growth as campaigns develop (much steeper for challengers than incumbents). Contrasting races with an incumbent running to open-seats will add another layer of evidence. And we take advantage of redistricting to further separate incumbency from campaign effects. We expect to uncover patterns to gauge some of the key consequences of the adoption of consecutive reelection in Mexican elections. 
+

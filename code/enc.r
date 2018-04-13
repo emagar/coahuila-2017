@@ -521,7 +521,7 @@ tmp$dconoceLeonel <- tmp$dconservadoLeonel <- NULL
 tmp9 <- glm(dconoce ~  dconservado            + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = tmp, family = "binomial")
 summary(tmp9)
 library(stargazer)
-stargazer(tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9, title="Resultados Logit", align=TRUE, report = ('vc*s'), 
+stargazer(tmp1, tmp2, tmp3, tmp6, tmp5, tmp4, tmp8, tmp7, tmp9, title="Resultados Logit", align=TRUE, report = ('vc*s'), 
      covariate.labels = c("conservado","perdido","ha.hecho","interesa.polít","smartphone","panista","priista","morenista","constante"),
      keep.stat = c("n","ll"), float.env = "sidewaystable", initial.zero = FALSE, digits = 2)
 
@@ -530,7 +530,6 @@ rm(tmp, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, tmp9)
 # dmorena too correlated with AnaIsabel's respondents
 table(dat$dconservadoAnaIsabel, dat$dmorena)
 table(dat$dperdidoAnaIsabel, dat$dmorena)
-
 
 #######################
 #######################
@@ -560,7 +559,7 @@ fitJags <- function(model = NA, test = TRUE, incl.perdido = FALSE, incl.morena =
     ######################################
     ### EXTRA DATA PREP FOR JAGS MODEL ###
     ######################################
-    model <- model2 # debug
+    #model <- model2 # debug
     model <- model                                 # generic model name
     incl.perdido <- FALSE; incl.morena <- FALSE;
     tmp <- grep("dperdido", variable.names(model))    # is dperdido included in right side?
@@ -648,65 +647,131 @@ sims4List <- function(fit = NA, posInList = NA){
     fit <- fit
     posInList <- posInList
     incumbent <- fit$incumbent
+    tmp <- grep("dperdido", fit$var.labels)    # is dperdido included in right side?
+    if (length(tmp)>0) {
+        incl.perdido <- TRUE
+    } else {
+        incl.perdido <- FALSE
+    }
+    tmp <- grep("dmorena", fit$var.labels)     # is morena included in right side?
+    if (length(tmp)>0) {
+        incl.morena <- TRUE
+    } else {
+        incl.morena <- FALSE
+    }
     # plug elements into sims list
     antilogit <- function(X){ exp(X) / (exp(X)+1) }
     ## pr(recognizes candidate)
     coefs <- fit$BUGSoutput$sims.matrix; coefs <- coefs[,-grep("deviance", colnames(fit$BUGSoutput$sims.matrix))]
-    scenario <- c(
-        1, #cons=1,
-        0, #dconservado will be changed to c(0,1) below,
-        median(dat.tmp$dhaHecho), #dhaHecho <- median,
-        median(dat.tmp$dinteresaPol), #dinteresaPol=median,
-        median(dat.tmp$dsmartPh), #dsmartPh=median,
-        1, #dpan=c(0,1),
-        0, #dpri=c(0,1),
-        0  #dmorena=c(0,1)
-    )
-    names(scenario) <- c("cons", "dconservado", "dhaHecho", "dinteresaPol", "dsmartPh", "dpan", "dpri", "dmorena")
+    if (incl.perdido==TRUE & incl.morena==TRUE) scenario <- c(
+                                                    1, #cons=1,
+                                                    0, #dconservado will be changed to c(0,1) below,
+                                                    0, #dperdido will be changed to c(0,1) below,
+                                                    1, #dhaHecho=1,
+                                                    0, #dinteresaPol=0,
+                                                    median(dat.tmp$dsmartPh), #dsmartPh=median,
+                                                    1, #dpan=c(0,1),
+                                                    0, #dpri=c(0,1),
+                                                    0  #dmorena=c(0,1)
+                                                )
+    if (incl.perdido==FALSE & incl.morena==TRUE) scenario <- c(
+                                                    1, #cons=1,
+                                                    0, #dconservado will be changed to c(0,1) below,
+                                                    1, #dhaHecho=1,
+                                                    0, #dinteresaPol=0,
+                                                    median(dat.tmp$dsmartPh), #dsmartPh=median,
+                                                    1, #dpan=c(0,1),
+                                                    0, #dpri=c(0,1),
+                                                    0  #dmorena=c(0,1)
+                                                )
+    if (incl.perdido==TRUE & incl.morena==FALSE) scenario <- c(
+                                                    1, #cons=1,
+                                                    0, #dconservado will be changed to c(0,1) below,
+                                                    0, #dperdido will be changed to c(0,1) below,
+                                                    1, #dhaHecho=1,
+                                                    0, #dinteresaPol=0,
+                                                    median(dat.tmp$dsmartPh), #dsmartPh=median,
+                                                    1, #dpan=c(0,1),
+                                                    0 #dpri=c(0,1),
+                                                )
+    names(scenario) <- fit$var.labels
     #
     n <- nrow(coefs)
     sc <- matrix(rep(scenario, n), nrow = n, byrow = TRUE)
     sc <- as.data.frame(sc)
-    colnames(sc) <- c("cons", "dconservado", "dhaHecho", "dinteresaPol", "dsmartPh", "dpan", "dpri", "dmorena")
-    # change dconoce by alternating 0,1
-    sc$dconservado <- rep ( 0:1, n/2)
+    colnames(sc) <- fit$var.labels
+    # change dconoce and dperdido by alternating 0,1
+    if (incl.perdido==FALSE) {
+        sc$dconservado <- rep ( 0:1, n/2)
+    } else {
+        sc$dconservado <- rep ( 0:2, n/3)
+        sc$dperdido[sc$dconservado==2] <- 1
+        sc$dconservado[sc$dconservado==2] <- 0
+    }        
     sc <- as.matrix(sc)
     #
     tmp <- fit$BUGSoutput$summary[grep("beta", rownames(fit$BUGSoutput$summary)),1] # coef point pred (mean posterior)
-    pointPred <- sc %*% diag(tmp) # right side achieves multiplication of matrix columns by vector
+    pointPred <- sc %*% diag(tmp) # achieves multiplication of matrix columns by vector
     pointPred <- antilogit(rowSums(pointPred)) # will plug this in sc later
     #
     pred <- sc * coefs
     pred <- antilogit(rowSums(pred)) # will plug this in sc later
     #
-    sc <- as.data.frame(sc); colnames(sc) <- c("cons", "dconservado", "dhaHecho", "dinteresaPol", "dsmartPh", "dpan", "dpri", "dmorena")
+    sc <- as.data.frame(sc); colnames(sc) <- fit$var.labels
     sc$pred <- pred; #rm(pred)
     sc$pointPred <- pointPred; #rm(pointPred)
     #
-    return(list(sc=sc, posInList=posInList, incumbent=incumbent))
+    return(list(sc=sc, posInList=posInList, incumbent=incumbent, incl.perdido=incl.perdido))
 }
 
 sims <- list(NA,NA,NA,NA,NA,NA,NA,NA,NA) # will receive simulations
 #
 # plug simulations into sims list
+tmp <- sims4List(fit = fit1, posInList = 1)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
+tmp <- sims4List(fit = fit2, posInList = 2)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
+tmp <- sims4List(fit = fit3, posInList = 3)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
+tmp <- sims4List(fit = fit4, posInList = 4)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
+tmp <- sims4List(fit = fit5, posInList = 5)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
+tmp <- sims4List(fit = fit6, posInList = 6)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
+tmp <- sims4List(fit = fit7, posInList = 7)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
+tmp <- sims4List(fit = fit8, posInList = 8)
+sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
+names(sims)[tmp$posInList] <- tmp$incumbent # name it
 tmp <- sims4List(fit = fit9, posInList = 9)
 sims[[tmp$posInList]] <- tmp$sc             # plug sims into list
 names(sims)[tmp$posInList] <- tmp$incumbent # name it
 summary(sims)
 
 # kernel density plots
-names <- c("Javier Díaz González", "Lily Gutiérrez Burciaga", "Georgina Cano Torralva", "Ana Isabel Durán Piña", "Sonia Villarreal Pérez", "Lariza Montiel Luis", "José Armando Pruneda Valdez", "Leonel Contreras Pámanes", "Lencho Siller")
-i <- 1 # select one fit's sims
+names <- c("Javier Díaz González", "Lily Gutiérrez Burciaga", "Georgina Cano Torralva", "Ana Isabel Durán Piña", "Sonia Villarreal Pérez", "Lencho Siller", "Lariza Montiel Luis", "J. Armando Pruneda Valdez", "Leonel Contreras Pámanes")
+incl.perdido <- c(TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE)
+i <- 2 # select one fit's sims
 for (i in 1:9){
     sc <- sims[[i]]; incumbent <- names(sims[i])
     d <- density(sc$pred[sc$dconservado==0])
     d1 <- density(sc$pred[sc$dconservado==1])
+    if (incl.perdido[i]==TRUE) d2 <- density(sc$pred[sc$dperdido==1])
     pdf(file = paste("../graphs/prReconoce", i, ".pdf",sep = ""), width = 7, height = 3.5)
       par(mar = c(2,2,2,2) + .1)
-      plot(d, xlim = c(0,1), ylim = c(0,25), type = "n", main = names[i], axes = FALSE, ylab = "", xlab = "Prob(reconocimiento)", cex.main = 2)
+      plot(d, xlim = c(0,1), type = "n", main = names[i], axes = FALSE, ylab = "", xlab = "Prob(reconocimiento)", cex.main = 2)
       axis(1)
       polygon(d,  col = rgb(0,0,1, alpha = .5))
       polygon(d1, col = rgb(1,0,0, alpha = .5))
+      if (incl.perdido[i]==TRUE) polygon(d2, col = rgb(0,1,0, alpha = .5))
     dev.off()
 }
 
