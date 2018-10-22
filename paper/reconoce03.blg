@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: reconoce03.aux
+The style file: apsrInitials.bst
+Database file #1: /home/eric/Dropbox/mydocs/magar.bib
+You've used 26 entries,
+            2874 wiz_defined-function locations,
+            863 strings with 9878 characters,
+and the built_in function-call counts, 82003 in all, are:
+= -- 13205
+> -- 963
+< -- 0
++ -- 5985
+- -- 355
+* -- 6674
+:= -- 16898
+add.period$ -- 107
+call.type$ -- 26
+change.case$ -- 342
+chr.to.int$ -- 26
+cite$ -- 26
+duplicate$ -- 429
+empty$ -- 853
+format.name$ -- 391
+if$ -- 14744
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 28
+newline$ -- 122
+num.names$ -- 297
+pop$ -- 158
+preamble$ -- 1
+purify$ -- 390
+quote$ -- 0
+skip$ -- 341
+stack$ -- 0
+substring$ -- 18134
+swap$ -- 69
+text.length$ -- 364
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 0
+while$ -- 594
+width$ -- 0
+write$ -- 392

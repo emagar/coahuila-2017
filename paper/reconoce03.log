@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  13 APR 2018 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.30)  29 AUG 2018 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\nonstopmode\input reconoce01.tex
-(./reconoce01.tex (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+**\nonstopmode\input reconoce03.tex
+(./reconoce03.tex (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -851,30 +851,22 @@ Package: arydshln 2004/08/31 v1.71
 \adl@everyvbox=\toks37
 \adl@LTpagetotal=\dimen185
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/02/24 3.9q The Babel package
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-Language: spanish.ldf 2016/01/15 v5.0o Spanish support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/02/24 3.9q Babel common definitions
-\babel@savecnt=\count134
-\U@D=\dimen186
-)
-\es@quottoks=\toks38
-\es@quotdepth=\count135
-Package babel Info: Making " an active character on input line 533.
-Package babel Info: Making . an active character on input line 634.
-Package babel Info: Making < an active character on input line 679.
-Package babel Info: Making > an active character on input line 679.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip50
 \bibsep=\skip51
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count136
+\c@NAT@ctr=\count134
 )
 (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
@@ -885,10 +877,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks39
-\XKV@tempa@toks=\toks40
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
 )
-\XKV@depth=\count137
+\XKV@depth=\count135
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
@@ -897,42 +889,39 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count138
-\calc@Bcount=\count139
-\calc@Adimen=\dimen187
-\calc@Bdimen=\dimen188
+\calc@Acount=\count136
+\calc@Bcount=\count137
+\calc@Adimen=\dimen186
+\calc@Bdimen=\dimen187
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count140
+\calc@Ccount=\count138
 \calc@Cskip=\skip54
 )
-\c@@todonotes@numberoftodonotes=\count141
+\c@@todonotes@numberoftodonotes=\count139
 )
 
 LaTeX Warning: Unused global option(s):
     [letter].
 
-(./reconoce01.aux
-LaTeX Info: Redefining \. on input line 16.
-LaTeX Info: Redefining \% on input line 16.
-)
-\openout1 = `reconoce01.aux'.
+(./reconoce03.aux)
+\openout1 = `reconoce03.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 43.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -972,17 +961,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
-\scratchdimen=\dimen189
+\scratchcounter=\count140
+\scratchdimen=\dimen188
 \scratchbox=\box41
-\nofMPsegments=\count143
-\nofMParguments=\count144
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count145
-\MPscratchDim=\dimen190
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
-\everyMPtoPDFconversion=\toks42
+\nofMPsegments=\count141
+\nofMParguments=\count142
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen189
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1030,76 +1019,85 @@ e
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 48
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 51
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 48
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 51
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 48
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 51
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 48
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 51
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 48.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
- [1
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 51.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 94.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 62.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 103.
  [3] [4]
 ! Undefined control sequence.
 \Url Error ->\url used in a moving argument. 
                                              
-l.141 ...ts.org/overview/reelect.php} para EE.UU.}
+l.164 ...s.org/overview/reelect.php} for the U.S.}
                                                   \label{T:retRate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1111,26 +1109,97 @@ and I'll forget about whatever was undefined.
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-) [7]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 204.
- [8] [9]
+) [7] [8] [9] [10]
+Overfull \hbox (30.13872pt too wide) in paragraph at lines 364--365
+[]\T1/ptm/m/n/12 Geographic vari-ables test hy-pothe-ses. We hold three ex-pec-
+ta-tions: that vari-able $[][]$'s
+ []
 
-LaTeX Warning: Reference `T:ambition' on page 10 undefined on input line 270.
+<../graphs/prReconoce1.pdf, id=46, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce1.pdf Graphic file (type pdf)
 
+<use ../graphs/prReconoce1.pdf>
+Package pdftex.def Info: ../graphs/prReconoce1.pdf used on input line 440.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce6.pdf, id=47, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce6.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce6.pdf>
+Package pdftex.def Info: ../graphs/prReconoce6.pdf used on input line 441.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce8.pdf, id=48, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce8.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce8.pdf>
+Package pdftex.def Info: ../graphs/prReconoce8.pdf used on input line 442.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce2.pdf, id=49, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce2.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce2.pdf>
+Package pdftex.def Info: ../graphs/prReconoce2.pdf used on input line 443.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce5.pdf, id=50, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce5.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce5.pdf>
+Package pdftex.def Info: ../graphs/prReconoce5.pdf used on input line 444.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce7.pdf, id=51, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce7.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce7.pdf>
+Package pdftex.def Info: ../graphs/prReconoce7.pdf used on input line 445.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce3.pdf, id=52, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce3.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce3.pdf>
+Package pdftex.def Info: ../graphs/prReconoce3.pdf used on input line 446.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce4.pdf, id=53, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce4.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce4.pdf>
+Package pdftex.def Info: ../graphs/prReconoce4.pdf used on input line 447.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+
+<../graphs/prReconoce9.pdf, id=54, 505.89pt x 252.945pt>
+File: ../graphs/prReconoce9.pdf Graphic file (type pdf)
+
+<use ../graphs/prReconoce9.pdf>
+Package pdftex.def Info: ../graphs/prReconoce9.pdf used on input line 448.
+(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
+ [11] [12] (./reconoce03.bbl [13] [14 <../graphs/prReconoce1.pdf> <../graphs/pr
+Reconoce6.pdf> <../graphs/prReconoce8.pdf> <../graphs/prReconoce2.pdf> <../grap
+hs/prReconoce5.pdf> <../graphs/prReconoce7.pdf> <../graphs/prReconoce3.pdf> <..
+/graphs/prReconoce4.pdf> <../graphs/prReconoce9.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
+\T1/pcr/m/n/12 dudas / 2013 / 12 / 05 / por -[] que -[] la -[] reeleccion -[] s
+irve -[] y -[] por -[] que -[]
+ []
+
+[15])
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374  conservado & 1.85^
-                         {***} & 2.37^{***} & 4.91^{***} & 3.10^{***} & 3.02...
+l.475  $\texttt{retained}$   & 1.85^
+                                    {***} & 2.37^{***} & 4.91^{***} & 3.10^{...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374  conservado & 1.85^{***} &
-                                 2.37^{***} & 4.91^{***} & 3.10^{***} & 3.02...
+l.475  $\texttt{retained}$   & 1.85^{***} &
+                                            2.37^{***} & 4.91^{***} & 3.10^{...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1140,16 +1209,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374  conservado & 1.85^{***} & 2.37^
-                                      {***} & 4.91^{***} & 3.10^{***} & 3.02...
+l.475  $\texttt{retained}$   & 1.85^{***} & 2.37^
+                                                 {***} & 4.91^{***} & 3.10^{...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374  conservado & 1.85^{***} & 2.37^{***} &
-                                              4.91^{***} & 3.10^{***} & 3.02...
+l.475 ...{retained}$   & 1.85^{***} & 2.37^{***} &
+                                                   4.91^{***} & 3.10^{***} &...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1159,7 +1228,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...servado & 1.85^{***} & 2.37^{***} & 4.91^
+l.475 ...ned}$   & 1.85^{***} & 2.37^{***} & 4.91^
                                                   {***} & 3.10^{***} & 3.02^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1167,7 +1236,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ... & 1.85^{***} & 2.37^{***} & 4.91^{***} &
+l.475 ... & 1.85^{***} & 2.37^{***} & 4.91^{***} &
                                                    3.10^{***} & 3.02^{***} &...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1178,7 +1247,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...5^{***} & 2.37^{***} & 4.91^{***} & 3.10^
+l.475 ...5^{***} & 2.37^{***} & 4.91^{***} & 3.10^
                                                   {***} & 3.02^{***} & 4.59^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1186,7 +1255,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ... & 2.37^{***} & 4.91^{***} & 3.10^{***} &
+l.475 ... & 2.37^{***} & 4.91^{***} & 3.10^{***} &
                                                    3.02^{***} & 4.59^{***} &...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1197,7 +1266,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...7^{***} & 4.91^{***} & 3.10^{***} & 3.02^
+l.475 ...7^{***} & 4.91^{***} & 3.10^{***} & 3.02^
                                                   {***} & 4.59^{***} & 1.10^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1205,7 +1274,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ... & 4.91^{***} & 3.10^{***} & 3.02^{***} &
+l.475 ... & 4.91^{***} & 3.10^{***} & 3.02^{***} &
                                                    4.59^{***} & 1.10^{*} & -...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1216,7 +1285,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...1^{***} & 3.10^{***} & 3.02^{***} & 4.59^
+l.475 ...1^{***} & 3.10^{***} & 3.02^{***} & 4.59^
                                                   {***} & 1.10^{*} & -.22 & ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1224,7 +1293,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ... & 3.10^{***} & 3.02^{***} & 4.59^{***} &
+l.475 ... & 3.10^{***} & 3.02^{***} & 4.59^{***} &
                                                    1.10^{*} & -.22 & 2.93^{*...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1235,7 +1304,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...0^{***} & 3.02^{***} & 4.59^{***} & 1.10^
+l.475 ...0^{***} & 3.02^{***} & 4.59^{***} & 1.10^
                                                   {*} & -.22 & 2.93^{***} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1243,7 +1312,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...*} & 3.02^{***} & 4.59^{***} & 1.10^{*} &
+l.475 ...*} & 3.02^{***} & 4.59^{***} & 1.10^{*} &
                                                    -.22 & 2.93^{***} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1254,7 +1323,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...*} & 4.59^{***} & 1.10^{*} & -.22 & 2.93^
+l.475 ...*} & 4.59^{***} & 1.10^{*} & -.22 & 2.93^
                                                   {***} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1262,7 +1331,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.375   &
+l.476   &
           (.33) & (.33) & (.41) & (.43) & (.32) & (.44) & (.58) & (.75) & (....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1273,16 +1342,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377  perdido & 1.29^
-                      {*} &  &  & 1.27^{***} &  & 1.46^{*} &  &  &  \\
+l.478  $\texttt{lost}$       & 1.29^
+                                    {*} &  &  & 1.27^{***} &  & 1.46^{*} &  ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377  perdido & 1.29^{*} &
-                             &  & 1.27^{***} &  & 1.46^{*} &  &  &  \\
+l.478  $\texttt{lost}$       & 1.29^{*} &
+                                           &  & 1.27^{***} &  & 1.46^{*} &  ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1292,16 +1361,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377  perdido & 1.29^{*} &  &  & 1.27^
-                                       {***} &  & 1.46^{*} &  &  &  \\
+l.478 ...ttt{lost}$       & 1.29^{*} &  &  & 1.27^
+                                                  {***} &  & 1.46^{*} &  &  ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377  perdido & 1.29^{*} &  &  & 1.27^{***} &
-                                                & 1.46^{*} &  &  &  \\
+l.478 ...t}$       & 1.29^{*} &  &  & 1.27^{***} &
+                                                    & 1.46^{*} &  &  &  \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1311,7 +1380,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377 ... & 1.29^{*} &  &  & 1.27^{***} &  & 1.46^
+l.478 ... & 1.29^{*} &  &  & 1.27^{***} &  & 1.46^
                                                   {*} &  &  &  \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1319,7 +1388,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377 ...29^{*} &  &  & 1.27^{***} &  & 1.46^{*} &
+l.478 ...29^{*} &  &  & 1.27^{***} &  & 1.46^{*} &
                                                     &  &  \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1330,16 +1399,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380  ha.hecho & .86^
-                      {***} & .76^{***} & 1.46^{***} & .51^{*} & .93^{***} &...
+l.481  $\texttt{delivered}$  & .86^
+                                   {***} & .76^{***} & 1.46^{***} & .51^{*} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380  ha.hecho & .86^{***} &
-                              .76^{***} & 1.46^{***} & .51^{*} & .93^{***} &...
+l.481  $\texttt{delivered}$  & .86^{***} &
+                                           .76^{***} & 1.46^{***} & .51^{*} ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1349,16 +1418,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380  ha.hecho & .86^{***} & .76^
-                                  {***} & 1.46^{***} & .51^{*} & .93^{***} &...
+l.481  $\texttt{delivered}$  & .86^{***} & .76^
+                                               {***} & 1.46^{***} & .51^{*} ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380  ha.hecho & .86^{***} & .76^{***} &
-                                          1.46^{***} & .51^{*} & .93^{***} &...
+l.481 ...tt{delivered}$  & .86^{***} & .76^{***} &
+                                                   1.46^{***} & .51^{*} & .9...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1368,15 +1437,15 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380  ha.hecho & .86^{***} & .76^{***} & 1.46^
-                                               {***} & .51^{*} & .93^{***} &...
+l.481 ...ivered}$  & .86^{***} & .76^{***} & 1.46^
+                                                  {***} & .51^{*} & .93^{***...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380 ...ho & .86^{***} & .76^{***} & 1.46^{***} &
+l.481 ...$  & .86^{***} & .76^{***} & 1.46^{***} &
                                                    .51^{*} & .93^{***} & .26...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1387,7 +1456,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380 ....86^{***} & .76^{***} & 1.46^{***} & .51^
+l.481 ....86^{***} & .76^{***} & 1.46^{***} & .51^
                                                   {*} & .93^{***} & .26 & .5...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1395,7 +1464,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380 ...***} & .76^{***} & 1.46^{***} & .51^{*} &
+l.481 ...***} & .76^{***} & 1.46^{***} & .51^{*} &
                                                    .93^{***} & .26 & .51 & ....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1406,7 +1475,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380 ...& .76^{***} & 1.46^{***} & .51^{*} & .93^
+l.481 ...& .76^{***} & 1.46^{***} & .51^{*} & .93^
                                                   {***} & .26 & .51 & .85^{*...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1414,7 +1483,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380 ...***} & 1.46^{***} & .51^{*} & .93^{***} &
+l.481 ...***} & 1.46^{***} & .51^{*} & .93^{***} &
                                                    .26 & .51 & .85^{***} & ....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1425,7 +1494,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380 ... & .51^{*} & .93^{***} & .26 & .51 & .85^
+l.481 ... & .51^{*} & .93^{***} & .26 & .51 & .85^
                                                   {***} & .26 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1433,7 +1502,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.380 ...{*} & .93^{***} & .26 & .51 & .85^{***} &
+l.481 ...{*} & .93^{***} & .26 & .51 & .85^{***} &
                                                    .26 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1444,16 +1513,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383  interesa.pol√≠t & .35 & 1.03^
-                                    {***} & 1.34^{***} & .82^{***} & .52^{**...
+l.484  $\texttt{interested}$ & .35 & 1.03^
+                                          {***} & 1.34^{***} & .82^{***} & ....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383  interesa.pol√≠t & .35 & 1.03^{***} &
-                                            1.34^{***} & .82^{***} & .52^{**...
+l.484  $\texttt{interested}$ & .35 & 1.03^{***} &
+                                                  1.34^{***} & .82^{***} & ....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1463,15 +1532,15 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383  interesa.pol√≠t & .35 & 1.03^{***} & 1.34^
-                                                 {***} & .82^{***} & .52^{**...
+l.484 ...t{interested}$ & .35 & 1.03^{***} & 1.34^
+                                                  {***} & .82^{***} & .52^{*...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ....pol√≠t & .35 & 1.03^{***} & 1.34^{***} &
+l.484 ...ested}$ & .35 & 1.03^{***} & 1.34^{***} &
                                                    .82^{***} & .52^{**} & .7...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1482,7 +1551,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ...≠t & .35 & 1.03^{***} & 1.34^{***} & .82^
+l.484 ...}$ & .35 & 1.03^{***} & 1.34^{***} & .82^
                                                   {***} & .52^{**} & .74^{**...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1490,7 +1559,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ...5 & 1.03^{***} & 1.34^{***} & .82^{***} &
+l.484 ...5 & 1.03^{***} & 1.34^{***} & .82^{***} &
                                                    .52^{**} & .74^{**} & .71...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1501,7 +1570,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ....03^{***} & 1.34^{***} & .82^{***} & .52^
+l.484 ....03^{***} & 1.34^{***} & .82^{***} & .52^
                                                   {**} & .74^{**} & .71^{**}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1509,7 +1578,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ...**} & 1.34^{***} & .82^{***} & .52^{**} &
+l.484 ...**} & 1.34^{***} & .82^{***} & .52^{**} &
                                                    .74^{**} & .71^{**} & .28...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1520,7 +1589,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ... 1.34^{***} & .82^{***} & .52^{**} & .74^
+l.484 ... 1.34^{***} & .82^{***} & .52^{**} & .74^
                                                   {**} & .71^{**} & .28 & .5...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1528,7 +1597,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ...{***} & .82^{***} & .52^{**} & .74^{**} &
+l.484 ...{***} & .82^{***} & .52^{**} & .74^{**} &
                                                    .71^{**} & .28 & .57^{*} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1539,7 +1608,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ... & .82^{***} & .52^{**} & .74^{**} & .71^
+l.484 ... & .82^{***} & .52^{**} & .74^{**} & .71^
                                                   {**} & .28 & .57^{*} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1547,7 +1616,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ...^{***} & .52^{**} & .74^{**} & .71^{**} &
+l.484 ...^{***} & .52^{**} & .74^{**} & .71^{**} &
                                                    .28 & .57^{*} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1558,7 +1627,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.383 ...2^{**} & .74^{**} & .71^{**} & .28 & .57^
+l.484 ...2^{**} & .74^{**} & .71^{**} & .28 & .57^
                                                   {*} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1566,7 +1635,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.384   &
+l.485   &
           (.24) & (.27) & (.34) & (.28) & (.26) & (.33) & (.36) & (.27) & (....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1577,15 +1646,15 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.386  smartphone & -.27 & .37 & -.18 & -.47^
-                                             {*} & .21 & -.05 & -.43 & .26 &...
+l.487 ...{smartphone}$ & -.27 & .37 & -.18 & -.47^
+                                                  {*} & .21 & -.05 & -.43 & ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.386  smartphone & -.27 & .37 & -.18 & -.47^{*} &
+l.487 ...tphone}$ & -.27 & .37 & -.18 & -.47^{*} &
                                                    .21 & -.05 & -.43 & .26 &...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1596,16 +1665,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.389  panista & .15 & -.11 & -.03 & 1.18^
-                                          {***} & .02 & .80^{*} & .78^{*} & ...
+l.490 ...{panista}$    & .15 & -.11 & -.03 & 1.18^
+                                                  {***} & .02 & .80^{*} & .7...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.389  panista & .15 & -.11 & -.03 & 1.18^{***} &
-                                                  .02 & .80^{*} & .78^{*} & ...
+l.490 ...a}$    & .15 & -.11 & -.03 & 1.18^{***} &
+                                                   .02 & .80^{*} & .78^{*} &...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1615,7 +1684,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.389 ...5 & -.11 & -.03 & 1.18^{***} & .02 & .80^
+l.490 ...5 & -.11 & -.03 & 1.18^{***} & .02 & .80^
                                                   {*} & .78^{*} & .34 & 1.15...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1623,7 +1692,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.389 ....11 & -.03 & 1.18^{***} & .02 & .80^{*} &
+l.490 ....11 & -.03 & 1.18^{***} & .02 & .80^{*} &
                                                    .78^{*} & .34 & 1.15^{***...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1634,7 +1703,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.389 ... -.03 & 1.18^{***} & .02 & .80^{*} & .78^
+l.490 ... -.03 & 1.18^{***} & .02 & .80^{*} & .78^
                                                   {*} & .34 & 1.15^{***} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1642,7 +1711,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.389 ... & 1.18^{***} & .02 & .80^{*} & .78^{*} &
+l.490 ... & 1.18^{***} & .02 & .80^{*} & .78^{*} &
                                                    .34 & 1.15^{***} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1653,7 +1722,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.389 ...} & .02 & .80^{*} & .78^{*} & .34 & 1.15^
+l.490 ...} & .02 & .80^{*} & .78^{*} & .34 & 1.15^
                                                   {***} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1661,7 +1730,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.390   &
+l.491   &
           (.39) & (.41) & (.52) & (.35) & (.41) & (.44) & (.47) & (.39) & (....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1672,7 +1741,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.392 ...ta & .37 & .15 & -.01 & -.21 & .17 & .74^
+l.493 ...   & .37 & .15 & -.01 & -.21 & .17 & .74^
                                                   {**} & .43 & .19 & .16 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1680,7 +1749,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.392 ...37 & .15 & -.01 & -.21 & .17 & .74^{**} &
+l.493 ...37 & .15 & -.01 & -.21 & .17 & .74^{**} &
                                                    .43 & .19 & .16 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1691,16 +1760,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398  constante & -3.03^
-                         {***} & -3.82^{***} & -4.45^{***} & -3.48^{***} & -...
+l.499  Intercept             & -3.03^
+                                     {***} & -3.82^{***} & -4.45^{***} & -3....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398  constante & -3.03^{***} &
-                                 -3.82^{***} & -4.45^{***} & -3.48^{***} & -...
+l.499  Intercept             & -3.03^{***} &
+                                             -3.82^{***} & -4.45^{***} & -3....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1710,16 +1779,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398  constante & -3.03^{***} & -3.82^
-                                       {***} & -4.45^{***} & -3.48^{***} & -...
+l.499 ...ercept             & -3.03^{***} & -3.82^
+                                                  {***} & -4.45^{***} & -3.4...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398  constante & -3.03^{***} & -3.82^{***} &
-                                               -4.45^{***} & -3.48^{***} & -...
+l.499 ...            & -3.03^{***} & -3.82^{***} &
+                                                   -4.45^{***} & -3.48^{***}...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1729,7 +1798,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...ante & -3.03^{***} & -3.82^{***} & -4.45^
+l.499 ...     & -3.03^{***} & -3.82^{***} & -4.45^
                                                   {***} & -3.48^{***} & -3.4...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1737,7 +1806,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...-3.03^{***} & -3.82^{***} & -4.45^{***} &
+l.499 ...-3.03^{***} & -3.82^{***} & -4.45^{***} &
                                                    -3.48^{***} & -3.49^{***}...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1748,7 +1817,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...***} & -3.82^{***} & -4.45^{***} & -3.48^
+l.499 ...***} & -3.82^{***} & -4.45^{***} & -3.48^
                                                   {***} & -3.49^{***} & -3.9...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1756,7 +1825,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...-3.82^{***} & -4.45^{***} & -3.48^{***} &
+l.499 ...-3.82^{***} & -4.45^{***} & -3.48^{***} &
                                                    -3.49^{***} & -3.99^{***}...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1767,7 +1836,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...***} & -4.45^{***} & -3.48^{***} & -3.49^
+l.499 ...***} & -4.45^{***} & -3.48^{***} & -3.49^
                                                   {***} & -3.99^{***} & -3.8...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1775,7 +1844,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...-4.45^{***} & -3.48^{***} & -3.49^{***} &
+l.499 ...-4.45^{***} & -3.48^{***} & -3.49^{***} &
                                                    -3.99^{***} & -3.87^{***}...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1786,7 +1855,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...***} & -3.48^{***} & -3.49^{***} & -3.99^
+l.499 ...***} & -3.48^{***} & -3.49^{***} & -3.99^
                                                   {***} & -3.87^{***} & -3.2...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1794,7 +1863,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...-3.48^{***} & -3.49^{***} & -3.99^{***} &
+l.499 ...-3.48^{***} & -3.49^{***} & -3.99^{***} &
                                                    -3.87^{***} & -3.29^{***}...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1805,7 +1874,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...***} & -3.49^{***} & -3.99^{***} & -3.87^
+l.499 ...***} & -3.49^{***} & -3.99^{***} & -3.87^
                                                   {***} & -3.29^{***} & -3.5...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1813,7 +1882,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...-3.49^{***} & -3.99^{***} & -3.87^{***} &
+l.499 ...-3.49^{***} & -3.99^{***} & -3.87^{***} &
                                                    -3.29^{***} & -3.58^{***} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1824,7 +1893,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...***} & -3.99^{***} & -3.87^{***} & -3.29^
+l.499 ...***} & -3.99^{***} & -3.87^{***} & -3.29^
                                                   {***} & -3.58^{***} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1832,7 +1901,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...-3.99^{***} & -3.87^{***} & -3.29^{***} &
+l.499 ...-3.99^{***} & -3.87^{***} & -3.29^{***} &
                                                    -3.58^{***} \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1843,7 +1912,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.398 ...***} & -3.87^{***} & -3.29^{***} & -3.58^
+l.499 ...***} & -3.87^{***} & -3.29^{***} & -3.58^
                                                   {***} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1851,7 +1920,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.399   &
+l.500   &
           (.25) & (.30) & (.39) & (.30) & (.28) & (.35) & (.37) & (.28) & (....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1859,104 +1928,41 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[10] [11] <../graphs/prReconoce1.pdf, id=47, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce1.pdf Graphic file (type pdf)
 
-<use ../graphs/prReconoce1.pdf>
-Package pdftex.def Info: ../graphs/prReconoce1.pdf used on input line 419.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce6.pdf, id=48, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce6.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce6.pdf>
-Package pdftex.def Info: ../graphs/prReconoce6.pdf used on input line 420.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce8.pdf, id=49, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce8.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce8.pdf>
-Package pdftex.def Info: ../graphs/prReconoce8.pdf used on input line 421.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce2.pdf, id=50, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce2.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce2.pdf>
-Package pdftex.def Info: ../graphs/prReconoce2.pdf used on input line 422.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce5.pdf, id=51, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce5.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce5.pdf>
-Package pdftex.def Info: ../graphs/prReconoce5.pdf used on input line 423.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce7.pdf, id=52, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce7.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce7.pdf>
-Package pdftex.def Info: ../graphs/prReconoce7.pdf used on input line 424.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce3.pdf, id=53, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce3.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce3.pdf>
-Package pdftex.def Info: ../graphs/prReconoce3.pdf used on input line 425.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce4.pdf, id=54, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce4.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce4.pdf>
-Package pdftex.def Info: ../graphs/prReconoce4.pdf used on input line 426.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
-
-<../graphs/prReconoce9.pdf, id=55, 505.89pt x 252.945pt>
-File: ../graphs/prReconoce9.pdf Graphic file (type pdf)
-
-<use ../graphs/prReconoce9.pdf>
-Package pdftex.def Info: ../graphs/prReconoce9.pdf used on input line 427.
-(pdftex.def)             Requested size: 195.13098pt x 97.56746pt.
- (./reconoce01.bbl [12] [13] [14 <../graphs/prReconoce1.pdf> <../graphs/prRecon
-oce6.pdf> <../graphs/prReconoce8.pdf> <../graphs/prReconoce2.pdf> <../graphs/pr
-Reconoce5.pdf> <../graphs/prReconoce7.pdf> <../graphs/prReconoce3.pdf> <../grap
-hs/prReconoce4.pdf> <../graphs/prReconoce9.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 92--96
-\T1/pcr/m/n/12 dudas / 2013 / 12 / 05 / por -[] que -[] la -[] reeleccion -[] s
-irve -[] y -[] por -[] que -[]
+Overfull \hbox (22.37999pt too wide) in paragraph at lines 574--574
+[]\T1/pcr/m/n/10 21 El 3 de abril iniciaron las campaÒas para renovar el Congre
+so del Estado.[] 
  []
 
-[15]) [16] (./reconoce01.aux
-LaTeX Info: Redefining \. on input line 16.
-LaTeX Info: Redefining \% on input line 16.
-)
+[16] [17]
+Overfull \hbox (10.37999pt too wide) in paragraph at lines 574--574
+[]\T1/pcr/m/n/10 25 Le voy a leer unos nombres, para cada uno, æpodrÌa decirme 
+si le es muy[] 
+ []
 
-LaTeX Warning: There were undefined references.
-
- ) 
+[18] (./reconoce03.aux) ) 
 Here is how much of TeX's memory you used:
- 17175 strings out of 494868
- 324233 string characters out of 6177991
- 385166 words of memory out of 5000000
- 20066 multiletter control sequences out of 15000+600000
- 92924 words of font info for 141 fonts, out of 8000000 for 9000
+ 16674 strings out of 494868
+ 317323 string characters out of 6177991
+ 361773 words of memory out of 5000000
+ 19568 multiletter control sequences out of 15000+600000
+ 94435 words of font info for 160 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 55i,15n,77p,1472b,763s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on reconoce01.pdf (16 pages, 216215 bytes).
+ 55i,17n,77p,1763b,771s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on reconoce03.pdf (18 pages, 239781 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+ 188 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

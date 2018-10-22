@@ -445,6 +445,7 @@ mean_center <- function(x) {
 }
 
 
+library(car)
 # regression
 # favor reeleccion
 model <- glm(dfavorReel ~ dinteresaPol + drecibidoObsequio + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
@@ -457,16 +458,19 @@ summary(model)
 #summary(model)
 model1 <- glm(dconoceJavier    ~  dconservadoJavier    + dperdidoJavier    + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
 summary(model1)
+linearHypothesis(model1, "dconservadoJavier = dperdidoJavier")
 model2 <- glm(dconoceLily      ~  dconservadoLily                          + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
 summary(model2)
 model3 <- glm(dconoceGina      ~  dconservadoGina                          + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
 summary(model3)
 model4 <- glm(dconoceAnaIsabel ~  dconservadoAnaIsabel + dperdidoAnaIsabel + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri          , data = dat, family = "binomial")
 summary(model4)
+linearHypothesis(model4, "dconservadoAnaIsabel = dperdidoAnaIsabel")
 model5 <- glm(dconoceSonia     ~  dconservadoSonia                         + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
 summary(model5)
 model6 <- glm(dconoceLencho    ~  dconservadoLencho    + dperdidoLencho    + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
 summary(model6)
+linearHypothesis(model6, "dconservadoLencho = dperdidoLencho")
 model7 <- glm(dconoceLariza    ~  dconservadoLariza                        + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
 summary(model7)
 model8 <- glm(dconoceArmando   ~  dconservadoArmando                       + dhaHecho + dinteresaPol + dsmartPh + dpan + dpri + dmorena, data = dat, family = "binomial")
