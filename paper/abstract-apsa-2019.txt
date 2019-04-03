@@ -1,0 +1,10 @@
+Title: Using redistricting to separate incumbency from campaign effects: Name recognition in Mexican subnational legislative races
+         1         2         3         4         5         6         7         8
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+A method to separate incumbency and campaign effects with redistricting
+
+Authors: Eric Magar and Alejandro Moreno (ITAM)
+
+Abstract: We investigate name recognition of candidates to Coahuila's state assembly in the 2017 election---the first Mexican state since 1930 allowing incumbents on the ballot. Name recognition has been associated with representatives' efforts to preserve or enhance their reelectability. We propose a general method relying on redistricting to parse out incumbency effects from more standard campaign effects in name recognition. A pre-election survey provides evidence of systematic differentials (higher name recognition for incumbents than challengers and open seats; higher in precincts unchanged by redistricting than those that were removed/added; etc.) Just three incumbents were on the ballot, but the patterns uncovered conform to personal vote hypotheses. The method can be extended to other systems where redistricting preceded legislative elections.
+
