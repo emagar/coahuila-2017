@@ -5,3 +5,6 @@ paper/auto/
 
 *.log
 *.aux
+*.bbl
+*.blg
+*.out
