@@ -19,6 +19,11 @@ Cain, B.~E., J.~A. Ferejohn \harvardand\ M.~P. Fiorina. 1987.
   independence}.
 \newblock Cambridge, MA:  Harvard University Press.
 
+\harvarditem{Carey \harvardand\ Shugart}{1995}{carey.shugart.1995}
+Carey, J.~M. \harvardand\ M.~S. Shugart. 1995.
+\newblock ``Incentives to Cultivate a Personal Vote: A Rank Ordering of
+  Electoral Formulas.'' {\em Electoral Studies} 14(4):417--39.
+
 \harvarditem{Cox \harvardand\ Katz}{2002}{cox.katz.2002}
 Cox, G.~W. \harvardand\ J.~N. Katz. 2002.
 \newblock {\em Elbridge {G}erry's Salamander: The Electoral Consequences of the
@@ -35,10 +40,10 @@ Cox, G.~W. \harvardand\ M.~D. McCubbins. 1993.
 \newblock {\em Legislative {L}eviathan: Party Government in the {H}ouse}.
 \newblock Berkeley:  University of California Press.
 
-\harvarditem{Fenno}{1978}{fenno.1978}
-Fenno, R.~F. 1978.
-\newblock {\em Home Style: {H}ouse Members in their Districts}.
-\newblock Boston:  Little, Brown, \& Co.
+\harvarditem{Downs}{1957}{downs.1957}
+Downs, A. 1957.
+\newblock {\em An Economic Theory of Democracy}.
+\newblock New York:  Harper \& Collins.
 
 \harvarditem{Godoy~Rueda}{2014}{godoy.reeleccion.2014}
 Godoy~Rueda, L.~F. 2014.
@@ -50,10 +55,10 @@ Haggard, S. \harvardand\ M.~D. McCubbins, eds. 2001.
 \newblock {\em Presidents, Parliaments, and Policy}.
 \newblock New York:  Cambridge University Press.
 
-\harvarditem{Jacobson}{1997}{jacobson.1997}
-Jacobson, G.~C. 1997.
-\newblock {\em The Politics of Congressional Elections}.
-\newblock 4$^{th}$ ed. New York:  Longman.
+\harvarditem{Jacobson \harvardand\ Kernell}{1983}{jacobson.kernell.1983}
+Jacobson, G.~C. \harvardand\ S. Kernell. 1983.
+\newblock {\em Strategy and Choice in Congressional Elections}.
+\newblock 2$^{nd}$ ed. New Haven:  Yale University Press.
 
 \harvarditem[Jones et~al.]{Jones, Saiegh, Spiller \harvardand\
   Tommasi}{2002}{jones.etal.amateurLegis.2002}
@@ -64,47 +69,48 @@ Jones, M.~P., S. Saiegh, P.~T. Spiller \harvardand\ M. Tommasi. 2002.
 
 \harvarditem{Langston}{n.d.}{langston.nd}
 Langston, J. n.d.
-\newblock ``Congressional campaigns in Mexico.'' Unpublished manuscript, CIDE.
-
-\harvarditem{Madison}{1961}{madison.1788}
-Madison, J. 1961.
-\newblock The Federalist \textsc{li}.  In {\em The Federalist Papers: Hamilton,
-  Madison, Jay}, ed. C. Rossiter.
-\newblock New York:  Penguin pp.~320--25.
-
-\harvarditem{Magar}{2017}{magarInstReel.2017}
-Magar, E. 2017.
-\newblock ``Consecutive reelection institutions and electoral calendars since
-  1994 in Mexico V2.0.'' \url{http://dx.doi.org/10.7910/DVN/X2IDWS}, Harvard
-  Dataverse [distributor].
+\newblock ``Congressional campaigns in {M}exico.'' Unpublished manuscript,
+  CIDE.
 
 \harvarditem{Mainwaring}{1991}{mainwaring.1991}
 Mainwaring, S. 1991.
-\newblock ``Politicians, Parties and Electoral Systems: Brazil in Comparative
+\newblock ``Politicians, Parties and Electoral Systems: {B}razil in Comparative
   Perspective.'' {\em Comparative Politics} 24(1):21--43.
 
-\harvarditem{Mayhew}{1974}{mayhew.1974}
-Mayhew, D.~R. 1974.
+\harvarditem{Mayhew}{1974{\em a}}{mayhew.1974}
+Mayhew, D.~R. 1974{\em a}.
 \newblock {\em Congress: The Electoral Connection}.
 \newblock New Haven:  Yale University Press.
 
-\harvarditem{McCubbins \harvardand\ Sullivan}{1987}{mccubbins.sullivan.1987}
-McCubbins, M.~D. \harvardand\ T. Sullivan, eds. 1987.
-\newblock {\em Congress: Structure and Policy}.
-\newblock New York:  Cambridge University Press.
+\harvarditem{Mayhew}{1974{\em b}}{mayhew1974vanishingMg}
+Mayhew, D.~R. 1974{\em b}.
+\newblock ``Congressional elections: The case of the vanishing marginals.''
+  {\em Polity} pp.~295--317.
 
 \harvarditem[Merino, Fierro \harvardand\ Zarkin]{Merino, Fierro \harvardand\
   Zarkin}{2013}{merinoFierroZarkin2013Blog}
 Merino, J., E. Fierro \harvardand\ J. Zarkin. 2013.
 \newblock ``Por qu\'e la reelecci\'on sirve y por qu\'e no servir\'a en
-  M\'exico.''
+  {M\'e}xico.''
   \url{http://www.animalpolitico.com/blogueros-salir-de-dudas/2013/12/05/por-que-la-reeleccion-sirve-y-por-que-servira-en-mexico/}.
 
 \harvarditem{Micozzi}{2009}{micozziPhD2009}
 Micozzi, J.~P. 2009.
 \newblock The Electoral Connection in Multi-Level Systems with Non-Static
-  Ambition: Linking Political Careers and Legislative Performance in Argentina
-  Ph{D}. dissertation Rice {U}niversity.
+  Ambition: Linking Political Careers and Legislative Performance in
+  {A}rgentina Ph{D}. dissertation Rice {U}niversity.
+
+\harvarditem{Mikulska \harvardand\ Scarrow}{2010}{mikulska.uk.cand.sel2010}
+Mikulska, A.~B. \harvardand\ S.~E. Scarrow. 2010.
+\newblock ``Assessing the Political Impact of Candidate Selection Rules:
+  Britain in the 1990s.'' {\em Journal of Elections, Public Opinion and
+  Parties} 20(3):311--333.
+
+\harvarditem{Moreno}{2009}{moreno.decisElec.2009}
+Moreno, A. 2009.
+\newblock {\em La decisi\'on electoral: votantes, partidos y democracia en
+  {M\'e}xico}.
+\newblock {M}exico City:  Porr\'ua.
 
 \harvarditem{Morgenstern}{2002}{morgenstern.2002b}
 Morgenstern, S. 2002.
@@ -119,34 +125,52 @@ Navia, P. 2000.
   Paper read at the annual meeting of the Latin American Studies Association,
   Miami \textsc{fl}, March 16--18.
 
+\harvarditem{Popkin}{1991}{popkin.1991}
+Popkin, S.~L. 1991.
+\newblock {\em The Reasoning Voter: Communication and Persuation in
+  Presidential Campaigns}.
+\newblock Chicago:  University of Chicago Press.
+
+\harvarditem{Ranney}{1981}{ranney.cand-sel.1981}
+Ranney, A. 1981.
+\newblock Candidate Selection.  In {\em Democracy at the Polls: A Comparative
+  Study of Competitive National Elections}, ed. D. Butler, H.~R. Penniman
+  \harvardand\ A. Ranney.
+\newblock Washington, D.C.:  American Enterprise Institute pp.~75--106.
+
+\harvarditem{Samuels}{2003}{samuels.2003}
+Samuels, D. 2003.
+\newblock {\em Ambition, Federalism, and Legislative Politics in {B}razil}.
+\newblock New York:  Cambridge University Press.
+
 \harvarditem{Schlesinger}{1966}{schlesinger.1966}
 Schlesinger, J.~A. 1966.
 \newblock {\em Ambition and Politics: Political Careers in the United States}.
 \newblock Chicago:  Rand McNally.
 
+\harvarditem[Sniderman, Brody \harvardand\ Tetlock]{Sniderman, Brody
+  \harvardand\ Tetlock}{1991}{sniderman-etal.1991}
+Sniderman, P.~M., R.~A. Brody \harvardand\ P.~E. Tetlock. 1991.
+\newblock {\em Reasoning and Choice: Explorations in Political Psychology}.
+\newblock New York:  Cambridge University Press.
+
 \harvarditem[Trelles et~al.]{Trelles, Altman, Magar \harvardand\
   McDonald}{2016}{trelles.etalDatosabiertos.pyg.2016}
 Trelles, A., M. Altman, E. Magar \harvardand\ M.~P. McDonald. 2016.
-\newblock ``Datos abiertos, transparencia y redistritaci\'on en M\'exico.''
+\newblock ``Datos abiertos, transparencia y redistritaci\'on en {M}\'exico.''
   {\em Pol\'itica y Gobierno} 23(2).
-
-\harvarditem{Weingast \harvardand\ Marshall}{1988}{weingast.marshall.1988}
-Weingast, B.~R. \harvardand\ W.~J. Marshall. 1988.
-\newblock ``The Industrial Organization of Congress; or Why Legislatures, Like
-  Firms, Are Not Organized as Markets.'' {\em Journal of Political Economy}
-  96(1):132--63.
 
 \harvarditem{Weldon}{1997}{weldon.1997}
 Weldon, J.~A. 1997.
-\newblock The Political Sources of Presidencialismo in Mexico.  In {\em
+\newblock The Political Sources of Presidencialismo in {M}exico.  In {\em
   Presidentialism and Democracy in Latin America}, ed. S. Mainwaring
   \harvardand\ M.~S. Shugart.
 \newblock New York:  Cambridge University Press pp.~225--58.
 
 \harvarditem{Zaller}{1998}{zallerprizeFighters}
 Zaller, J. 1998.
-\newblock Politicians as prize fighters: Electoral selection and incumbency
-  advantage.  In {\em Party politics and politicians}, ed. J.~G. Geer.
-\newblock Baltiore, MD:  Johns Hopkins University Press pp.~125--85.
+\newblock Politicians as Prize Fighters: Electoral Selection and Incumbency
+  Advantage.  In {\em Party Politics and Politicians}, ed. J.~G. Geer.
+\newblock Baltimore, MD:  Johns Hopkins University Press pp.~125--85.
 
 \end{thebibliography}
