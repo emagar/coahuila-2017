@@ -46,13 +46,16 @@
 \setlength\epigraphwidth{.8\textwidth}
 \setlength\epigraphrule{0pt} % no rule
 
+% multicolumns in appendix
+\usepackage{multicol}
+
 \begin{document}
 
 % notes
 % - 3apr2022 next study, use name familiarity, with two instrumentations (cf. cff): name recall and name recognition
 
 % \title{The removal of single-term limits, redistricting, and name recognition in Coahuila's state races}
-\title{Redistricting and the separation of incumbency and campaign effects: name recognition in Coahuila\thanks{We thank participants of the IV Encuentro del Grupo de Estudios Legislativos de ALACIP in Mexico City for comments and critiques. We are grateful for the generous support of the Asociación Mexicana de Cultura A.C. The authors bear full responibility for errors and limitations in the study.}}
+\title{Redistricting and the separation of incumbency and campaign effects: name recognition in Coahuila\thanks{We thank participants of the IV Encuentro del Grupo de Estudios Legislativos de ALACIP in Mexico City for comments and critiques. We are grateful for the generous support of the Asociación Mexicana de Cultura A.C. and to José Angel Torrens Hernández for research assistance. The authors bear full responibility for errors and limitations in the study.}}
 \author{Eric Magar  \\ ITAM \and
         Alejandro Moreno \\ ITAM 
 }
@@ -514,6 +517,155 @@ Despite an incomplete research design, we uncover evidence of name recognition c
 \newpage
 \section*{Appendix}
 
+\subsection{Survey questions}
+Thirteen items in the survey questionnaire involved reelection and name recognition (from question 20 to question 25.i) . We used questions 25.a--25.i to code our dependent variables. Responses much/some/little (\emph{mucho/algo/poco}) coded as 1 in the incumbent's name recognition indicator; 0 otherwise.
+
+* Add descriptives. 
+
+We reproduce the relevant items in the questionnaire in Spanish and their English translation here.
+
+\begin{multicols}{2}
+
+\begin{scriptsize}
+\begin{verbatim}
+20 Are you in favor, against or indifferent 
+towards the consecutive reelection of 
+lawmakers?
+
+1) In favor 
+2) Against
+3) Indifferent
+4) Don't know / No answer
+
+21 On April 3, campaigns to renew the State 
+Congress began. If I asked you the names of 
+the candidates for deputy in this district, 
+could you tell me all the names, some names 
+or do not remember any names at this moment?
+
+1) All 
+2) Some
+3) Don't remember
+4) No answer
+
+22 Now please think about the current local 
+deputies. If I asked you the things your 
+deputy has done for this community, could 
+you mention many things, some, would you 
+say he did nothing or do not remember at 
+this moment? [5=NR/NA]
+
+1) Many
+2) Some
+3) Did nothing
+4) Don't remember
+
+23 If your current deputy were running for 
+reelection, would you vote for him or not 
+vote for him?
+
+1) Yes, I would vote for him/her
+2) Would not vote for him/her
+3) Don't known / No answer (DO NOT READ)
+
+24 Based on the work done by your current 
+deputy, do you think he/she would deserve 
+to be reelected in his position or not?
+
+[1=Yes; 2=No; 3= No answer]
+
+25 I'm going to read you some names, for 
+each one, could you tell me if he/she is 
+well known, somewhat known, little known 
+or not known at all?
+
+[1= Well known; 2=Somewhat known; 
+3= Little known; 4=Not known at all; 
+5= DK/NA].
+
+a Javier Díaz González     
+b Lily Gutiérrez Burciaga  
+c Georgina Cano Torralva   
+d Ana Isabel Durán         
+e Sonia Villareal          
+f Lariza Montiel           
+g Armando Pruneda          
+h Leonel Contreras Pámanes 
+i Florencio ``Lencho'' Siller
+\end{verbatim}
+\end{scriptsize}
+
+\columnbreak
+
+\begin{scriptsize}
+\begin{verbatim}
+20 ¿Está usted a favor, en contra o le 
+es indiferente la reelección consecutiva 
+de legisladores?
+
+1) A favor 2) En contra
+3) Le es indiferente
+4) NS/NC
+
+21 El 3 de abril iniciaron las campañas 
+para renovar el Congreso del Estado. Si yo 
+le preguntara los nombres de los candidatos 
+a diputado en este distrito, ¿usted me 
+podría decir todos los nombres, algunos 
+nombres o no recuerda ningún nombre en
+este momento?
+
+1) Todos 2) Algunos
+3) No recuerda
+4) No contestó
+
+22 Ahora piense por favor en los diputados
+locales actuales. Si yo le preguntara las
+cosas que ha hecho su diputado por esta
+comunidad, ¿usted podría mencionarme muchas
+cosas, algunas, diría que no hizo nada o no
+recuerda en este momento? [5=NS/NC]
+
+1) Muchas
+2) Algunas
+3) No hizo nada
+4) No recuerda
+
+23 Si su actual diputado compitiera para
+buscar la reelección, ¿usted votaría por
+él o no votaría por él?
+
+1) Sí votaría por él
+2) No votaría por él
+3) NS/NC (NO LEER)
+
+24 Con base en el trabajo realizado por 
+suactual diputado, ¿cree que merecería 
+ser reelecto en su cargo o no?
+
+[1=Sí; 2=No; 3=NC]
+
+25 Le voy a leer unos nombres, para cada 
+uno, ¿podría decirme si le es muy conocido, 
+algo conocido, poco o nada conocido?
+
+[1=Muy conocido; 2=Algo; 3=Poco; 
+4=Nada conocido; 5=NS/NC]
+
+a Javier Díaz González     
+b Lily Gutiérrez Burciaga  
+c Georgina Cano Torralva   
+d Ana Isabel Durán         
+e Sonia Villareal          
+f Lariza Montiel           
+g Armando Pruneda          
+h Leonel Contreras Pámanes 
+i Florencio ``Lencho'' Siller
+\end{verbatim}
+\end{scriptsize}
+
+\end{multicols}
+
 \subsection{Regression results}
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
@@ -567,68 +719,6 @@ Log Likelihood & \multicolumn{1}{c}{-262.32} & \multicolumn{1}{c}{-231.34} & \mu
   \label{T:regs} 
 \end{sidewaystable} 
 
-\subsection{Survey questions}
-Thirteen items in the survey questionnaire involved reelection and name recognition (from question 20 to question 25.i) . We used questions 25.a--25.i to code our dependent variables. Responses much/some/little (\emph{mucho/algo/poco}) coded as 1 in the incumbent's name recognition indicator; 0 otherwise.
 
-* Add descriptives. 
-
-We reproduce the relevant items in Spanish here.
-
-\begin{footnotesize}
-\begin{verbatim}
-20 ¿Está usted a favor, en contra o le es indiferente la reelección 
-consecutiva de legisladores?
-
-1) A favor 2) En contra
-3) Le es indiferente
-4) NS/NC
-
-21 El 3 de abril iniciaron las campañas para renovar el Congreso del Estado. 
-Si yo le preguntara los nombres de los candidatos a diputado en este 
-distrito, ¿usted me podría decir todos los nombres, algunos nombres o no 
-recuerda ningún nombre en este momento?
-
-1) Todos 2) Algunos
-3) No recuerda
-4) No contestó
-
-22 Ahora piense por favor en los diputados locales actuales. Si yo le 
-preguntara las cosas que ha hecho su diputado por esta comunidad, ¿usted 
-podría mencionarme muchas cosas, algunas, diría que no hizo nada o no 
-recuerda en este momento? [5=NS/NC]
-
-1) Muchas
-2) Algunas
-3) No hizo nada
-4) No recuerda
-
-23 Si su actual diputado compitiera para buscar la reelección,
-¿usted votaría por él o no votaría por él?
-
-1) Sí votaría por él
-2) No votaría por él
-3) NS/NC (NO LEER)
-
-24 Con base en el trabajo realizado por su actual diputado,
-¿cree que merecería ser reelecto en su cargo o no?
-
-[1=Sí; 2=No; 3=NC]
-
-25 Le voy a leer unos nombres, para cada uno, ¿podría decirme si le es muy 
-conocido, algo conocido, poco o nada conocido?
-
-[1=Muy conocido; 2=Algo; 3=Poco; 4=Nada conocido; 5=NS/NC]
-
-a Javier Díaz González     
-b Lily Gutiérrez Burciaga  
-c Georgina Cano Torralva   
-d Ana Isabel Durán         
-e Sonia Villareal          
-f Lariza Montiel           
-g Armando Pruneda          
-h Leonel Contreras Pámanes 
-i Florencio ``Lencho'' Siller
-\end{verbatim}
-\end{footnotesize}
 
 \end{document}
