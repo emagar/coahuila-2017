@@ -1,0 +1,726 @@
+\documentclass[letter,12pt]{article}
+\usepackage[letterpaper,right=1.25in,left=1.25in,top=1in,bottom=1in]{geometry}
+\usepackage{setspace}
+
+\usepackage[utf8]{inputenc}   % allows input of special characters from keyboard (input encoding)
+\usepackage[T1]{fontenc}      % what fonts to use when printing characters       (output encoding)
+\usepackage{amsmath}          % facilitates writing math formulas and improves the typographical quality of their output
+\usepackage[hyphens]{url}     % adds line breaks to long urls
+\renewcommand{\UrlFont}{\ttfamily\small} % shrinks url font 1 step down
+\usepackage[pdftex]{graphicx} % enhanced support for graphics
+\usepackage{tikz}             % Easier syntax to draw pgf files (invokes pgf automatically)
+\usetikzlibrary{arrows}
+
+\usepackage{mathptmx}           % set font type to Times
+\usepackage[scaled=.90]{helvet} % set font type to Times (Helvetica for some special characters)
+\usepackage{courier}            % set font type to Times (Courier for other special characters)
+
+\usepackage{rotating}         % sideway tables and figures that take a full page
+\usepackage{caption}          % allows multipage figures and tables with same caption (\ContinuedFloat)
+
+\usepackage{dcolumn}          % needed for apsrtable and stargazer tables from R to compile
+\usepackage{arydshln}         % dashed lines in tables (hdashline, cdashline{3-4}, 
+                              %see http://tex.stackexchange.com/questions/20140/can-a-table-include-a-horizontal-dashed-line)
+                              % must be loaded AFTER dcolumn, 
+                              %see http://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict
+
+\usepackage{amssymb}          % has nicer empty set \varnothing, among much much more
+
+%FOR SPANISH FORMATTING (HYPHENATION ETC.)
+%% \usepackage[spanish]{babel}
+%% \addto\captionsspanish{\renewcommand{\figurename}{Diagrama}} % cambia Figura por Diagrama
+
+\usepackage[longnamesfirst, sort]{natbib}\bibpunct[]{(}{)}{,}{a}{}{;} % handles biblio and references 
+%% \AtBeginDocument{\renewcommand\harvardand{y}} % change 'author and author' by Spanish 'author y author'
+
+\newcommand{\mc}{\multicolumn}
+
+%% TO ADD NOTES IN TEXT, PUT % BEFORE THE ONE YOU WANT DISBALED
+%\usepackage[disable]{todonotes}                            % notes not showed
+\usepackage[colorinlistoftodos, textsize=small]{todonotes} % show notes
+\newcommand{\eric}[1]{\todo[color=red!15, inline]{\textbf{Eric:} #1}}
+\newcommand{\alex}[1]{\todo[color=green!15, inline]{\textbf{Alejandro:} #1}}
+
+% Format epigraph
+\usepackage{epigraph}
+\setlength\epigraphwidth{.8\textwidth}
+\setlength\epigraphrule{0pt} % no rule
+
+% multicolumns in appendix
+\usepackage{multicol}
+
+\begin{document}
+
+% notes
+% - 3apr2022 next study, use name familiarity, with two instrumentations (cf. cff): name recall and name recognition
+% - mpsa 2022 slides have cleaner framing for next iteration
+
+% \title{The removal of single-term limits, redistricting, and name recognition in Coahuila's state races}
+\title{Redistricting and the separation of incumbency and campaign effects: name recognition in Coahuila\thanks{Paper read at the Annual Meeting of the Midwest Political Science Association in Chicago, April 7th 2022. We thank participants of the IV Encuentro del Grupo de Estudios Legislativos de ALACIP in Mexico City for comments and critiques. We are grateful for the generous support of the Asociación Mexicana de Cultura A.C. and to José Angel Torrens Hernández for research assistance. The authors bear full responibility for errors and limitations in the study.}}
+\author{Eric Magar  \\ ITAM \\ \url{emagar@itam.mx} \and
+        Alejandro Moreno \\ ITAM \\ \url{amoreno@itam.mx} 
+}
+\date{\today}
+\maketitle
+
+\begin{center} \textbf{$\rightarrow$~~Preliminary draft~~$\leftarrow$} \\ (please inquire for new version)  \end{center}
+
+\begin{abstract}
+\noindent We investigate candidate name recognition in races for the state of Coahuila assembly in 2017. Name familiarity has been associated with efforts by therepresentatives to cultivate a personal vote towards reeelection. We exploit redistricting prior to the races to identify differentials in name familiarity attributable theoretically to incumbency effects---and not to campaign effects, which occur simultaneously. Even if the instrument failed to include sufficient sampling points for a full separation due to few incumbents on the ballot, we detect significant shifts in name recognition in accordance with theoretical expectations. Survey evidence of the first election held after Mexico recently dropped single-term limits suggests that the few ambitious lawmakers solidified their electoral connection.
+%\noindent Estudiamos el reconocimiento del nombre de candidatos al Congreso del estado de Coahuila en 2017. El fenómeno ha sido asociado con el esfuerzo del representante en su distrito para preservar su reelegibilidad. Aprovechamos la redistritación del estado que antecedió a la elección para detectar diferencias en reconocimiento atribuibles al efecto del ocupante y no al efecto de campaña. Aunque la cobertura muestral de la encuesta preeelectoral que usamos impide una separación cabal de los dos efectos, detectamos diferenciales en reconocimiento de nombre significativos y consistentes con la teoría. Ofrecemos tres diseños de investigación alternativos para que futuros estudios de opinión separen el efecto de ocupante (\emph{incumbency effect}) en elecciones que permitirán la reelección consecutiva a partir de 2018 en México. 
+\end{abstract}
+
+% campaign effect
+% ``In 1952, campaign buttons said `I like Ike,' but at rallies people said `/We/ like Ike.' ... The transformation of `What have you done for me lately?' into `What have you done for /us/ lately?' is the essence of campaigning. Transforming unstructured and diverse interests into a single coalition, making a single cleavage dominant, requires the creation of new constituencies and political identities. It requires the aggregation of countless /I/s into a few /we/s. Behind the /we/s, however, are people who are still reasoning about the ways in which their lives and government policies are related.''
+\epigraph{
+  In 1952, campaign buttons said ``I like Ike,'' but at rallies people said ``\emph{We} like Ike.'' ... The transformation of ``What have you done for me lately?'' into ``What have you done for \emph{us} lately?'' is the essence of campaigning.}{---Popkin, \emph{The Reasoning Voter} (1991:12)}
+
+% incumbency effect
+% The claim that incumbency is the single most important factor in House elections may well be true if interpreted in the broadest sense of incumbency as a factor in raising money and discouraging opposition as well as a criterion for vote choice.
+\epigraph{Even if party identification continues to have primacy in vote choice, the syndrome of factors encapsulated by ``incumbency'' follows a close second}{---Cain, Ferejohn, and Fiorina, \emph{The Personal Vote} (1987:167)}
+
+\onehalfspacing
+
+\section{Introduction}
+
+We rely on redistricting to separate campaign and incumbency effects in congressional elections. Both effects are well established.
+
+Vote swings can be viewed as the sum of long- and short-term forces. The district's economic and socio-demographic makeup determines long-term forces, which voters' party identifications encapsulate. This structure remains mostly unchanged from one election to the next, yielding the notion of a district's ``normal vote'' \citep{converse.1966}. Short-term forces favor one candidate or another in a given year, with fluctuating intensity, but ultimately vanish, reverting the district back to its normal vote. Prominent short-term forces are the effects of campaigns \citep{moreno.decisElec.2009,downs.1957,jacobson.1990spending} and incumbency \citep{mayhew1974vanishingMg,erikson1971incumbency,gelman.king.1991incumbency}, along with presidential \citep{ferejohn.calvert.1984} and gubernatorial coattails \citep{magar.gubCoatMx.2012}, national party tides \citep[][:104-7]{cox.mccubbins.2007leviath2nd}, and so forth. 
+
+Incumbency effects originate in the maintenance of and reliance upon a pre-existing coalition of voters. This would tend to place them among long-term forces, except that they are associated with a person, the candidate, and candidates can change in a snap. Incumbency effects are tantamount to what \citet[][:9]{cain.etal.1987} call the personal vote, ``that portion of a candidate's electoral support which originates in his or her personal qualities, qualifications, activities, and record''. Conversely, campaign effects are successful attempts to shift a prior coalition, by breaking it or by expanding it towards new groups and interests. ``Campaigns transform unstructured and diverse interests into a single coalition, making a single cleavage dominant'' \citep[][:12]{popkin.1991}. 
+
+% A prominent student of campaigns reminds the military methaphor they bring to politics. Just as a military campaign takes an army out of the barracks for operations in the open country (\emph{à la campagne}, in French), so campaigns bring politicians out of the war room and into the open field: ``to arouse public opinion and generate support for their cause, they must defend their old policies, sell new policies, and justify their rule'' \citep[][:8]{popkin.1991}.
+
+% Given enough risk aversion, reliance on a pre-existing coalition, which has already worked, looks more attractive. Campaign effects rise out of necessity rather than 
+
+% Incumbency effects have a dubious reputation among many. Campaigns seen more optimism, good for democracy. 
+
+% Unless an incumbent retires (removing the incumbency effect), these phenomena occur simultaneously.
+
+Campaign and incumbency effects are simultaneous. Unless the seat is open, which removes the incumbency effect, challengers campaign to unseat an incumbent. Challenger success corresponds to a campaign effect larger than the effect of incumbency. But, in general, it is unclear how much vote swings owe to each of this pair of effects. We propose a separating method that relies on redistricting. Periodic changes in district boundary delimitation migrate some groups from one district to another. So even with incumbents running for another term in office, these voters will not find theirs' on the ballot. We generate expectations on name familiarity depending on the geographic location of voters. The procedure is applicable to other systems promoting the personal vote \citep{carey.shugart.1995} where districts are re-drawn periodically. 
+
+%In the case we inspect---the state of Coahuila in northern Mexico, the first where incumbents were allowed on the ballot after the reform---however, district boundaries were redrawn after dropping term limits, such that ambitious members of the assembly who re-ran did it on a map more or less different from their freshman election's map.
+
+We take advantage of the recent removal of single-term limits in Mexico to present the procedure. Prior to the reform, incumbents accross the board had to retire. The reform coincided with redistricting, offering some leverage to see the procedure at work. The manuscript joins the few investigations of consecutive reelection in Mexico. Such studies focus on plenary speech. \citet{motolinia-reel-pork2021} uncovers a substantial inter-term surge in plenary time devoted to particularistic legislation in post-reform state assemblies relative to the rest. In the federal Congress, \citet{magar.debate.2021} finds that single-member district deputies freed of single-term limits made significantly more and longer speeches than the rest, even after controlling for other correlates such as the member's party size and majority status, seniority, and the position in the chamber hierarchy. We contribute by offering a first view of the reform from the perspective of public opinion.
+
+We included items to tap attitudes towards reelection---including name recognition \citep[cf.][]{cain.etal.1987}---among respondents to a pre-election survey in the state of Coahuila, in northern Mexico. Coahuila's 2017 elections were the first where incumbents of any sort were up for consecutive reelection since the 1930s \citep[see][]{magarInstReel.2017}. Identifying precincts that mapmakers moved across districts, we test expectations of differentials in the degree of name recognition in clear and distrinct geographical areas. While our empirical strategy had drawbacks preventing a test of the relative sizes of campaign vs. incumbency effects, survey evidence uncovers patterns of name familiarity consistent with the personal vote. Voters in the district are more familiar with their representative than those outside. And familiarity is strongest in areas that remained inside the district after the map was redrawn, than in areas that migrated to the next district.  
+
+The paper proceeds thus. Section 1 elaborates the electoral connection and notions of static and non-static ambition among politicians. Section 2 describes the Mexican reform, highlighting institutional limitations that might render reelection meaningless. Section 3 develops the procedure to separate campaign from incumbency effects by means of redistricting. Section 4 presents the survey and a multivariate model of name recognition. Section 5 concludes.  
+
+% \section{Old intro}
+
+% \noindent Mexico inaugurates the consecutive reelection of lawmakers at the state and federal levels, and of municipal governments in all but two states.  For eight decades, every elected officer had to vacate the seat at the end of the term. Reelection is a major change in electoral institutions. Political scientists in American politics see it as the cornerstone of democratic accountability, the key of what \citet{madison.1788} called external checks to the government.\footnote{See \citet{schlesinger.1966}, \citet{mayhew.1974}, \citet{fenno.1978}, \citet{cain.etal.1987}, \citet{mccubbins.sullivan.1987}, \citet{cox.mccubbins.1993}, \citet{weingast.marshall.1988}, \citet{jacobson.1997}, among others.} Those with ambition to keep their job can stay another term if they convince constituents to support them again. The representative delivers in exchange for votes. 
+
+% From the U.S.\ standpoint, institutional change adopted along the 2014 electoral reform has potential to instill much welcome oxigen to representation relations of Mexico's young democracy. But a comparative perspective serves as a reminder that there is no guarantee that such potential will be fulfilled. While most Latin American democracies allow legislative reelection, few exhibit return rates even remotely comparable to those observed in the U.S. Congress. In fact, pessimistic forecasts of the irrelevance and likely failure of Mexico's reform accompanied its adoption \citep{merinoFierroZarkin2013Blog}. 
+
+% The paper elaborates reasons to be optimistic and those to be pessimistic, and examines the case of Coahuila, a northern state bordering the U.S.\footnote{There is institutional variance among states. See \citet{magarInstReel.2017}.}
+
+\section{Political ambition and democracy}
+
+Proposing a purposive model of lawmakers, Mayhew's \emph{Electoral Connection} \citeyearpar{mayhew.1974} set a research program on congressional politics in motion. The argument's crucial premise is motivational, stylizing members of the U.S.\ Congress as automatons with a unique, all-encompassing goal: reelection for another term in office. Mayhew does not deny that other worries might deny members a good night sleep---turning a prioritary program into law, climbing the chamber's hierarchy, her/his legacy are just some examples. But none of that would be achieved if the member fails to reelect. % Despite its parsimony, the model explains most activity that representatives engage in while in Congress. 
+
+Another premise is instrumental: reelection is a function of the member's reputation for delivering benefits to the district. But with team production of legislation, where each member's effort is not immediately evident, ascription problems arise rendering credit claiming for delivery cheap talk. Hence members' preference for particularistic goods. Their distinguishing trait is that their production and/or delivery depends on the incumbent's personal effort \citep{haggard.mccubbins.2001}. Classic examples are constituency service and pork-barrel legislation, spending and jobs earmarked for the district \citep[][ refer to them as service and allocation responsiveness, respectively]{cain.etal.1987}. Incumbents have full control to direct pork where the political logic indicates, creating (this is crucial) a responsibility link.
+
+% In personalistic systems, such as the U.S. (and Carey Shugart) reputation is mostly individual.
+
+Delivery need not involve every constituent in the district. Groups jeopardizing reelection by dropping their support are much more important than others. \citet{cox.mccubbins.1986} call them \emph{core constituents}. Other things constant, it is rational (and less risky) to work in preserving a coalition that made you win in the past, delivering to core constituents, rather than attempting to build a new one.
+
+Cultivating a personal vote by nurturing a reputation for delivering breeds visibility. Survey evidence establishes this connection, measuring visibility by name familiarity (Abramowitz). Compared to those who did not, and other things constant, respondents who met their representative personally were twice as likely in the U.S., and 1.5 times as likely in the U.K., to correctly recall their name. The same goes for respondents who heard the member speak and those who talked to staff \citep[][:34]{cain.etal.1987}.
+
+We rely on name familiarity below to gauge the personal vote in the analysis. 
+
+% And coalition maintenance requires delivering results, channeling new benefits, or preserving existing benefits, to the core. As in all human relations, perceptions matter as much as substance: the core must give the incumbent credit for delivering. 
+
+% for conclusion summary
+% To the extent that Mayhew's logic intersects with ascription problems, theory expects legislators to devote substantial time to cultivate their personal vote through delivery of particularistic goods. As a result, a closer link develops between lawmaker and her core constituents than the rest of the citizenry. As a consequence, better incumbent's name recognition is expected in the district than beyond. 
+
+\section{A Minimal Effects Hypothesis}
+
+It is far from evident that the North American electoral connection model extends to Mexico \citep[or to democracies in general, see][]{samuels.2003,jones.etal.amateurLegis.2002}. Skeptics feed on two lines of argument, the party lock and the lack of interest for reelection. We elaborate them. 
+
+\subsection{The lock}
+
+\begin{center}
+\begin{singlespacing}
+  We face the possibility of adopting reelection \\
+  while failing to meet its goal, which is true \\
+  representation and evaluation by voters \\
+  --Senator Ríos Piter\footnote{``Estamos en la posibilidad de que se apruebe la reelección y de que no se cumpla el objetivo, que es la verdadera representación y evaluación por parte de los votantes'', see \url{http://www.diputados.gob.mx/sedia/biblio/prog_leg/135_DOF_10feb14.pdf}.}
+\end{singlespacing}
+\end{center}
+
+\noindent Mexican reformers gave the right of reelection not to the representative but to her party. Incumbents can run for reelection if, and only if, the party that elected them to office nominates them again. Pundits dubbed this the ``party lock,'' granting party apparatchik a veto on the representative's renomination. More often than not in competitive systems, parties let national leaders deny candidates the use of the party label if they choose to run \citep[:85]{ranney.cand-sel.1981}. The party lock is more formidable, Mexican party leaders can veto an incumbent's renomination, \emph{even by other parties}.\footnote{Until the Supreme Court declared it unconstitutional, Brazil's \emph{candidato nato} clause imposed the reverse relationship between party and incumbent, giving the second power to override the leadership veto on renomination \citep{mainwaring.1991}. Major parties in the United Kingdom rely on a mix, district parties selecting candidates that the national party can veto \citep{mikulska.uk.cand.sel2010}.}
+
+As a consequence, a mayor or legislator sensing tension between core supporters' and party leaders' interests faces a predicament. Siding systematically with core supporters might expose her to the wrath of the leadership and, as retaliation, she may be prevented from being on the ballot---keeping the leadership discipline mechanism of single-term limits \citep{weldon.1997} intact. Towards the end of their post, \citet{merinoFierroZarkin2013Blog} claim that``we shall gain no political leverage over representatives, nor shall government be more responsive... with this pseudo-reelection.'' In other words, skeptics expect the incumbency effect in Mexico will be negligible, at best.\footnote{Lessening incumbents' independence was in the minds of lawmakers. The reform bill's summary (\emph{exposición de motivos}) does not even mention the party lock. But leaders' fears of losing their firm grip upon elected officeholders intentions transpired in the floor debate. The diario de los debates for the December 3rd, 2013 session, when the reported bill was considered and approved, registers the intervention (for the report) of Sen.\ Javier Corral (PAN--Chihuahua). Legislators' opportunism against their parties was mentioned: ``I would have preferred a direct reelection'' he claimed, ``but also believe that this report mitigates... political turncoats'' Later on, introducing a failed amendment to delete the party lock, Sen.\ Armando Ríos Piter (PRD--Guerrero) further elaborated: ``it is important to drop it'', he argued, ``[b]ecause if we wish the evaluation be made by citizens we cannot let it depend on a political party'' whom, in roll calls, will be watchful that the ``legislator does not escape the sheepfold.'' See \url{http://www.diputados.gob.mx/sedia/biblio/prog_leg/135_DOF_10feb14.pdf}.}
+
+% (``Me hubiera gustado una reelección directa, pero también creo que el dictamen se encarga de un fenómeno que no podemos negar, el transfuguismo político''). 
+
+% (``es importante quitar[lo]... [p]orque si queremos que la evaluación la hagan los ciudadanos pues no podemos dejar que dependa de un partido político'' que, en las votaciones, velará por que el ``legislador no se salga del redil).''
+
+%Siguiendo a los apologistas de la reelección consecutiva en México desde \citet{lujambio.1996} (quizás antes), subraya un esperado efecto benéfico en la profesionalización de los legisladores.\footnote{\citet{dworak.legisladorAexamen.2003,campos.1996,careaga.1996}; \url{http://www.animalpolitico.com/blogueros-vision-legislativa/2013/12/04/reeleccion-legislativa-historia-y-estadisticas/}.} Menciona someramente el argumento de la conexión electoral, pero mantiene silencio sobre las razones del candado partidista. 
+
+%Dip. Ricardo Monreal (oponiéndose tanto al candado como a la reelección): Si se mantiene la redacción tal y como está, lo único que se va a promover es fortalecer el cacicazgo político, fortalecer la partidocracia y generar una casta que va a ser difícil sacudirse de ella. 
+
+We can also view the problem as a shade of grays instead of black or white. Fully canceling incumbency effects and the electoral connection requires incumbents \emph{fully} lacking resources to fend off leadership pressure. Some politicians are, no doubt, in such a position---freshmen, personal appointees, etc. But any resource of this nature opens some room for negotiation between incumbent and party. This is the essence of legislative party theory \citep{cox.mccubbins.2007leviath2nd,aldrich.rohdeCPG2001}.
+
+One resource is electoral competitiveness. \citet{zallerprizeFighters} models incumbents as prize fighters and the electoral arena as the selection mechanism: winners demonstrate having ``natural advantages'' than defeated challengers. Personal electoral machines, political dynasties, or personal charisma are some elements feeding incumbents' natural advantage. From this perspective, the party can stubbornly prevent a prize fighter's attempts to be on the ballot, but does so at the peril of losing the district. The party lock may prevent the incumbent from entering the race, but she retains the option of moving the machinery and resources making her competitive to another campaign, ensuring that her party is beaten.
+
+Sketching a model might clarify. The vote share in the district or municipality has three components: $P + C + O = 100$. Here $P$ is the party's expected vote percentage without the incumbent's machine, $C$ is the vote that the incumbent can mobilize personally, and $O$ is the opposition's expected vote. Any candidate controlling $C \ge |P-O|$ votes is in a position to impose her re-nomination to party leaders.\footnote{Alternation in many states, districts, and municipalities since 1989 has, in fact, been the result of such defections and party splits [Ver manuscrito q me dio FEE].} Anyone resourceful enough should therefore negotiate with the party without removing the electoral connection completely.
+
+Whether or not this shades of gray approach is correct can be resolved empirically. We apply our procedure to this task. 
+
+\subsection{The lack}
+
+Pessimism also feeds on reelection apathy, which would further dilute incumbency effects. Disinterest by Latin American politicians for reelecting to the assembly leads \citet{morgenstern.2002b} and \citet{micozziPhD2009} to distinguish between static and non-static ambitions. A look towards reelection rates in a handful of the continent's cases shows the need for Schlesinger's \citeyearpar{schlesinger.1966} original intuition.
+
+%% \begin{table}
+%%   \centering
+%% %  \begin{tabular}{lccc}
+%% %  \begin{tabular}{p{.25\textwidth} p{.18\textwidth} p{.18\textwidth} p{.18\textwidth}}
+%%   \begin{tabular}{lccc}
+%% %           & \mc{3}{c}{Incumbents and reelection} \\ [-.5ex]
+%% %           & seek & succeed & return \\ \hline
+%%                          & \mc{3}{c}{Ocupantes (\%) que} \\ 
+%%                          & buscaron la & consiguieron    &            \\ [-.5ex]
+%%                          & reelección  & reelegirse      & retornaron \\ [-.5ex]
+%%     Caso                 & ($a$)       & ($b$)           & ($c=a\times b/100$) \\ \hline \\ [-1.25ex] 
+%%     Argentina 1983--2001 & 25          &  76             &     19     \\
+%%     Brasil 1995          & 70          &  62             &     43     \\
+%%     Chile 1993--2000     & 71          &  83             &     59     \\
+%%     EE.UU. 1990--2010    & 91          &  94             &     85     \\ \\ [-1.25ex] \hline
+%% %    \mc{4}{p{.79\textwidth}}{\footnotesize{Fuentes: \citet[][:658]{jones.etal.amateurLegis.2002} para Argentina; \citet[][:415--6]{morgenstern.2002b} para Brasil y Chile; \url{https://www.opensecrets.org/overview/reelect.php} para EE.UU.}} \\ \hline
+%%   \end{tabular}
+%%   \caption{Querer y poder retornar al Congreso de cuatro democracias. La columna (a) reporta el porcentaje de ocupantes de la cámara baja que fueron renominados, la (b) el porcentaje de éstos que se reeligió y la (c) la tasa de retorno. Fuentes: \citet[][:658]{jones.etal.amateurLegis.2002} para Argentina; \citet[][:415--6]{morgenstern.2002b} para Brasil; \citet{naviaIncumbency.2000} para Chile; \url{https://www.opensecrets.org/overview/reelect.php} para EE.UU.}\label{T:retRate}
+%% \end{table}
+
+\begin{table}
+  \centering
+%  \begin{tabular}{lccc}
+%  \begin{tabular}{p{.25\textwidth} p{.18\textwidth} p{.18\textwidth} p{.18\textwidth}}
+  \begin{tabular}{lccc}
+%           & \mc{3}{c}{Incumbents and reelection} \\ [-.5ex]
+%           & seek & succeed & return \\ \hline
+                             & \mc{3}{c}{Incumbents (\%) who} \\ 
+                             & sought      &             &            \\ [-.5ex]
+                             & reelection  & reelected   & returned   \\ [-.5ex]
+    Case                     &   ($a$)     &   ($b$)     & ($c=a\times b/100$) \\ \hline \\ [-1.25ex] 
+    United States 1990--2010 &    91       &     94      &     86     \\ 
+    Chile 1993--2000         &    71       &     83      &     59     \\
+    Brazil 1994--2002        &    75       &     66      &     50     \\
+    Uruguay 1985--1999       &    61       &     56      &     34     \\
+    Colombia 1994--2002      &    53       &     65      &     34     \\                 
+    Mexico 2018-2024         &    47       &     72      &     34     \\
+    Argentina 1983--2001     &    25       &     76      &     19     \\ \\ [-1.25ex] \hline
+  \end{tabular}
+  \caption{The willing and the able to return to Congress in seven democracies. Column (a) reports the percentage of incumbents in the lower chamber that were renominated, column (b) the percentage of those renominated that won reelection for a consecutive term, and column (c) the return rate. Sources: \citet[][:658]{jones.etal.amateurLegis.2002} for Argentina; \citet{botero.renno-Career-reelec-br-col2007} for Brazil and Colombia; \citet{naviaIncumbency.2000} for Chile; \protect\url{https://emagar.github.io/2021-06-25-reeleccion-dipfed-6-jun.html} for Mexico (single-member-district deputies only); \citet{altman-chasquetti-Career-reelec-urug2005} for Uruguay; \protect\url{https://www.opensecrets.org/overview/reelect.php} for the U.S.}\label{T:retRate}
+\end{table}
+
+Consider three indicators comparing a handful of Latin American systems to the United States Congress in Table \ref{T:retRate}. Column \emph{a} reports the percentage of lawmakers who ran again for the same office at the end of their terms, capturing the notion of static ambition: politicians pursuing a congressional career by trying to repeat in office. Variation is notable. If 9 out of 10 U.S.\ incumbents regularly manifest static ambition, a bare quarter did in Argentina since the return to democracy, and about half in Mexico and Colombia. Static ambition progressively rises in Uruguay, Brazil, and Chile, without any approaching the U.S.\ rate. 
+
+Desire requires ability for achievement, and columns \emph{b} and \emph{c} also report the conditional success rate (i.e., the percentage or renominated incumbents reelected) and the rate of return (i.e., the percentage of all members returning to the chamber in the consecutive term), respectively. The U.S.\ strikes the eye again, where 94 percent fulfilled their ambition, for a 20-year average return rate of 86 percent. With the exception of Uruguay, whose short sample overlaps the collapse of two-party dominance, conditional success rates are decently high. Compounding them with the low prevalence of static ambition, however, yields remarkably low rates of return in Latin America. Brazil and Chile, with rates between 50 and 60 percent, still remained distant from the U.S. Return rates drop to one-third in Mexico, Colombia, and Uruguay, and below 20 percent in Argentina (despite the second highest conditional success rate in the region). 
+
+\begin{table}
+  \centering
+  \begin{tabular}{lc}
+    Year &  \% returned  \\ \hline \\ [-1.25ex]
+    1916 (Constitutional Congress) &          --- \\
+    1917 &           18 \\
+    1918 &           25 \\
+    1920 &           15 \\
+    1922 &           26 \\
+    1924 &           25 \\
+    1926 &           30 \\
+    1928 &           40 \\
+    1930 (Congress size nearly halved) &           42 \\
+    1932 &           27 \\
+    1934 (single-term limits effective) &            0 \\ [-1.25ex] \\ \hline
+  \end{tabular}
+  \caption{Reelection in the post-Revolutionary Chamber of Deputies up to 1934. Source: \citet{godoy.reeleccion.2014}.}\label{T:1920s}
+\end{table}
+
+The Mexican indicators in Table \ref{T:retRate} are for the 2021 race only, when federal term limits were dropped (it excludes party-appointed members elected in the proportional representation tier of the mixed system from the counts). It stands second from the bottom. Is static ambition in Mexico doomed to remain at near Argentine levels? History suggests otherwise. Table \ref{T:1920s} reports the return rate of federal deputies observed in the years prior to the adoption of single-term limits in 1934. At 18 percent, the return rate upon adoption of the Revolutionary constitution is almost indistinguishable from present-day Argentina. But it grew at rapid pace in the mid-1920s. The return rate had doubled by 1928, reaching 40 percent, \emph{en route} to meet present-day Brazil. Progress was arrested in 1930 when, setting the stage for the centralization of authority under the PRI, reformers removed 128 of the 281 seats Congress had had in 1928, 46 percent of all, cunningly targeting opponents of Jefe Máximo Calles \citep[see][:23]{godoy.reeleccion.2014}. A stable return rate that year despite a sharp denominator drop implies that the apportionment \emph{blitz} was orthogonal to static ambition.
+
+%Es indudable que la cláusula podría anular la independencia del legislador para defender los intereses de sus representados. Pero no hay tampoco garantía de ello. , Y la posibilidad de que no haya interés. En ambos casos, la pregunta es empírica. Campeones y Godoy.
+
+%Este trabajo lleva a cabo un estudio preliminar. Aprovecha elección Coahuila 2107, primera y única hasta ahora con ocupantes en la boleta. Estudiamos una encuesta y reconocimiento de nombre. Si el diseño de la presente investigación tiene una limitación fundamental, el trabajo ofrece la ventaja de describit con detalle el diseño que permitirá superar la limitación. Bienvenido para estudiar los 24 estados que podrán tener ocupantes en la boleta en 2018. 
+
+\section{Redistricting as source of hypotheses}
+
+We examine name recognition in Coahuila. State legislators had single-term limits lifted in 2017 and their legislative district boundaries redrawn prior to the race (our focus is the sixteen single-member plurality districts, leaving the proportional representation lists of the mixed electoral system at the hind).\footnote{The northern state of Coahuila, which shares a border with Texas in the United States, was the first instance where politicians could reelect consecutively after the 2014 electoral reform. As part of the same reform, state electoral boards were stripped of redistricting authority. The new national election board, the Instituto Nacional Electoral (INE) was put in charge of periodically redrawing state district lines, and was obliged to produce new maps for the first post-reform legislative elections. See \citet{trelles.etalDatosabiertos.pyg.2016} and \citet{magarInstReel.2017}.} We exploit this coincidence to generate falsifiable hypotheses. The idea is simple. Incumbents who sought to return to office competed in districts more or less different from those they erstwhile represented. We expect the degree of dissimilarity in their constituents to reveal geographically differentiated patterns of name recognition. 
+
+\begin{figure}
+  \centering
+    \usetikzlibrary{calc}
+    \begin{tikzpicture}
+      \draw (0,0)  ellipse (3 and 2);
+      \node[sloped,above] at ($(0,0)+(90:3 and 2)$) {\textsc{father}};
+      \draw (3,0) ellipse (3 and 2);
+      \node[sloped,above] at ($(3,0)+(90:3 and 2)$) {\textsc{son}};
+      \draw (-3.5,-3) rectangle (6.5,3);
+      \node [text width=2cm, text centered] at (-1.25,0)   {$l=$ land lost};
+      \node [text width=2cm, text centered] at (4.25,0)    {$g=$ land gained};
+      \node [text width=2cm, text centered] at (1.5,0)  {$r=$ land retained};
+      \node at (1.5,-2.5) {$n=$ no man's land};
+    \end{tikzpicture}
+    \caption{Four clear and distinct lands arise from redistricting. \textsc{Father} and \textsc{son} represent 2014 and 2017 map districts, respectively.}\label{F:venn}
+\end{figure}
+
+For this purpose, we begin by identifying `father' and `son' districts. We construe district genealogy as \citet{cox.katz.2002} do. One-by-one, we compare districts in the new map (the offspring) to those in the old map, in order to identify the district it shares the most voters with. This is the district's father. Figure \ref{F:venn} pictures a Venn diagram of one father (from the 2014 map) and son (from the 2017 map) pair. Ovals are simplified versions of district boundaries (minus geographic accidents typical of real-world maps). Four terrains can be distinguished. Intersection $r$ is land (and the voters who live there) that the son has retained from its father. By construction, $r$ is never empty (else the district would be an orphan). To the left is land $l$ that the son has lost from the father by the redistricting, and to the right lies land $g$ that the son has gained from one or more other old-map districts. Lands $l$ and $g$ represent change in the map, and one, the other, or both could be empty. Land $n$ not belonging to any of the ovals is no man's land, with no interest whatsoever for the incumbent at hand. 
+
+The approach quantifies the degree of change in any incumbent's electorate brought by redistricting. Comparing the land father and son share in common with land lost and won yields an index of district similarity $S_i$ for district $i$. If {\small$\texttt{father}_i$} and {\small$\texttt{son}_i$} denote, respectively, voters in the father and son districts, then $S_i = \frac{\texttt{father}_i \cap \texttt{son}_i}{\texttt{father}_i \cup \texttt{son}_i} = \frac{r}{l+r+g}$. The index reaches maximum value $S_j=1$ when father and son are identical (i.e., $l=g=\varnothing$), dropping gradually as intersection $r$ shrinks relative to $l+g$. Index $S$ tends to zero when father and son intersect minimally (as $r$ is never empty, zero is not reached).
+
+\begin{table}
+  \centering
+\scalebox{.9}{
+\begin{tabular}{llrcc}
+ Son district                &  Father district            &       &                        & Revealed          \\ [-.5ex]
+ (2017)                      &  (2014)                     &  $S$  & Incumbent              & ambition          \\ \hline
+\\ [-1.2ex]
+ \textsc{xii}-Ramos Arizpe  & \textsc{v}-Ramos Arizpe     & 1.000 & Lily Gutiérrez Burciaga     & \textbf{static} \\
+ \textsc{i}-Acuña           & \textsc{xv}-Acuña           &  .798 & Georgina Cano Torralva      & \textbf{static} \\ 
+ \textsc{ii}-Piedras Negras & \textsc{xvi}-Piedras Negras &  .791 & Sonia Villarreal Pérez      & progressive     \\ 
+ \textsc{x}-Matamoros       & \textsc{vii}-Torreón        &  .705 & Shamir Fernández Hernández  & none            \\ 
+ \textsc{xiv}-Saltillo      & \textsc{i}-Saltillo         &  .700 & Javier Díaz González        & \textbf{static} \\ 
+ \textsc{ix}-Torreón        & \textsc{viii}-Torreón       &  .650 & Irma Castaño Orozco         & none            \\ 
+ \textsc{vii}-Matamoros     & \textsc{vi}-Torreón         &  .618 & Verónica Martínez García    & none            \\ 
+ \textsc{xvi}-Saltillo      & \textsc{ii}-Saltillo        &  .553 & Francisco Tobías Hernández  & none            \\ 
+ \textsc{iii}-Sabinas       & \textsc{xiii}-Múzquiz       &  .551 & Antonio Nerio Maltos        & none            \\ 
+ \textsc{xiii}-Saltillo     & \textsc{iv}-Saltillo        &  .459 & Martha Garay Cadena         & none            \\ 
+ \textsc{iv}-San Pedro      & \textsc{x}-San Pedro        &  .444 & Ana Isabel Durán Piña       & progressive     \\ 
+ \textsc{v}-Monclova        & \textsc{xii}-Monclova       &  .408 & Melchor Sánchez de la Fuente& none            \\ 
+ \textsc{vi}-Frontera       & \textsc{xi}-Frontera        &  .377 & Lencho Siller Linaje        & progressive     \\ 
+ \textsc{xiii}-Saltillo     & \textsc{iii}-Saltillo       &  .236 & José María Fraustro Siller  & none            \\ 
+ \textsc{ix}-Torreón        & \textsc{ix}-Torreón         &  .204 & Luis Gurza Jaidar           & none            \\ 
+ \textsc{iii}-Sabinas       & \textsc{xiv}-Sabinas        &  .197 & Martha Morales Iribarrén    & none            \\ 
+ \\ [-1.2ex] \hline
+\end{tabular}
+}
+\caption{District similarity index $S$ in the state of Coahuila. Mexican legislative districts rely on Roman numerals for identification, hyphenated in the Table with the district's administrative seat (\emph{cabecera distrital}.)}\label{T:dsi}
+\end{table}
+
+Table \ref{T:dsi} reports Coahuila's district similarity in 2017. We operationalize $S$ with electoral \emph{secciones} an not voters directly.\footnote{Data is from INE's official election returns and redistricting archives, available at \url{www.ine.mx}. \emph{Secciones electorales} are analogous to U.S.\ census tracts (median secci\'on population in the 2010 census was 1,280, with a maximum at 79,232; median tract population in the 2010 census was 3,995, with a maximum at 37,452). Secciones are the basic building blocks for district cartography. The old (called here 2014 for clarity, but inaugurated in 2011) and new (2017) maps relate 1,710 secciones in the state to 16 legislative districts (available at \url{https://github.com/emagar/mxDistritos/blob/master/mapasComparados/loc/coaLoc.csv}.) With our operationalization, $S$'s value is the share of secciones shared by father and son share vis-à-vis secciones in any of them. If electoral secciones all had identical populations, our operationalization would be identical to Cox and Katz's, who rely on shared population instead. As population heterogeneity rises, so do discrepancies between both versions of $S$ across districts. Electoral secciones have relatively homogeneous populations nationwide: 99 percent had between 100 and 5,700 inhabitants in the 2010 census.} The survey we rely on below identified the sección where interviewees registered for voting, so this suffices for the test. The median, located between districts \textsc{xvi} and \textsc{iii}, shares only 55 percent secciones when reunited with its father. Similarity looks scant: if the incumbent ran again for consecutive reelection and knew personally every voter she represented during the term that is expiring, she would recognize only a bit more than half of her new constituents. $S$'s inter-quartile range is .4--.7.
+
+From the electoral connection's perspective, changes of this sort in district geography should discourage static ambition, pushing incumbents to retirement. And so it did. We lack evidence to claim that redistricting, and not something else, forced thirteen of sixteen SMD incumbents to not seek reelection. But the fact is that the three who did represented districts with much higher similarity indexes (the right-most column in the table reports incumbents' revealed ambition), which is consistent with this interpretation. Lily Gutiérrez Burciaga's constituents in Ramos Arizpe in fact changed nothing at all (she ran in the only district with $S=1$). Georgina Cano Torralva from Acuña and Javier Díaz González from Saltillo retained 8 and 7 of every 10 voters, respectively.
+
+\begin{table}
+  \centering
+  \begin{tabular}{cccc}
+      & Campaign & Incumbency &  Total   \\ [-.5ex]
+      & effect   & effect     &  effect  \\ \hline
+    \\ [-1.2ex]
+    1 & $r=g$    & $r>g$      &  $r>g$   \\
+    2 & $r>l$    & $r>l$      &  $r>l$   \\
+    3 & $r>n$    & $r>n$      &  $r>n$   \\
+    4 & $l<g$    & $l>g$      &  $l~?~g$ \\ % \overset{?}{>}
+    5 & $l=n$    & $l>n$      &  $l>n$   \\
+    6 & $g>n$    & $g>n$      &  $g>n$   \\ \\ [-1.2ex] \hline 
+    %% & Efecto &       Efecto &        Efecto \\ [-.5ex]
+    %% & del ocupante & de la campaña & total\\ \hline
+    %% \\ [-1.2ex]
+    %% 1 & $c>a$   & $c=a$  & $c>a$   \\
+    %% 2 & $c>p$   & $c>p$  & $c>p$   \\
+    %% 3 & $c>y$   & $c>y$  & $c>y$   \\
+    %% 4 & $p~?~a$ & $p<a$  & $p~?~a$ \\
+    %% 5 & $p>y$   & $p=y$  & $p>y$   \\
+    %% 6 & $a>y$   & $a>y$  & $a>y$   \\ \\ [-1.2ex] \hline 
+  \end{tabular}
+  \caption{Incumbency and campaign effects in name recognition hypotheses. Cells give expected relations in name recognition in the areas defined in Figure \ref{F:venn}. Thus, row 1 indicates that incumbency causes higher name recognition among voters in land retained than among voters in land gained, a difference not caused by the campaign effect; combining them gives the reported total effect.}\label{T:hyps}
+\end{table}
+
+We have argued that name familiarity results from efforts to cultivate a personal vote. Campaigns, however, also generate name familiarity to those who pay attention. We next derive campaign and incumbency effects in name familiarity in lands $l$, $r$, $g$, and $n$, summarized in Table \ref{T:hyps}. 
+
+Upon redistricting, the ``battlefield'' ahead is more or less different, depending on how much parent and son changed, for members in office and candidates on the campaign trail. Election campaigns know the precise limits of the new district where effort must be focalized (the son)---billboards and wall paintings, printed flier distribution and robocalls, meetings with neighbors alone or in the company of candidates higher in the ticket, vote-buying with construction material and debit cards, and so forth \citep{langston.nd}. Constituency service, however, has a less distinct perspective, at least until the new district map is published. At that point, incumbents discover that mapmakers turned past constituency service in lost land $l$ into sunk cost, as it will not pay off towards reelection. And while retained land $r$ remains well-treaded, they also must advance into uncharted territory $g$ that was gained.
+
+This generates somewhat different predictions summarized in Table \ref{T:hyps}. The quantity of interest is the expected probability that a voter picked at random among voters registered in one of the four lands is familiar with the candidate's name. Campaign effects in name familiarity, if any, occur throughout the district (i.e., the son $r \cup g$), with negligible spillover beyond its borders. There is therefore no ground to expect a difference in name familiarity within the district (which the table reports as $r=g$), but there is ground to expect such difference between the district and the rest of land. Expectations from the campaign column in the table boil down to $l=n<r=g$. %but a difference will be manifest between either $r$ or $g$ and either $l$ or $n$
+
+Incumbent name familiarity, if any, takes place in the reunion of father and son district areas---with varying intensities. While retained land $r$ experienced a full three-year term of constituency service, gained land $g$ only received the incumbent's attention with knowledge that it would be part of the new district. Cultivating a personal vote requires time, so we expect higher name familiarity in land $r$ than in land $g$ ($r>g$ in the table). Likewise, the incumbent with finite effort stopped servicing land $l$ when it became certain it would be lost to redistricting, so we again expect $r>l$. And with the period between new map publication and the next election small relative to the time the incumbent spent servicing the parent district, we also expect $l>g$ in name familiarity. Expectations from the incumbency column in the table boil down to $n<g<l<r$. % But as those periods even-up, a clear expectation no longer arises, hence the question mark in the table---in Coahuila, sons' maps were announced about two-thirds into members' terms. 
+
+Note that in table rows 2, 3, and 6, campaign and incumbency expectations on name familiarity are identical. Comparison of land areas in those rows offers no element to separate effects: detecting a signal, it must me attributed to the total effect, reported in the third column. But expectations in rows 1, 4, and 5 are contradictory, so an empirical relationship discriminates theoretical effects. Row 4 is the clearest: observing $l<g$ among respondents implies a campaign effect in name recognition larger than the incumbency effect; observing $l>g$, an incumbency larger in relative size. 
+
+% Incumbents running for reelection generate the sum of effects. Challengers generate campaign effects only. 
+
+%% \begin{table}
+%%   \centering
+%%   \begin{tabular}{lrrrr}
+%%                & \mc{2}{c}{Contendió de nuevo}           &           &       \\ [-.5ex]
+%%     Diputado   &        en un distrito & en un municipio & Se retiró & Total \\ \hline
+%%     de mayoría &                     3 &            3    &        10 &    16 \\
+%%     de RP      &                     0 &            3    &         6 &     9 \\ \hline
+%%   \end{tabular}
+%%   \caption{Ocupantes con ambición estática, progresiva o nula} \label{T:ambition}
+%% \end{table}
+
+%El Cuadro \ref{T:ambition} resume la ambición revelada por los legisladores en funciones en Coahuila en 2017. De los dieciséis diputados que representaban un distrito (todos del PRI, que ganó un carro completo en 2014), tres aspiraron a reelegirse como diputados, tres a elegirse como alcaldes, y diez se retiraron. Y tres de nueve diputados de lista aspiraron a volverse alcaldes. A pesar de la posibilidad que abrió la reforma, entre los diputados que no se retiraron, los de ambición progresiva duplicaron a los de ambición estática mostraron ambición progresiva---transitaron la ruta tradicional del llamado ``chapulineo'', que antes era la única disponible.
+
+%Terminología: ocupante es un candidato que ha representado un territorio en el periodo que concluye tras la elección y que compite por la reelección; rival es todo candidato que no es ocupante.  
+
+%\singlespacing
+
+%% \begin{description}
+%%   \item [Hipótesis 1] Manteniendo lo demás constante, el reconocimiento de un ocupante sigue los patrones siguientes:
+%%     \begin{enumerate}
+%%       \item es mayor entre votantes del terreno $c$ que entre los del $h$
+%%       \item es mayor entre votantes del terreno $c$ que entre los del $p$
+%%       \item es mayor entre votantes del terreno $c$ que entre los del $a$
+%%       \item es mayor entre votantes del terreno $p$ que entre los del $h$
+%%       \item es mayor entre votantes del terreno $a$ que entre los del $h$
+%%       \item es mayor entre votantes del terreno $p$ que entre los del $a$
+%%     \end{enumerate}
+%% \end{description}
+
+%% \onehalfspacing
+
+%% \singlespacing
+
+%% \begin{description}
+%%   \item [Hipótesis 2] Manteniendo lo demás constante, el reconocimiento de un rival sigue los patrones siguientes:
+%%     \begin{enumerate}
+%%       \item es menor entre votantes del terreno $h$ que entre los demás
+%%       \item no muestra diferencias significativas entre votantes de los terrenos $p$, $c$ y $a$. 
+%%     \end{enumerate}
+%% \end{description}
+
+%% \onehalfspacing
+
+\section{The survey}
+
+\eric{This section needs more work.}
+
+We analyze a face-to-face survey from May 19--21, 2017 in Coahuila, two weeks before the state legislative election (concurrent with a gubernatorial and municipal races).\footnote{The survey was commissioned to Alejandro Moreno by \emph{El Financiero} newspaper (published May 25). A sample of 1,008 registered voters was interviewed in households. Urban/rural electoral secciones were stratified, then a random sample taken to select 72 points throughout the state where interviews took place. The 95-percent confidence interval of inferences has a $\pm3.1\%$ error. The non-response rate was 32\%.} The survey includes questions on name recognition inspired from \citet{cain.etal.1987}. We coded name recognition indicators for six incumbents in Table \ref{T:dsi} (all representing single-member districts). Three ran for reelection (static ambition) and three for election to municipal office (progressive ambition). We also coded indicators for three proportional-representation lawmakers who ran for municipal office. 
+
+%Encuesta en Coahuila realizada cara a cara en vivienda del 19 al 21 de mayo a 1,008 adultos con credencial para votar vigente. Las entrevistas se llevaron a cabo en 72 puntos de la entidad seleccionados probabilísticamente a partir del listado de secciones electorales del INE previamente estratificadas por criterio urbano-rural. Con un nivel de confianza de 95%, el margen de error de la encuesta es de +/- 3.1%. La tasa de rechazo a las entrevistas fue de 32%. “Los resultados reflejan las preferencias electorales y las opiniones de los encuestados al momento de realizar el estudio y son válidos para esa población y fechas específicas”. Se entrega copia del estudio y sus características metodológicas al Instituto Electoral de Coahuila.
+
+We instrumented name familiarity in an original survey as name recognition. In all cases, we relied on close-ended questions mentioning the incumbent's name while asking interviewees how much they remembered it (see the appendix) to code nine dependent variables. An incumbent's name recognition indicator $\texttt{recognize}_i$ takes value 1 if respondent $i$ expressed remembering his/her name in any degree; 0 otherwise.
+
+Included all nine names: three incumbents with static ambition; three with progressive ambition (running for mayors); and three more with progressive ambition but who had been elected to the state assembly in proportional representation lists. How we coded the four areas. We measured how many respondents correctly remembered the name corresponding to the district's race. 
+
+(Stronger item would have respondents pick a name from the list, and complement with prior \emph{recall} version (``Could you name incumbent for me'', as Cain Ferejohn and Fiorina do.)
+
+No interviewees registered in land areas gained by many districts had incumbents running for reelection in the survey. This is unfortunate and a serious limitation of our empirical study: by excluding sampling points in area $g$ that districts with an incumbent on the ballot gained, we cannot observe two of three separation scenarios in Table \ref{T:hyps}. Both scenarios involve relations with land $g$, and among them is the strongest prediction in row 4. This is a limitation due to the low frequency static ambition in the case study. Future research with survey, when static ambition becomes more frequent (as indeed happened in 2018 and 2021), will overcome this limitation more easily. If our survey can say little about separation and the relative size of effects empirically (the table's row 5 only), it still offers a view of total effects in the remainder scenarios, offering an interesting study of reelection among voters. 
+
+\eric{Descriptive statistics here.}
+
+We analyze name recognition with equation
+\begin{equation}
+  \begin{split}
+\text{logit}(\texttt{recognize}_i) & =    \beta_0
+                                       + \beta_1\texttt{retained}_i
+                                       + \beta_2\texttt{lost}_i
+                                       + \beta_3\texttt{delivered}_i \\
+                                     & + \beta_4\texttt{interested}_i
+                                       + \beta_5\texttt{smartphone}_i 
+                                       + \beta_6\texttt{panista}_i \\
+                                     & + \beta_7\texttt{priista}_i
+                                       + \beta_8\texttt{morenista}_i
+                                       + \text{error}_i.
+  \end{split}
+\end{equation}
+The model includes two geographic indicators: $\texttt{retained}_i$ equals 1 if respondent $i$ is a voter registered in area $r$, 0 otherwise; and $\texttt{lost}_i$ equals 1 if respondent $i$ is a registered voter in area $l$, 0 otherwise. The geographic regressors are mutually-exclusive but not exhaustive, thus avoiding the dummy trap. The omitted category is for respondents in area $n$, so these indicators' coefficients are interpreted against it. The model also includes indicators for incumbent responsiveness ($\texttt{delivered}_i$ equals 1 if the respondent said the incumbent did something for the district, 0 otherwise), for interest in politics ($\texttt{interested}_i$ equals 1 if the respondent expressed interest in politics, 0 otherwise), for socioeconomic status ($\texttt{smartphone}_i$ equals 1 if the respondent said owning such device, 0 otherwise), and controls for partisanship ($\texttt{panista}_i$, $\texttt{priista}_i$, and $\texttt{morenista}_i$ equal 1 if the respondent self-identified with the party in question, 0 otherwise).
+
+Geographic controls test hypotheses. We hold three expectations: that $\texttt{retained}_i$'s regression coefficient is positive, that $\texttt{lost}_i$'s is positive, and that the first coefficient is larger than the second. Note that the equation excludes variable $\texttt{gained}_i$ (an indicator for area $g$). This is a weakness in our data and study. Random sampling of survey points produced no secciones in areas gained by legislative districts. This limitation shuts out the possibility to test some of the separation hypotheses. Future research designs should explicitly include all four geographical areas into consideration. 
+
+Predictions $r>n$ and $r>l$ are common to both effects in Table \ref{T:hyps}. Only $l>n$ owes to incumbency only, so confirmation that $\texttt{lost}_i$ gets a positive coefficient is not attributable to campaigns. Future design should make sure to include respondents in area $g$ in order to get more separating predictions. We might also have included questions on challenger and open-seat candidate name recognition (they only experience campaign effects). A second survey at the start of the campaign would also have helped (campaigns swell incumbent and challenger name recognition in time, but incumbents should start from a substantially higher level).
+
+%% \begin{table}
+%%   \centering
+%%   \begin{tabular}{clllcrrrrr}
+%% %      & Ocupante  & Tipo                  & Perdido & Conservado & Adquirido & Huizachal & Total \\ \hline
+%%       & Ocupante        & \mc{1}{c}{Tipo (cabecera)}              & margen               & $p$ & $c$ & $a$ & $h$ & Total \\ \hline
+%%     1 & Javier--PRI    & MR$\rightarrow$MR  (Saltillo)       &   \color{red}{$-12$} &  14 &  56 &  0  & 938 & 1,008 \\
+%%     2 & Lily--PRI      & MR$\rightarrow$MR  (Ramos Arispe)   & \color{green}{$+14$} &   0 &  56 &  0  & 952 & 1,008 \\
+%%     3 & Gina--PRI      & MR$\rightarrow$MR  (Acuña)          &   \color{red}{$-17$} &   0 &  70 &  0  & 938 & 1,008 \\ \hdashline
+%%     4 & Lencho--PRI    & MR$\rightarrow$mun (Frontera)       &  \color{green}{$+8$} &  42 &  28 &  0  & 938 & 1,008 \\
+%%     5 & Sonia--PRI     & MR$\rightarrow$mun (Piedras Negras) & \color{green}{$+12$} &   0 &  56 &  0  & 952 & 1,008 \\
+%%     6 & AnaIsabel--PRI & MR$\rightarrow$mun (San Pedro)      &  \color{green}{$+3$} &  14 &  42 &  0  & 952 & 1,008 \\ \hdashline
+%%     7 & Armando--PAN   & RP$\rightarrow$mun (Frontera)       &    \color{red}{$-8$} & 966 &  42 &  0  &   0 & 1,008 \\
+%%     8 & Lariza--PAN    & RP$\rightarrow$mun (Piedras Negras) &   \color{red}{$-12$} & 966 &  42 &  0  &   0 & 1,008 \\
+%%     9 & Leonel--PPC    & RP$\rightarrow$mun (Matamoros)      &    \color{red}{$-7$} & 966 &  42 &  0  &   0 & 1,008 \\ \hline
+%%   \end{tabular}
+%%   \caption{Los ocupantes y su terreno. El tipo distingue ocupantes de mayoría (dist) o representación proporcional y si contendieron nuevamente para la legislatura (dist) o una alcaldía (mun). El margen es la diferencia porcentual que separa segundo lugar del ganador, positivo si el ocupante ganó, negativo si perdió. Las columnas $p$, $c$, $a$, $h$ reportan el número de secciones electorales en cada una de las categorías de terreno.}\label{T:terrenos}
+%% \end{table}
+
+\begin{table}
+  \centering
+  \begin{tabular}{llcrrrr|rrrr}
+                & District/   &                      &  \mc{4}{c}{Secciones}& \mc{4}{c}{Interviewees}  \\ 
+    Incumbent   & municipio   & Margin               &  $l$ & $r$ & $g$& $n$  & $l$ & $r$ & $g$ & $n$  \\ \hline
+    \hline \\[-1.8ex] 
+    \mc{7}{l|}{~~A. \emph{Static ambition (SMD$\rightarrow$SMD)}} \\ \hdashline
+  Javier PRI    & Saltillo    &   \color{red}{$-12$} &   14 &  64 & 13 & 1,619 &  14 &  56 &  0  & 938  \\
+  Lily PRI      & R. Arispe   & \color{green}{$+14$} &    0 & 117 &  0 & 1,593 &   0 &  56 &  0  & 952  \\
+  Gina PRI      & Acuña       &   \color{red}{$-17$} &    0 &  78 & 21 & 1,611 &   0 &  70 &  0  & 938  \\
+  \\[-1.8ex] 
+    \mc{7}{l|}{~~B. \emph{Progressive ambition (SMD$\rightarrow$municipio)}} \\ \hdashline
+  Lencho PRI    & Frontera    &  \color{green}{$+8$} &   83 &  41 &  0 & 1,586 &  42 &  28 &  0  & 938  \\
+  Sonia PRI     & P. Negras   & \color{green}{$+12$} &    0 &  88 &  0 & 1,622 &   0 &  56 &  0  & 952  \\
+  AnaIsabel PRI & San Pedro   &  \color{green}{$+3$} &   48 &  75 &  0 & 1,587 &  14 &  42 &  0  & 952  \\ 
+  \\[-1.8ex]
+  \mc{7}{l|}{~~C. \emph{Progressive ambition (PR$\rightarrow$municipio)}} \\ \hdashline
+  Armando PAN   & Frontera    &    \color{red}{$-8$} & 1,635 &  75 &  0 &    0 & 966 &  42 &  0  &   0  \\
+  Lariza PAN    & P. Negras   &   \color{red}{$-12$} & 1,635 &  75 &  0 &    0 & 966 &  42 &  0  &   0  \\
+  Leonel PPC    & Matamoros   &    \color{red}{$-7$} & 1,648 &  62 &  0 &    0 & 966 &  42 &  0  &   0  \\
+  \\[-1.8ex] \hline \hline
+  \end{tabular}
+  \caption{Incumbents and their terrain. Members with static ambition---from a single member district (SMD) running for a SMD---are distinguished from those with two types of progressive ambition---to a municipality from a SMD and from a PR seat. The margin is the percentage difference between the winner and runner-up, positive if the incumbent won, negative otherwise. The first set of $l$, $r$, $g$, $n$ reports the number of electoral secciones (of 1,710 total in the state) in each category of terrain. The second reports the number of interviewees sampled (out of 1,008) in each terrain category.}\label{T:terrenos}
+\end{table}
+
+Table \ref{T:regs} in the appendix reports full regression results. In the text we only summarize relevant hypothesis tests in Table \ref{T:hyp-tests}. Most clear the test. But many missing to be confident that effects are from incumbent and not campaign.
+
+\begin{table}
+\centering
+  \begin{tabular}{lrrr}
+                          & \multicolumn{3}{c}{Hypothesis} \\
+  Model and incumbent     & $r>n$ & $l>n$ & $r>l$ \\ \hline
+  \multicolumn{4}{l}{\textbf{~~~SMD, static ambition}} \\
+1 Javier Díaz González    & \color{green}{$<.001$} & \color{green}{$.029$} & \color{red}{$.221$} \\
+2 Lily Gutiérrez Burciaga & \color{green}{$<.001$} & ---    & --- \\
+3 Gina Cano Torralva      & \color{green}{$<.001$} & ---    & --- \\
+  \multicolumn{4}{l}{\textbf{~~~SMD, progressive ambition}} \\
+4 Lencho Siller           & \color{green}{$<.001$} & \color{green}{$.003$} & \color{green}{$.001$} \\
+5 Sonia Villarreal Pérez  & \color{green}{$<.001$} & ---    & --- \\
+6 Ana Isabel Durán Piña   & \color{green}{$<.001$} & \color{green}{$.036$} & \color{green}{$<.001$} \\
+  \multicolumn{4}{l}{\textbf{~~~PR, progressive ambition}} \\
+7 Armando Pruneda Valdez  & \color{green}{$.030$}  & ---    & --- \\
+8 Lariza Montiel Luis     & \color{red}{$.385$}    & ---    & --- \\
+9 Leonel Contreras Pámanes& \color{green}{$<.001$} & ---    & --- \\ \hline
+\end{tabular}
+\caption{Hypothesis tests. Cells report one-tailed p-values. The top-right cell, for instance, indicates that the null associated to model 1's $r>l$ hypothesis can only be rejected at the .221 level, way above the conventional .05 confidence level. Columns 1 and 2 test that coefficients of $\texttt{retained}$ and $\texttt{lost}$ are positive, column 3 that $\texttt{retained}$'s coefficient is greater than $\texttt{lost}$'s (LR test).}\label{T:hyp-tests}
+\end{table}
+
+We illustrate results through simulation in Figure \ref{f:sims}. 
+
+\begin{sidewaysfigure}
+  \centering
+  \begin{tabular}{ccc}
+    Static ambition & Progressive ambition SMD & Progressive ambition PR \\ \hline
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce1.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce6.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce8.pdf} \\
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce2.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce5.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce7.pdf} \\
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce3.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce4.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce9.pdf} \\
+  \end{tabular}
+  \caption{The probability of name recognition (x-axis). We portray simulations with Bayesian versions of regression models. The violet density is for respondents in area $n$, the green (when applicable) for respondents in area $l$, and the pink for respondents in area $r$. \emph{With clear gaps between them, we expect the purple to lie to the left, the pink to the right, the green between them}. All other controls held constant to represent a PAN-identifier with a smartphone, who said the incumbent has delivered but is uninterested in politics.}\label{f:sims}
+\end{sidewaysfigure}
+
+\section{Conclusion}
+
+\eric{Forthcoming}
+
+Despite an incomplete research design, we uncover evidence of name recognition consistent with the electoral connection model in Coahuila. Will make sure to sample respondents in $g$ in future work, in order to compare contradictory expectations between campaign and incumbency effects.  
+
+
+\bibliographystyle{apsrInitials}
+\bibliography{/home/eric/Dropbox/mydocs/magar}
+
+\newpage
+\section*{Appendix}
+
+\subsection{Survey questions}
+Thirteen items in the survey questionnaire involved reelection and name recognition (from question 20 to question 25.i) . We used questions 25.a--25.i to code our dependent variables. Responses much/some/little (\emph{mucho/algo/poco}) coded as 1 in the incumbent's name recognition indicator; 0 otherwise.
+
+* Add descriptives. 
+
+We reproduce the relevant items in the questionnaire in Spanish and their English translation here.
+
+\begin{multicols}{2}
+
+\begin{scriptsize}
+\begin{verbatim}
+20 Are you in favor, against or indifferent 
+towards the consecutive reelection of 
+lawmakers?
+
+1) In favor 
+2) Against
+3) Indifferent
+4) Don't know / No answer
+
+21 On April 3, campaigns to renew the State 
+Congress began. If I asked you the names of 
+the candidates for deputy in this district, 
+could you tell me all the names, some names 
+or do not remember any names at this moment?
+
+1) All 
+2) Some
+3) Don't remember
+4) No answer
+
+22 Now please think about the current local 
+deputies. If I asked you the things your 
+deputy has done for this community, could 
+you mention many things, some, would you 
+say he did nothing or do not remember at 
+this moment? [5=NR/NA]
+
+1) Many
+2) Some
+3) Did nothing
+4) Don't remember
+
+23 If your current deputy were running for 
+reelection, would you vote for him or not 
+vote for him?
+
+1) Yes, I would vote for him/her
+2) Would not vote for him/her
+3) Don't known / No answer (DO NOT READ)
+
+24 Based on the work done by your current 
+deputy, do you think he/she would deserve 
+to be reelected in his position or not?
+
+[1=Yes; 2=No; 3= No answer]
+
+25 I'm going to read you some names, for 
+each one, could you tell me if he/she is 
+well known, somewhat known, little known 
+or not known at all?
+
+[1= Well known; 2=Somewhat known; 
+3= Little known; 4=Not known at all; 
+5= DK/NA].
+
+a Javier Díaz González     
+b Lily Gutiérrez Burciaga  
+c Georgina Cano Torralva   
+d Ana Isabel Durán         
+e Sonia Villareal          
+f Lariza Montiel           
+g Armando Pruneda          
+h Leonel Contreras Pámanes 
+i Florencio ``Lencho'' Siller
+\end{verbatim}
+\end{scriptsize}
+
+\columnbreak
+
+\begin{scriptsize}
+\begin{verbatim}
+20 ¿Está usted a favor, en contra o le 
+es indiferente la reelección consecutiva 
+de legisladores?
+
+1) A favor 2) En contra
+3) Le es indiferente
+4) NS/NC
+
+21 El 3 de abril iniciaron las campañas 
+para renovar el Congreso del Estado. Si yo 
+le preguntara los nombres de los candidatos 
+a diputado en este distrito, ¿usted me 
+podría decir todos los nombres, algunos 
+nombres o no recuerda ningún nombre en
+este momento?
+
+1) Todos 2) Algunos
+3) No recuerda
+4) No contestó
+
+22 Ahora piense por favor en los diputados
+locales actuales. Si yo le preguntara las
+cosas que ha hecho su diputado por esta
+comunidad, ¿usted podría mencionarme muchas
+cosas, algunas, diría que no hizo nada o no
+recuerda en este momento? [5=NS/NC]
+
+1) Muchas
+2) Algunas
+3) No hizo nada
+4) No recuerda
+
+23 Si su actual diputado compitiera para
+buscar la reelección, ¿usted votaría por
+él o no votaría por él?
+
+1) Sí votaría por él
+2) No votaría por él
+3) NS/NC (NO LEER)
+
+24 Con base en el trabajo realizado por 
+suactual diputado, ¿cree que merecería 
+ser reelecto en su cargo o no?
+
+[1=Sí; 2=No; 3=NC]
+
+25 Le voy a leer unos nombres, para cada 
+uno, ¿podría decirme si le es muy conocido, 
+algo conocido, poco o nada conocido?
+
+[1=Muy conocido; 2=Algo; 3=Poco; 
+4=Nada conocido; 5=NS/NC]
+
+a Javier Díaz González     
+b Lily Gutiérrez Burciaga  
+c Georgina Cano Torralva   
+d Ana Isabel Durán         
+e Sonia Villareal          
+f Lariza Montiel           
+g Armando Pruneda          
+h Leonel Contreras Pámanes 
+i Florencio ``Lencho'' Siller
+\end{verbatim}
+\end{scriptsize}
+
+\end{multicols}
+
+\subsection{Regression results}
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Wed, Feb 14, 2018 - 08:56:20 PM
+% Requires LaTeX packages: dcolumn 
+\begin{sidewaystable}[!htbp] \centering 
+%%\begin{tabular}{l|rrr|rrr|rrr} 
+    \scalebox{.85}{
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+%\\[-1.8ex]\hline 
+%\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} & \multicolumn{1}{c}{(6)} & \multicolumn{1}{c}{(7)} & \multicolumn{1}{c}{(8)} & \multicolumn{1}{c}{(9)}\\ 
+  & \multicolumn{1}{c}{Javier} & \multicolumn{1}{c}{Lily} & \multicolumn{1}{c}{Gina} & \multicolumn{1}{c}{Lencho} & \multicolumn{1}{c}{Sonia} & \multicolumn{1}{c}{A.Isabel} & \multicolumn{1}{c}{Armando} & \multicolumn{1}{c}{Lariza} & \multicolumn{1}{c}{Leonel}\\ 
+\hline \\[-1.8ex] 
+ $\texttt{retained}$   & 1.85^{***} & 2.37^{***} & 4.91^{***} & 3.10^{***} & 3.02^{***} & 4.59^{***} & 1.10^{*} & -.22 & 2.93^{***} \\ 
+  & (.33) & (.33) & (.41) & (.43) & (.32) & (.44) & (.58) & (.75) & (.38) \\ 
+  & & & & & & & & & \\ 
+ $\texttt{lost}$       & 1.29^{*} &  &  & 1.27^{***} &  & 1.46^{*} &  &  &  \\ 
+  & (.68) &  &  & (.47) &  & (.81) &  &  &  \\ 
+  & & & & & & & & & \\ 
+ $\texttt{delivered}$  & .86^{***} & .76^{***} & 1.46^{***} & .51^{*} & .93^{***} & .26 & .51 & .85^{***} & .26 \\ 
+  & (.25) & (.27) & (.34) & (.30) & (.27) & (.34) & (.37) & (.27) & (.33) \\ 
+  & & & & & & & & & \\ 
+ $\texttt{interested}$ & .35 & 1.03^{***} & 1.34^{***} & .82^{***} & .52^{**} & .74^{**} & .71^{**} & .28 & .57^{*} \\ 
+  & (.24) & (.27) & (.34) & (.28) & (.26) & (.33) & (.36) & (.27) & (.31) \\ 
+  & & & & & & & & & \\ 
+ $\texttt{smartphone}$ & -.27 & .37 & -.18 & -.47^{*} & .21 & -.05 & -.43 & .26 & -.42 \\ 
+  & (.24) & (.27) & (.31) & (.28) & (.26) & (.31) & (.35) & (.27) & (.30) \\ 
+  & & & & & & & & & \\ 
+ $\texttt{panista}$    & .15 & -.11 & -.03 & 1.18^{***} & .02 & .80^{*} & .78^{*} & .34 & 1.15^{***} \\ 
+  & (.39) & (.41) & (.52) & (.35) & (.41) & (.44) & (.47) & (.39) & (.41) \\ 
+  & & & & & & & & & \\ 
+ $\texttt{priista}$    & .37 & .15 & -.01 & -.21 & .17 & .74^{**} & .43 & .19 & .16 \\ 
+  & (.28) & (.30) & (.38) & (.37) & (.29) & (.35) & (.41) & (.31) & (.39) \\ 
+  & & & & & & & & & \\ 
+ $\texttt{morenista}$  & -.07 & .59 & .26 & .76 & -1.17 &  & -.26 & -1.01 & .88 \\ 
+  & (.63) & (.51) & (.74) & (.55) & (1.04) &  & (1.05) & (1.03) & (.56) \\ 
+  & & & & & & & & & \\ 
+ Intercept             & -3.03^{***} & -3.82^{***} & -4.45^{***} & -3.48^{***} & -3.49^{***} & -3.99^{***} & -3.87^{***} & -3.29^{***} & -3.58^{***} \\ 
+  & (.25) & (.30) & (.39) & (.30) & (.28) & (.35) & (.37) & (.28) & (.30) \\ 
+  & & & & & & & & & \\ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} & \multicolumn{1}{c}{1,008} \\ 
+Log Likelihood & \multicolumn{1}{c}{-262.32} & \multicolumn{1}{c}{-231.34} & \multicolumn{1}{c}{-169.84} & \multicolumn{1}{c}{-205.60} & \multicolumn{1}{c}{-235.20} & \multicolumn{1}{c}{-175.64} & \multicolumn{1}{c}{-147.10} & \multicolumn{1}{c}{-229.85} & \multicolumn{1}{c}{-182.89} \\ 
+\hline 
+\hline \\[-1.8ex] 
+    \multicolumn{10}{r}{\footnotesize{$^{*}$p$<$.1; $^{**}$p$<$.05; $^{***}$p$<$.01}} \\ %[-1.8ex]
+\end{tabular}
+}
+  \caption{Regression results. All models estimated with logit, standard errors in parentheses.} 
+  \label{T:regs} 
+\end{sidewaystable} 
+
+
+
+\end{document}

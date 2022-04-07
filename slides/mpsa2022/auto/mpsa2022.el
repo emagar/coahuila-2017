@@ -31,7 +31,8 @@
     "tikz"
     "multirow"
     "dcolumn"
-    "arydshln")
+    "arydshln"
+    "fixpauseincludegraphics")
    (TeX-add-symbols
     "mc"
     "be"
@@ -45,9 +46,6 @@
     "beq"
     "eeq"
     "bc"
-    "ec"
-    "circleH"
-    "circleU"
-    "circleR"))
+    "ec"))
  :latex)
 
