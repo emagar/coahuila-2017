@@ -289,7 +289,7 @@ The approach quantifies the degree of change in any incumbent's electorate broug
 \caption{District similarity index $S$ in the state of Coahuila. Mexican legislative districts rely on Roman numerals for identification, hyphenated in the Table with the district's administrative seat (\emph{cabecera distrital}.)}\label{T:dsi}
 \end{table}
 
-Table \ref{T:dsi} reports Coahuila's district similarity in 2017. We operationalize $S$ with electoral \emph{secciones} an not voters directly.\footnote{Data is from INE's official election returns and redistricting archives, available at \url{www.ine.mx}. \emph{Secciones electorales} are analogous to U.S.\ census tracts (median secci\'on population in the 2010 census was 1,280, with a maximum at 79,232; median tract population in the 2010 census was 3,995, with a maximum at 37,452). Secciones are the basic building blocks for district cartography. The old (called here 2014 for clarity, but inaugurated in 2011) and new (2017) maps relate 1,710 secciones in the state to 16 legislative districts (available at \url{https://github.com/emagar/mxDistritos/blob/master/mapasComparados/loc/coaLoc.csv}.) With our operationalization, $S$'s value is the share of secciones shared by father and son share vis-à-vis secciones in any of them. If electoral secciones all had identical populations, our operationalization would be identical to Cox and Katz's, who rely on shared population instead. As population heterogeneity rises, so do discrepancies between both versions of $S$ across districts. Electoral secciones have relatively homogeneous populations nationwide: 99 percent had between 100 and 5,700 inhabitants in the 2010 census.} The survey we rely on below identified the sección where interviewees registered for voting, so this suffices for the test. The median, located between districts \textsc{xvi} and \textsc{iii}, shares only 55 percent secciones when reunited with its father. Similarity looks scant: if the incumbent ran again for consecutive reelection and knew personally every voter she represented during the term that is expiring, she would recognize only a bit more than half of her new constituents. $S$'s inter-quartile range is .4--.7.
+Table \ref{T:dsi} reports Coahuila's district similarity in 2017. We operationalize $S$ with electoral \emph{secciones} an not voters directly.\footnote{Data is from INE's official election returns and redistricting archives, available at \url{www.ine.mx}. \emph{Secciones electorales} are analogous to U.S.\ census tracts (median secci\'on population in the 2010 census was 1,280, with a maximum at 79,232; median tract population in the 2010 census was 3,995, with a maximum at 37,452). Secciones are the basic building blocks for district cartography. The old (called here 2014 for clarity, but inaugurated in 2011) and new (2017) maps relate 1,710 secciones in the state to 16 legislative districts (available at \url{https://github.com/emagar/mxDistritos/blob/master/mapasComparados/loc/coaLoc.csv}.) With our operationalization, $S$'s value is the share of secciones shared by father and son share vis-à-vis secciones in any of them. If electoral secciones all had identical populations, our operationalization would be identical to Cox and Katz's, who rely on shared population instead. As population heterogeneity rises, so do discrepancies between both versions of $S$ across districts. Electoral secciones have relatively homogeneous populations nationwide: 99 percent had between 100 and 5,700 inhabitants in the 2010 census.} The survey we rely on below identified the sección where respondents registered for voting, so this suffices for the test. The median, located between districts \textsc{xvi} and \textsc{iii}, shares only 55 percent secciones when reunited with its father. Similarity looks scant: if the incumbent ran again for consecutive reelection and knew personally every voter she represented during the term that is expiring, she would recognize only a bit more than half of her new constituents. $S$'s inter-quartile range is .4--.7.
 
 From the electoral connection's perspective, changes of this sort in district geography should discourage static ambition, pushing incumbents to retirement. And so it did. We lack evidence to claim that redistricting, and not something else, forced thirteen of sixteen SMD incumbents to not seek reelection. But the fact is that the three who did represented districts with much higher similarity indexes (the right-most column in the table reports incumbents' revealed ambition), which is consistent with this interpretation. Lily Gutiérrez Burciaga's constituents in Ramos Arizpe in fact changed nothing at all (she ran in the only district with $S=1$). Georgina Cano Torralva from Acuña and Javier Díaz González from Saltillo retained 8 and 7 of every 10 voters, respectively.
 
@@ -328,6 +328,8 @@ Incumbent name familiarity, if any, takes place in the reunion of father and son
 
 Note that in table rows 2, 3, and 6, campaign and incumbency expectations on name familiarity are identical. Comparison of land areas in those rows offers no element to separate effects: detecting a signal, it must me attributed to the total effect, reported in the third column. But expectations in rows 1, 4, and 5 are contradictory, so an empirical relationship discriminates theoretical effects. Row 4 is the clearest: observing $l<g$ among respondents implies a campaign effect in name recognition larger than the incumbency effect; observing $l>g$, an incumbency larger in relative size. 
 
+Since our Coahuila study offers few members with static ambition, we extend exploration to members with progressive ambition too. These are three deputies who sought municipal office. The trick for analysis is to make the target municipality's territory into a counterfactual son district. Identifying the corresponding $l$, $r$, $g$, and $n$ distinct lands is trivial. But the important element of surprise in redistricting is absent: members know what ``son district'' (i.e., municipality) their progressive ambition points towards, and can therefore cultivate a personal vote \emph{ex-ante} \citep{lucardi.micozzi.Career-argentina.2016}. Comparability with static ambition is thus not ideal, but offers additional perspective.
+
 % Incumbents running for reelection generate the sum of effects. Challengers generate campaign effects only. 
 
 %% \begin{table}
@@ -343,36 +345,6 @@ Note that in table rows 2, 3, and 6, campaign and incumbency expectations on nam
 
 %El Cuadro \ref{T:ambition} resume la ambición revelada por los legisladores en funciones en Coahuila en 2017. De los dieciséis diputados que representaban un distrito (todos del PRI, que ganó un carro completo en 2014), tres aspiraron a reelegirse como diputados, tres a elegirse como alcaldes, y diez se retiraron. Y tres de nueve diputados de lista aspiraron a volverse alcaldes. A pesar de la posibilidad que abrió la reforma, entre los diputados que no se retiraron, los de ambición progresiva duplicaron a los de ambición estática mostraron ambición progresiva---transitaron la ruta tradicional del llamado ``chapulineo'', que antes era la única disponible.
 
-%Terminología: ocupante es un candidato que ha representado un territorio en el periodo que concluye tras la elección y que compite por la reelección; rival es todo candidato que no es ocupante.  
-
-%\singlespacing
-
-%% \begin{description}
-%%   \item [Hipótesis 1] Manteniendo lo demás constante, el reconocimiento de un ocupante sigue los patrones siguientes:
-%%     \begin{enumerate}
-%%       \item es mayor entre votantes del terreno $c$ que entre los del $h$
-%%       \item es mayor entre votantes del terreno $c$ que entre los del $p$
-%%       \item es mayor entre votantes del terreno $c$ que entre los del $a$
-%%       \item es mayor entre votantes del terreno $p$ que entre los del $h$
-%%       \item es mayor entre votantes del terreno $a$ que entre los del $h$
-%%       \item es mayor entre votantes del terreno $p$ que entre los del $a$
-%%     \end{enumerate}
-%% \end{description}
-
-%% \onehalfspacing
-
-%% \singlespacing
-
-%% \begin{description}
-%%   \item [Hipótesis 2] Manteniendo lo demás constante, el reconocimiento de un rival sigue los patrones siguientes:
-%%     \begin{enumerate}
-%%       \item es menor entre votantes del terreno $h$ que entre los demás
-%%       \item no muestra diferencias significativas entre votantes de los terrenos $p$, $c$ y $a$. 
-%%     \end{enumerate}
-%% \end{description}
-
-%% \onehalfspacing
-
 \section{The survey}
 
 \eric{This section needs more work.}
@@ -381,13 +353,13 @@ We analyze a face-to-face survey from May 19--21, 2017 in Coahuila, two weeks be
 
 %Encuesta en Coahuila realizada cara a cara en vivienda del 19 al 21 de mayo a 1,008 adultos con credencial para votar vigente. Las entrevistas se llevaron a cabo en 72 puntos de la entidad seleccionados probabilísticamente a partir del listado de secciones electorales del INE previamente estratificadas por criterio urbano-rural. Con un nivel de confianza de 95%, el margen de error de la encuesta es de +/- 3.1%. La tasa de rechazo a las entrevistas fue de 32%. “Los resultados reflejan las preferencias electorales y las opiniones de los encuestados al momento de realizar el estudio y son válidos para esa población y fechas específicas”. Se entrega copia del estudio y sus características metodológicas al Instituto Electoral de Coahuila.
 
-We instrumented name familiarity in an original survey as name recognition. In all cases, we relied on close-ended questions mentioning the incumbent's name while asking interviewees how much they remembered it (see the appendix) to code nine dependent variables. An incumbent's name recognition indicator $\texttt{recognize}_i$ takes value 1 if respondent $i$ expressed remembering his/her name in any degree; 0 otherwise.
+We instrumented name familiarity in an original survey as name recognition. In all cases, we relied on close-ended questions mentioning the incumbent's name while asking respondents how much they remembered it (see the appendix) to code nine dependent variables. An incumbent's name recognition indicator $\texttt{recognize}_i$ takes value 1 if respondent $i$ expressed remembering his/her name in any degree; 0 otherwise.
 
 Included all nine names: three incumbents with static ambition; three with progressive ambition (running for mayors); and three more with progressive ambition but who had been elected to the state assembly in proportional representation lists. How we coded the four areas. We measured how many respondents correctly remembered the name corresponding to the district's race. 
 
 (Stronger item would have respondents pick a name from the list, and complement with prior \emph{recall} version (``Could you name incumbent for me'', as Cain Ferejohn and Fiorina do.)
 
-No interviewees registered in land areas gained by many districts had incumbents running for reelection in the survey. This is unfortunate and a serious limitation of our empirical study: by excluding sampling points in area $g$ that districts with an incumbent on the ballot gained, we cannot observe two of three separation scenarios in Table \ref{T:hyps}. Both scenarios involve relations with land $g$, and among them is the strongest prediction in row 4. This is a limitation due to the low frequency static ambition in the case study. Future research with survey, when static ambition becomes more frequent (as indeed happened in 2018 and 2021), will overcome this limitation more easily. If our survey can say little about separation and the relative size of effects empirically (the table's row 5 only), it still offers a view of total effects in the remainder scenarios, offering an interesting study of reelection among voters. 
+No respondents registered in land areas gained by many districts had incumbents running for reelection in the survey. This is unfortunate and a serious limitation of our empirical study: by excluding sampling points in area $g$ that districts with an incumbent on the ballot gained, we cannot observe two of three separation scenarios in Table \ref{T:hyps}. Both scenarios involve relations with land $g$, and among them is the strongest prediction in row 4. This is a limitation due to the low frequency static ambition in the case study. Future research with survey, when static ambition becomes more frequent (as indeed happened in 2018 and 2021), will overcome this limitation more easily. If our survey can say little about separation and the relative size of effects empirically (the table's row 5 only), it still offers a view of total effects in the remainder scenarios, offering an interesting study of reelection among voters. 
 
 \eric{Descriptive statistics here.}
 
@@ -433,7 +405,7 @@ Predictions $r>n$ and $r>l$ are common to both effects in Table \ref{T:hyps}. On
 \begin{table}
   \centering
   \begin{tabular}{llcrrrr|rrrr}
-                & District/   &                      &  \mc{4}{c}{Secciones}& \mc{4}{c}{Interviewees}  \\ 
+                & District/   &                      &  \mc{4}{c}{Secciones}& \mc{4}{c}{Respondents}  \\ 
     Incumbent   & municipio   & Margin               &  $l$ & $r$ & $g$& $n$  & $l$ & $r$ & $g$ & $n$  \\ \hline
     \hline \\[-1.8ex] 
     \mc{7}{l|}{~~A. \emph{Static ambition (SMD$\rightarrow$SMD)}} \\ \hdashline
@@ -445,14 +417,14 @@ Predictions $r>n$ and $r>l$ are common to both effects in Table \ref{T:hyps}. On
   Lencho PRI    & Frontera    &  \color{green}{$+8$} &   83 &  41 &  0 & 1,586 &  42 &  28 &  0  & 938  \\
   Sonia PRI     & P. Negras   & \color{green}{$+12$} &    0 &  88 &  0 & 1,622 &   0 &  56 &  0  & 952  \\
   AnaIsabel PRI & San Pedro   &  \color{green}{$+3$} &   48 &  75 &  0 & 1,587 &  14 &  42 &  0  & 952  \\ 
-  \\[-1.8ex]
-  \mc{7}{l|}{~~C. \emph{Progressive ambition (PR$\rightarrow$municipio)}} \\ \hdashline
-  Armando PAN   & Frontera    &    \color{red}{$-8$} & 1,635 &  75 &  0 &    0 & 966 &  42 &  0  &   0  \\
-  Lariza PAN    & P. Negras   &   \color{red}{$-12$} & 1,635 &  75 &  0 &    0 & 966 &  42 &  0  &   0  \\
-  Leonel PPC    & Matamoros   &    \color{red}{$-7$} & 1,648 &  62 &  0 &    0 & 966 &  42 &  0  &   0  \\
+  % \\[-1.8ex]
+  % \mc{7}{l|}{~~C. \emph{Progressive ambition (PR$\rightarrow$municipio)}} \\ \hdashline
+  % Armando PAN   & Frontera    &    \color{red}{$-8$} & 1,635 &  75 &  0 &    0 & 966 &  42 &  0  &   0  \\
+  % Lariza PAN    & P. Negras   &   \color{red}{$-12$} & 1,635 &  75 &  0 &    0 & 966 &  42 &  0  &   0  \\
+  % Leonel PPC    & Matamoros   &    \color{red}{$-7$} & 1,648 &  62 &  0 &    0 & 966 &  42 &  0  &   0  \\
   \\[-1.8ex] \hline \hline
   \end{tabular}
-  \caption{Incumbents and their terrain. Members with static ambition---from a single member district (SMD) running for a SMD---are distinguished from those with two types of progressive ambition---to a municipality from a SMD and from a PR seat. The margin is the percentage difference between the winner and runner-up, positive if the incumbent won, negative otherwise. The first set of $l$, $r$, $g$, $n$ reports the number of electoral secciones (of 1,710 total in the state) in each category of terrain. The second reports the number of interviewees sampled (out of 1,008) in each terrain category.}\label{T:terrenos}
+  \caption{Incumbents and their terrain. Members with static ambition---from a single member district (SMD) running for a SMD---are distinguished from those with two types of progressive ambition---to a municipality from a SMD and from a PR seat. The margin is the percentage difference between the winner and runner-up, positive if the incumbent won, negative otherwise. The first set of $l$, $r$, $g$, $n$ reports the number of electoral secciones (of 1,710 total in the state) in each category of terrain. The second reports the number of respondents sampled (out of 1,008) in each terrain category.}\label{T:terrenos}
 \end{table}
 
 Table \ref{T:regs} in the appendix reports full regression results. In the text we only summarize relevant hypothesis tests in Table \ref{T:hyp-tests}. Most clear the test. But many missing to be confident that effects are from incumbent and not campaign.
@@ -462,56 +434,82 @@ Table \ref{T:regs} in the appendix reports full regression results. In the text 
   \begin{tabular}{lrrr}
                           & \multicolumn{3}{c}{Hypothesis} \\
   Model and incumbent     & $r>n$ & $l>n$ & $r>l$ \\ \hline
-  \multicolumn{4}{l}{\textbf{~~~SMD, static ambition}} \\
+  \multicolumn{4}{l}{\textbf{~~~Static ambition}} \\
 1 Javier Díaz González    & \color{green}{$<.001$} & \color{green}{$.029$} & \color{red}{$.221$} \\
 2 Lily Gutiérrez Burciaga & \color{green}{$<.001$} & ---    & --- \\
 3 Gina Cano Torralva      & \color{green}{$<.001$} & ---    & --- \\
-  \multicolumn{4}{l}{\textbf{~~~SMD, progressive ambition}} \\
+  \multicolumn{4}{l}{\textbf{~~~Progressive ambition}} \\
 4 Lencho Siller           & \color{green}{$<.001$} & \color{green}{$.003$} & \color{green}{$.001$} \\
 5 Sonia Villarreal Pérez  & \color{green}{$<.001$} & ---    & --- \\
 6 Ana Isabel Durán Piña   & \color{green}{$<.001$} & \color{green}{$.036$} & \color{green}{$<.001$} \\
-  \multicolumn{4}{l}{\textbf{~~~PR, progressive ambition}} \\
-7 Armando Pruneda Valdez  & \color{green}{$.030$}  & ---    & --- \\
-8 Lariza Montiel Luis     & \color{red}{$.385$}    & ---    & --- \\
-9 Leonel Contreras Pámanes& \color{green}{$<.001$} & ---    & --- \\ \hline
+%   \multicolumn{4}{l}{\textbf{~~~PR, progressive ambition}} \\
+% 7 Armando Pruneda Valdez  & \color{green}{$.030$}  & ---    & --- \\
+% 8 Lariza Montiel Luis     & \color{red}{$.385$}    & ---    & --- \\
+% 9 Leonel Contreras Pámanes& \color{green}{$<.001$} & ---    & --- \\
+    \hline
 \end{tabular}
 \caption{Hypothesis tests. Cells report one-tailed p-values. The top-right cell, for instance, indicates that the null associated to model 1's $r>l$ hypothesis can only be rejected at the .221 level, way above the conventional .05 confidence level. Columns 1 and 2 test that coefficients of $\texttt{retained}$ and $\texttt{lost}$ are positive, column 3 that $\texttt{retained}$'s coefficient is greater than $\texttt{lost}$'s (LR test).}\label{T:hyp-tests}
 \end{table}
 
 We illustrate results through simulation in Figure \ref{f:sims}. 
 
-\begin{sidewaysfigure}
-  \centering
-  \begin{tabular}{ccc}
-    Static ambition & Progressive ambition SMD & Progressive ambition PR \\ \hline
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce1.pdf} &
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce6.pdf} &
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce8.pdf} \\
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce2.pdf} &
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce5.pdf} &
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce7.pdf} \\
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce3.pdf} &
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce4.pdf} &
-    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce9.pdf} \\
-  \end{tabular}
+% \begin{sidewaysfigure}
+%   \centering
+%   \begin{tabular}{ccc}
+%     Static ambition & Progressive ambition SMD & Progressive ambition PR \\ \hline
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce1.pdf} &
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce6.pdf} &
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce8.pdf} \\
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce2.pdf} &
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce5.pdf} &
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce7.pdf} \\
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce3.pdf} &
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce4.pdf} &
+%     \includegraphics[width=.3\columnwidth]{../graphs/prReconoce9.pdf} \\
+%   \end{tabular}
+% ~ \\
+% ~ \\
+% %\definecolor{MidnightBlue}{rgb}{0.1, 0.1, 0.44}
+% \definecolor{MidnightBlue}{rgb}{0.48, 0.41, 0.93}
+% \definecolor{LimeGreen}{rgb}{0.2, 0.8, 0.2}
+% \definecolor{Salmon}{rgb}{1.0, 0.55, 0.41}
+% \begin{large}
+% \textbf{Hypotheses}:
+% \begin{tabular}{|rc|}
+% \hline  incumbency & \textcolor{MidnightBlue}{$n$} $<$ \textcolor{LimeGreen}{$l$} $<$ \textcolor{Salmon}{$r$} \\
+%   campaign   & \textcolor{MidnightBlue}{$n$} $=$ \textcolor{LimeGreen}{$l$} $<$ \textcolor{Salmon}{$r$} \\ \hline
+% \end{tabular}
+% \end{large}
+% \caption{The probability of name recognition (x-axis). We portray simulations with Bayesian versions of regression models. The violet density is for respondents in area $n$, the green (when applicable) for respondents in area $l$, and the pink for respondents in area $r$. \emph{With clear gaps between them, we expect the purple to lie to the left, the pink to the right, the green between them}. All other controls held constant to represent a PAN-identifier with a smartphone, who said the incumbent has delivered but is uninterested in politics.}\label{f:sims}
+% \end{sidewaysfigure}
 
-~ \\
-~ \\
-  
+\begin{figure}
+  \centering
+  \begin{tabular}{cc}
+    Static ambition & Progressive ambition \\ \hline
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce1.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce6.pdf} \\
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce2.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce5.pdf} \\
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce3.pdf} &
+    \includegraphics[width=.3\columnwidth]{../graphs/prReconoce4.pdf} \\
+  \end{tabular}
+~ \\ ~ \\ ~ \\
 %\definecolor{MidnightBlue}{rgb}{0.1, 0.1, 0.44}
 \definecolor{MidnightBlue}{rgb}{0.48, 0.41, 0.93}
 \definecolor{LimeGreen}{rgb}{0.2, 0.8, 0.2}
 \definecolor{Salmon}{rgb}{1.0, 0.55, 0.41}
 \begin{large}
-\textbf{Hypotheses}:
+
 \begin{tabular}{|rc|}
-\hline  incumbency & \textcolor{MidnightBlue}{$n$} $<$ \textcolor{LimeGreen}{$l$} $<$ \textcolor{Salmon}{$r$} \\
+  \hline \multicolumn{2}{|c|}{\textbf{Hypotheses}:} \\
+  incumbency & \textcolor{MidnightBlue}{$n$} $<$ \textcolor{LimeGreen}{$l$} $<$ \textcolor{Salmon}{$r$} \\
   campaign   & \textcolor{MidnightBlue}{$n$} $=$ \textcolor{LimeGreen}{$l$} $<$ \textcolor{Salmon}{$r$} \\ \hline
 \end{tabular}
 \end{large}
+\caption{The probability of name recognition (x-axis). We portray simulations with Bayesian versions of regression models. The violet density is for respondents in area $n$, the green (when applicable) for respondents in area $l$, and the pink for respondents in area $r$. Incumbency leads to expect the purple to lie to the left, the pink to the right, the green between them, with clear gaps between them. All other controls held constant to represent a PAN-identifier with a smartphone, who said the incumbent has delivered but is uninterested in politics.}\label{f:sims}
+\end{figure}
 
-\caption{The probability of name recognition (x-axis). We portray simulations with Bayesian versions of regression models. The violet density is for respondents in area $n$, the green (when applicable) for respondents in area $l$, and the pink for respondents in area $r$. \emph{With clear gaps between them, we expect the purple to lie to the left, the pink to the right, the green between them}. All other controls held constant to represent a PAN-identifier with a smartphone, who said the incumbent has delivered but is uninterested in politics.}\label{f:sims}
-\end{sidewaysfigure}
 
 \section{Conclusion}
 
