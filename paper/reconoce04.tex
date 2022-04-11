@@ -258,7 +258,7 @@ Coahuila state legislators had single-term limits lifted in 2017 and their legis
 
 For this purpose, we begin by identifying `father' and `son' districts. We construe district genealogy as \citet{cox.katz.2002} do. One-by-one, we compare districts in the new map (the offspring) to those in the old map, in order to identify the district it shares the most voters with. This is the district's father. Figure \ref{F:venn} pictures a Venn diagram of one father (from the 2014 map) and son (from the 2017 map) pair. Ovals are simplified versions of district boundaries (minus geographic accidents typical of real-world maps). Four terrains can be distinguished. Intersection $r$ is land (and the voters who live there) that the son has retained from its father. By construction, $r$ is never empty (else the district would be an orphan). To the left is land $l$ that the son has lost from the father by the redistricting, and to the right lies land $g$ that the son has gained from one or more other old-map districts. Lands $l$ and $g$ represent change in the map, and one, the other, or both could be empty. Land $n$ not belonging to any of the ovals is no man's land, with no interest whatsoever for the incumbent at hand. 
 
-The approach quantifies the degree of change in any incumbent's electorate brought by redistricting. Comparing the land father and son share in common with land lost and won yields an index of district similarity $S_i$ for district $i$. If {\small$\texttt{father}_i$} and {\small$\texttt{son}_i$} denote, respectively, voters in the father and son districts, then $S_i = \frac{\texttt{father}_i \cap \texttt{son}_i}{\texttt{father}_i \cup \texttt{son}_i} = \frac{r}{l+r+g}$. The index reaches maximum value $S_j=1$ when father and son are identical (i.e., $l=g=\varnothing$), dropping gradually as intersection $r$ shrinks relative to $l+g$. Index $S$ tends to zero when father and son intersect minimally (as $r$ is never empty, zero is not reached).
+The approach quantifies the degree of change in any member's electorate brought by redistricting. Comparing the land father and son share in common with land lost and won yields an index of district similarity $S_i$ for district $i$. If {\small$\texttt{father}_i$} and {\small$\texttt{son}_i$} denote, respectively, voters in the father and son districts, then $S_i = \frac{\texttt{father}_i \cap \texttt{son}_i}{\texttt{father}_i \cup \texttt{son}_i} = \frac{r}{l+r+g}$. The index reaches maximum value $S_j=1$ when father and son are identical (i.e., $l=g=\varnothing$), dropping gradually as intersection $r$ shrinks relative to $l+g$. Index $S$ tends to zero when father and son intersect minimally (as $r$ is never empty, zero is not reached).
 
 \begin{table}
   \centering
@@ -289,9 +289,11 @@ The approach quantifies the degree of change in any incumbent's electorate broug
 \caption{District similarity index $S$ in the state of Coahuila. Mexican legislative districts rely on Roman numerals for identification, hyphenated in the Table with the district's administrative seat (\emph{cabecera distrital}.)}\label{T:dsi}
 \end{table}
 
-Table \ref{T:dsi} reports Coahuila's district similarity in 2017. We operationalize $S$ with electoral \emph{secciones} an not voters directly.\footnote{Data is from INE's official election returns and redistricting archives, available at \url{www.ine.mx}. \emph{Secciones electorales} are analogous to U.S.\ census tracts (median secci\'on population in the 2010 census was 1,280, with a maximum at 79,232; median tract population in the 2010 census was 3,995, with a maximum at 37,452). Secciones are the basic building blocks for district cartography. The old (called here 2014 for clarity, but inaugurated in 2011) and new (2017) maps relate 1,710 secciones in the state to 16 legislative districts (available at \url{https://github.com/emagar/mxDistritos/blob/master/mapasComparados/loc/coaLoc.csv}.) With our operationalization, $S$'s value is the share of secciones shared by father and son share vis-à-vis secciones in any of them. If electoral secciones all had identical populations, our operationalization would be identical to Cox and Katz's, who rely on shared population instead. As population heterogeneity rises, so do discrepancies between both versions of $S$ across districts. Electoral secciones have relatively homogeneous populations nationwide: 99 percent had between 100 and 5,700 inhabitants in the 2010 census.} The survey we rely on below identified the sección where respondents registered for voting, so this suffices for the test. The median, located between districts \textsc{xvi} and \textsc{iii}, shares only 55 percent secciones when reunited with its father. Similarity looks scant: if the incumbent ran again for consecutive reelection and knew personally every voter she represented during the term that is expiring, she would recognize only a bit more than half of her new constituents. $S$'s inter-quartile range is .4--.7.
+Table \ref{T:dsi} reports Coahuila's district similarity in 2017. We operationalize $S$ with electoral \emph{secciones} an not voters directly.\footnote{Data is from INE's official election returns and redistricting archives, available at \url{www.ine.mx}. \emph{Secciones electorales} are analogous to U.S.\ census tracts (median secci\'on population in the 2010 census was 1,280, with a maximum at 79,232; median tract population in the 2010 census was 3,995, with a maximum at 37,452). Secciones are the basic building blocks for district cartography. The old (called here 2014 for clarity, but inaugurated in 2011) and new (2017) maps relate 1,710 secciones in the state to 16 legislative districts (available at \url{https://github.com/emagar/mxDistritos/blob/master/mapasComparados/loc/coaLoc.csv}.) With our operationalization, $S$'s value is the share of secciones shared by father and son share vis-à-vis secciones in any of them. If electoral secciones all had identical populations, our operationalization would be identical to Cox and Katz's, who rely on shared population instead. As population heterogeneity rises, so do discrepancies between both versions of $S$ across districts. Electoral secciones have relatively homogeneous populations nationwide: 99 percent had between 100 and 5,700 inhabitants in the 2010 census.} Our survey identifies secciones where respondents registered for voting, so this suffices for the test. The median, located between districts \textsc{xvi} and \textsc{iii}, shares just 55 percent secciones when reunited with its father. Similarity looks scant: if the member ran for consecutive reelection and knew personally every voter she represented during the term that is expiring, she would recognize only a bit overhalf of her new constituents. $S$'s inter-quartile range is .4--.7.
 
-From the electoral connection's perspective, changes of this sort in district geography should discourage static ambition, pushing incumbents to retirement. And so it did. We lack evidence to claim that redistricting, and not something else, forced thirteen of sixteen SMD incumbents to not seek reelection. But the fact is that the three who did represented districts with much higher similarity indexes (the right-most column in the table reports incumbents' revealed ambition), which is consistent with this interpretation. Lily Gutiérrez Burciaga's constituents in Ramos Arizpe in fact changed nothing at all (she ran in the only district with $S=1$). Georgina Cano Torralva from Acuña and Javier Díaz González from Saltillo retained 8 and 7 of every 10 voters, respectively.
+From the electoral connection's perspective, changes this big in district geography should discourage static ambition, pushing incumbents to retirement. And so it did. We lack evidence to support that redistricting, and not something else, forced thirteen of sixteen SMD incumbents to not seek reelection. But the fact is that the three who did represented districts with much higher similarity indexes (the right-most column in the table reports incumbents' revealed ambition), which is consistent with this interpretation. Lily Gutiérrez Burciaga's constituents in Ramos Arizpe in fact changed nothing at all (she ran in the only district with $S=1$). Georgina Cano Torralva from Acuña and Javier Díaz González from Saltillo retained 8 and 7 of every 10 voters, respectively.
+
+With simple logic, we distinguish effects of campaigns and incumbency on name familiarity in lands $l$, $r$, $g$, and $n$. The more redistricting changed the son from its father, the more different the ``battlefield'' ahead will appear to a member in office and to a candidate on the campaign trail. Election campaigns know the precise limits of the new district where effort must be focalized (the son)---billboards and wall paintings, printed flier distribution and robocalls, meetings with neighbors alone or in the company of candidates higher in the ticket, vote-buying with construction material and debit cards, and so forth \citep{langston.nd}. Constituency service, however, has a less distinct perspective, at least until the new district map is published. At that point, incumbents discover that mapmakers turned past constituency service in lost land $l$ into sunk cost, as it will not pay off towards reelection. And while retained land $r$ remains well-treaded, they also must advance into uncharted territory $g$ that was gained.
 
 \begin{table}
   \centering
@@ -305,30 +307,17 @@ From the electoral connection's perspective, changes of this sort in district ge
     4 & $l<g$    & $l>g$      &  $l~?~g$ \\ % \overset{?}{>}
     5 & $l=n$    & $l>n$      &  $l>n$   \\
     6 & $g>n$    & $g>n$      &  $g>n$   \\ \\ [-1.2ex] \hline 
-    %% & Efecto &       Efecto &        Efecto \\ [-.5ex]
-    %% & del ocupante & de la campaña & total\\ \hline
-    %% \\ [-1.2ex]
-    %% 1 & $c>a$   & $c=a$  & $c>a$   \\
-    %% 2 & $c>p$   & $c>p$  & $c>p$   \\
-    %% 3 & $c>y$   & $c>y$  & $c>y$   \\
-    %% 4 & $p~?~a$ & $p<a$  & $p~?~a$ \\
-    %% 5 & $p>y$   & $p=y$  & $p>y$   \\
-    %% 6 & $a>y$   & $a>y$  & $a>y$   \\ \\ [-1.2ex] \hline 
   \end{tabular}
   \caption{Incumbency and campaign effects in name recognition hypotheses. Cells give expected relations in name recognition in the areas defined in Figure \ref{F:venn}. Thus, row 1 indicates that incumbency causes higher name recognition among voters in land retained than among voters in land gained, a difference not caused by the campaign effect; combining them gives the reported total effect.}\label{T:hyps}
 \end{table}
 
-We have argued that name familiarity results from efforts to cultivate a personal vote. Campaigns, however, also generate name familiarity to those who pay attention. We next derive campaign and incumbency effects in name familiarity in lands $l$, $r$, $g$, and $n$, summarized in Table \ref{T:hyps}. 
+This generates somewhat different predictions summarized in Table \ref{T:hyps}. The quantity of interest is the expected probability that a respondent picked at random among voters registered in one of the four lands is familiar with the candidate's name. Campaign effects in name familiarity, if any, occur throughout the district (i.e., the son $r \cup g$), with negligible spillover beyond its borders. There is therefore no ground to expect a difference in name familiarity inside the district (which the table reports as $r=g$), but there is ground to expect such difference between the district and the rest. Expectations from the table's campaign column boil down to $l=n<r=g$. %but a difference will be manifest between either $r$ or $g$ and either $l$ or $n$
 
-Upon redistricting, the ``battlefield'' ahead is more or less different, depending on how much parent and son changed, for members in office and candidates on the campaign trail. Election campaigns know the precise limits of the new district where effort must be focalized (the son)---billboards and wall paintings, printed flier distribution and robocalls, meetings with neighbors alone or in the company of candidates higher in the ticket, vote-buying with construction material and debit cards, and so forth \citep{langston.nd}. Constituency service, however, has a less distinct perspective, at least until the new district map is published. At that point, incumbents discover that mapmakers turned past constituency service in lost land $l$ into sunk cost, as it will not pay off towards reelection. And while retained land $r$ remains well-treaded, they also must advance into uncharted territory $g$ that was gained.
-
-This generates somewhat different predictions summarized in Table \ref{T:hyps}. The quantity of interest is the expected probability that a voter picked at random among voters registered in one of the four lands is familiar with the candidate's name. Campaign effects in name familiarity, if any, occur throughout the district (i.e., the son $r \cup g$), with negligible spillover beyond its borders. There is therefore no ground to expect a difference in name familiarity within the district (which the table reports as $r=g$), but there is ground to expect such difference between the district and the rest of land. Expectations from the campaign column in the table boil down to $l=n<r=g$. %but a difference will be manifest between either $r$ or $g$ and either $l$ or $n$
-
-Incumbent name familiarity, if any, takes place in the reunion of father and son district areas---with varying intensities. While retained land $r$ experienced a full three-year term of constituency service, gained land $g$ only received the incumbent's attention with knowledge that it would be part of the new district. Cultivating a personal vote requires time, so we expect higher name familiarity in land $r$ than in land $g$ ($r>g$ in the table). Likewise, the incumbent with finite effort stopped servicing land $l$ when it became certain it would be lost to redistricting, so we again expect $r>l$. And with the period between new map publication and the next election small relative to the time the incumbent spent servicing the parent district, we also expect $l>g$ in name familiarity. Expectations from the incumbency column in the table boil down to $n<g<l<r$. % But as those periods even-up, a clear expectation no longer arises, hence the question mark in the table---in Coahuila, sons' maps were announced about two-thirds into members' terms. 
+Incumbent name familiarity, if any, takes place in the reunion of father and son district areas---with varying intensities. While retained land $r$ experienced a full three-year term of constituency service, gained land $g$ only received the member's attention with knowledge that it would be part of the new district. Cultivating a personal vote requires time, so we expect higher name familiarity in land $r$ than in land $g$ ($r>g$ in the table). Likewise, the incumbent with finite effort stopped servicing land $l$ when it became certain it would be lost to redistricting, so we again expect $r>l$. And with the period between new map publication and the next election small relative to the time the incumbent spent servicing the parent district, we also expect $l>g$ in name familiarity. Expectations from the incumbency column in the table boil down to $n<g<l<r$. % But as those periods even-up, a clear expectation no longer arises, hence the question mark in the table---in Coahuila, sons' maps were announced about two-thirds into members' terms. 
 
 Note that in table rows 2, 3, and 6, campaign and incumbency expectations on name familiarity are identical. Comparison of land areas in those rows offers no element to separate effects: detecting a signal, it must me attributed to the total effect, reported in the third column. But expectations in rows 1, 4, and 5 are contradictory, so an empirical relationship discriminates theoretical effects. Row 4 is the clearest: observing $l<g$ among respondents implies a campaign effect in name recognition larger than the incumbency effect; observing $l>g$, an incumbency larger in relative size. 
 
-Since our Coahuila study offers few members with static ambition, we extend exploration to members with progressive ambition too. These are three deputies who sought municipal office. The trick for analysis is to make the target municipality's territory into a counterfactual son district. Identifying the corresponding $l$, $r$, $g$, and $n$ distinct lands is trivial. But the important element of surprise in redistricting is absent: members know what ``son district'' (i.e., municipality) their progressive ambition points towards, and can therefore cultivate a personal vote \emph{ex-ante} \citep{lucardi.micozzi.Career-argentina.2016}. Comparability with static ambition is thus not ideal, but offers additional perspective.
+Since Coahuila offered few members with static ambition, we extend exploration to members with progressive ambition too. These are three deputies who sought municipal office. The trick for analysis is to make the target municipality's territory into a counterfactual son district. Identifying the corresponding $l$, $r$, $g$, and $n$ distinct lands is trivial. But the important element of surprise in redistricting is absent: members know what ``son district'' (i.e., municipality) their progressive ambition points towards, and can therefore cultivate a personal vote \emph{ex-ante} \citep{lucardi.micozzi.Career-argentina.2016}. Comparability with static ambition is thus not ideal, but offers additional perspective.
 
 % Incumbents running for reelection generate the sum of effects. Challengers generate campaign effects only. 
 
@@ -342,8 +331,6 @@ Since our Coahuila study offers few members with static ambition, we extend expl
 %%   \end{tabular}
 %%   \caption{Ocupantes con ambición estática, progresiva o nula} \label{T:ambition}
 %% \end{table}
-
-%El Cuadro \ref{T:ambition} resume la ambición revelada por los legisladores en funciones en Coahuila en 2017. De los dieciséis diputados que representaban un distrito (todos del PRI, que ganó un carro completo en 2014), tres aspiraron a reelegirse como diputados, tres a elegirse como alcaldes, y diez se retiraron. Y tres de nueve diputados de lista aspiraron a volverse alcaldes. A pesar de la posibilidad que abrió la reforma, entre los diputados que no se retiraron, los de ambición progresiva duplicaron a los de ambición estática mostraron ambición progresiva---transitaron la ruta tradicional del llamado ``chapulineo'', que antes era la única disponible.
 
 \section{The survey}
 
@@ -522,14 +509,567 @@ Despite an incomplete research design, we uncover evidence of name recognition c
 \bibliography{/home/eric/Dropbox/mydocs/magar}
 
 \newpage
-\section*{Appendix}
+\section{Appendix}
 
-\subsection{Survey questions}
+\subsection{Descriptive statistics}
+
+Unlike absolute frequencies In the summaries below, relative frequencies are parenthesized. All missing answers are reported (NS/NC = ``No Answer/Don't Know''), so totals add to 1,008 respondents for all survey questions. The summary for `Localidad' illustrates, then labels are omitted for economy. Section \ref{s:tran} includes an English translation of the survey questions about consecutive reelection. 
+
+\begin{scriptsize}
+\begin{verbatim}
+Localidad
+   Urbana         Rural         Mixta        Total
+  N    (%)      N    (%)      N    (%)      N    (%)
+----------------------------------------------------
+840   (83)     70    (7)     98   (10)   1008  (100)
+
+Municipio (% only)
+            ABASOLO               ACUÑA             ALLENDE             ARTEAGA 
+             (0.00)              (5.56)              (0.00)              (0.00) 
+            CANDELA            CASTAÑOS      CUATROCIENEGAS            ESCOBEDO 
+             (0.00)              (1.39)              (1.39)              (0.00) 
+FRANCISCO I. MADERO            FRONTERA      GENERAL CEPEDA            GUERRERO 
+             (1.39)              (2.78)              (1.39)              (0.00) 
+            HIDALGO             JIMENEZ              JUAREZ            LAMADRID 
+             (0.00)              (1.39)              (0.00)              (0.00) 
+          MATAMOROS            MONCLOVA             MORELOS             MUZQUIZ 
+             (4.17)              (6.94)              (0.00)              (2.78) 
+          NADADORES                NAVA              OCAMPO              PARRAS 
+             (0.00)              (1.39)              (0.00)              (1.39) 
+     PIEDRAS NEGRAS            PROGRESO        RAMOS ARIZPE             SABINAS 
+             (5.56)              (0.00)              (2.78)              (2.78) 
+         SACRAMENTO            SALTILLO    SAN BUENAVENTURA SAN JUAN DE SABINAS 
+             (0.00)             (26.39)              (1.39)              (1.39) 
+          SAN PEDRO       SIERRA MOJADA             TORREON              VIESCA 
+             (4.17)              (0.00)             (23.61)              (0.00) 
+        VILLA UNION            ZARAGOZA               Total
+             (0.00)              (0.00)            (100.00)
+
+Sección electoral (N only)
+   4    8   10   84  119  141  192  197  214  242  258  263  269  325  328  370 
+-------------------------------------------------------------------------------
+  14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14 
+===============================================================================
+ 378  411  454  473  508  550  580  586  617  627  653  661  692  712  734  737 
+-------------------------------------------------------------------------------
+  14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14 
+===============================================================================
+ 788  800  816  843  847  869  871  897  905  907  920  922  932  977  979 1042 
+-------------------------------------------------------------------------------
+  14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14 
+===============================================================================
+1068 1109 1145 1157 1173 1184 1214 1221 1263 1272 1303 1314 1316 1351 1377 1388 
+-------------------------------------------------------------------------------
+  14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14 
+===============================================================================
+1402 1447 1449 1464 1469 1623 1678 1703  Total
+-------------------------------------------------------------------------------
+  14   14   14   14   14   14   14   14   1008
+
+Congressional district
+       1        2        3        4        5        6        7      Total
+-------------------------------------------------------------------------
+140 (14) 154 (15) 154 (15) 154 (15) 140 (14) 154 (15) 112 (11) 1008 (100) 
+
+State assembly district
+     1      2      3      4      5      6      7      8      9     10     11     12     13  
+------------------------------------------------------------------------------------------
+70 (7) 70 (7) 70 (7) 70 (7) 56 (6) 56 (6) 56 (6) 70 (7) 84 (8) 42 (4) 42 (4) 56 (6) 84 (8) 
+==========================================================================================
+     14     15     16      Total
+--------------------------------
+ 56 (6) 84 (8) 42 (4) 1008 (100)
+
+(Si tiene credencial para votar vigente) ¿Está registrada en este domicilio o en otro?
+   En este        En otro
+-------------------------
+813   (81)     195   (19) 
+
+Sexo
+   Hombre        Mujer
+----------------------
+502  (50)    506  (50)
+ 
+Edad (grouped)
+ [18,28)   [28,38)   [38,48)   [48,58)   [58,68)    [68,+)
+----------------------------------------------------------         
+211 (21)  205 (20)  203 (20)  180 (18)  117 (12)   92  (9)
+
+ 
+1 En su opinión, ¿cuál es el principal problema que hay actualmente en el Estado de 
+Coahuila? (ANOTAR TEXTUAL)                   (%)
+------------------------------------------------
+                                  Campo    (0.2) 
+                             Corrupción   (13.7) 
+                              Desempleo   (12.4) 
+                               Economía    (6.5) 
+                              Educación    (0.8) 
+            Falta de buenos gobernantes    (0.9) 
+                    Fenómenos naturales    (0.1) 
+Inflación/alza de precios/precios altos    (0.8) 
+                    Inseguridad pública   (45.0) 
+                           Narcotráfico    (1.0) 
+                                Ninguno    (1.0) 
+                         Obras públicas    (0.4) 
+                                Pobreza    (3.1) 
+                    Problemas políticos    (0.5) 
+                        Gobierno de epn    (0.3) 
+                     Problemas sociales    (1.1) 
+                                  Salud    (0.9) 
+                     Servicios públicos    (9.7) 
+                                  Todos    (1.0) 
+                                  Otros    (0.4) 
+              Falta de ayuda a la gente    (0.2) 
+          Demasiados programas sociales    (0.1) 
+
+2 Por lo general, ¿cuánto le interesa la política? (LEER)
+     Mucho         Algo         Poco         Nada        NS/NC
+--------------------------------------------------------------
+122 (12.1)   259 (25.7)   324 (32.1)   301 (29.9)     2  (0.2) 
+
+3 ¿Sabe cuándo son las próximas elecciones para Gobernador del estado? 
+(NO LEER: 4 DE JUNIO 2017)
+Sabe completa    Incompleta        NS/NC 
+----------------------------------------
+    719  (71)    160   (16)    129  (13) 
+
+4 Del 0 a 10, donde 0 es nada probable y 10 muy probable, ¿qué tan probable es que 
+usted vote en las próximas elecciones para gobernador?
+        0         1         2         3         4         5 
+---------------------------------------------------------------
+ 64 (6.3)  37 (3.7)  21 (2.1)  25 (2.5)  14 (1.4)  90 (8.9)
+===============================================================
+        6         7          8         9          10      NS/NC
+----------------------------------------------------------------
+ 36 (3.6)  50 (5.0) 113 (11.2)  49 (4.9)  505 (50.1)     4 (0.4) 
+         
+5 (USAR BOLETA 1) Si hoy hubiera elecciones para Gobernador del estado, ¿por 
+quién votaría                            N       (%)
+----------------------------------------------------
+               Guillermo Anaya, PAN    194    (19.2) 
+             Miguel A. Riquelme,PRI    238    (23.6) 
+              Mary T. Guajardo, PRD     15     (1.5) 
+                  José A. Pérez, PT     15     (1.5) 
+           Miguel A. Riquelme, PVEM     16     (1.6) 
+               Guillermo Anaya, UDC     14     (1.4) 
+          Miguel A. Riquelme, PANAL      8     (0.8) 
+            Miguel A. Riquelme, PSI      4     (0.4) 
+               Guillermo Anaya, PPC      2     (0.2) 
+  Miguel A. Riquelme, Partido Jóven      9     (0.9) 
+            Miguel A. Riquelme, PRC      3     (0.3) 
+            Miguel A. Riquelme, PCP      4     (0.4) 
+           Armando Guadiana, Morena    102    (10.1) 
+  Guillermo Anaya, Encuentro Social      7     (0.7) 
+     Javier Guerrero, Independiente     45     (4.5) 
+Luis Horacio Salinas, Independiente     12     (1.2) 
+                      No registrado      5     (0.5) 
+                               Nulo     88     (8.7) 
+                            Ninguno     52     (5.2) 
+                              NS/NC    175    (17.4) 
+                              TOTAL   1008   (100.0)
+
+6 ¿Usted ya decidió definitivamente por quién votar para gobernador, 
+tiene idea pero podría cambiar o aún no decide su voto?
+                                N     (%)
+-----------------------------------------
+Ya decidió definitivamente    558    (55)
+Tiene idea, podría cambiar    150    (15)
+             Aún no decide    246    (24)
+                     NS/NC     54     (5) 
+
+7 ¿Cuál es su opinión acerca de los siguientes personajes políticos: muy buena, buena, mala, 
+muy mala,... o no lo conoce suficiente para opinar? (LEER Y ROTAR NOMBRES)
+
+a Guillermo Anaya Llamas       
+    Muy                             Muy    Ni buena               No lo  
+  buena     Buena       Mala       mala     ni mala      NS/NC   conoce       Total
+-----------------------------------------------------------------------------------
+ 41 (4)  260 (26)   191 (19)   106 (11)    260 (26)   100 (10)   50 (5)  1008 (100)  
+ 
+b Miguel Ángel Riquelme        
+    Muy                             Muy    Ni buena               No lo  
+  buena     Buena       Mala       mala     ni mala     NS/NC    conoce      Total
+----------------------------------------------------------------------------------
+ 45 (4)  224 (22)   225 (22)   187 (19)    195 (19)    93 (9)    39 (4)  1008 (100) 
+
+c Mary Telma Guajardo Villareal
+    Muy                             Muy    Ni buena               No lo  
+  buena     Buena       Mala       mala     ni mala     NS/NC    conoce      Total
+----------------------------------------------------------------------------------
+  3 (0)    77 (8)    96 (10)     64 (6)    162 (16)   254 (25) 352 (35)  1008 (100)
+
+d José Ángel Pérez Hernández   
+    Muy                             Muy    Ni buena               No lo  
+  buena     Buena       Mala       mala     ni mala     NS/NC    conoce      Total
+----------------------------------------------------------------------------------
+ 15 (1)    95 (9)     95 (9)     76 (8)    164 (16)   274 (27) 289 (29)  1008 (100)
+
+e Armando Guadiana Tijerina    
+    Muy                             Muy    Ni buena               No lo  
+  buena     Buena       Mala       mala     ni mala     NS/NC    conoce      Total
+----------------------------------------------------------------------------------
+ 21 (2)  159 (16)   88   (9)   71   (7)   180  (18)  210 (21)  279 (28)  1008 (100)
+
+f Javier Guerrero García       
+    Muy                             Muy    Ni buena               No lo  
+  buena     Buena       Mala       mala     ni mala     NS/NC    conoce      Total
+----------------------------------------------------------------------------------
+ 16 (2)  137 (14)     74 (7)     61 (6)    180 (18)  256 (25)  284 (28)  1008 (100)
+
+g Luis Horacio Salinas Valdez  
+    Muy                             Muy    Ni buena               No lo  
+  buena     Buena       Mala       mala     ni mala     NS/NC    conoce      Total
+----------------------------------------------------------------------------------
+  6 (1)    56 (6)     71 (7)     60 (6)    138 (14)   284 (28) 393 (39)  1008 (100) 
+
+8 ¿Si la elección para gobernador solamente fuera entre Guillermo Anaya y Miguel 
+Riquelme, ¿por quién votaría usted?                                      N   (%)
+---------------------------------------------------------------------------------
+                    Guillermo Anaya del PAN-UDC-PPC-Encuentro Social   334   (33) 
+Miguel Ángel Riquelme del PRI-PVEM-PANAL- PSI-Partido Joven- PRC-PCP   314   (31) 
+                                                             Ninguno   273   (27) 
+                                                               NC/NC    87    (9) 
+                                                               Total  1008  (100)
+
+9 ¿Quién cree que gane la elección para gobernador? (LEER)
+Guillermo Anaya del PAN  Miguel Ángel Riquelme del PRI    Otro      NS/NC
+---------------------------------------------------------------------------
+           258     (26)                    487    (48)   0  (0)   263  (26) 
+
+10 De los siguientes asuntos que le voy a leer, dígame por favor cuál es el 
+más importante que debe atender el próximo gobernador del estado: (LEER)      
+                         N   (%)
+--------------------------------
+        Inseguridad    319  (32)
+            Pobreza    193  (19)
+            Empleos    170  (17)
+         Corrupción    170  (17)
+          Educación     41   (4)
+     Medio ambiente     10   (1)
+La deuda del estado     66   (7)
+               Otro      0   (0)
+              NS/NC     39   (4)
+ 
+11 (USAR BOLETA 2) Si hoy hubiera elecciones para Diputados Locales, ¿por cuál partido 
+votaría usted?
+     PAN      PRI     PRD      PT    PVEM     UDC     MC   PANAL    PSI    PPC 
+------------------------------------------------------------------------------
+206 (20) 264 (26)  16 (2)  20 (2)  17 (2)  23 (2)  6 (1)  13 (1)  1 (0)  7 (1) 
+==============================================================================
+     PJ     PRC     PCP  MORENA    PES  Independiente       <NA>       Total
+----------------------------------------------------------------------------
+ 15 (1)   3 (0)   6 (1)  88 (9)  5 (0)         35 (3)   283 (28)  1008 (100)
+
+12 (USAR BOLETA 3) Si hoy hubiera elecciones para Presidente Municipal, ¿por cuál partido 
+votaría usted?
+     PAN      PRI     PRD      PT    PVEM     UDC     MC   PANAL    PSI    PPC 
+------------------------------------------------------------------------------
+218 (22) 287 (28)  17 (2)  14 (1)  11 (1)  22 (2)  8 (1)   5 (0)  1 (0)  9 (1) 
+==============================================================================
+     PJ     PRC     PCP  MORENA    PES  Independiente       <NA>       Total
+----------------------------------------------------------------------------
+ 13 (1)   2 (0)   6 (1)  78 (8)  5 (0)          38 (4)  274 (27)  1008 (100)
+
+13 ¿Votó usted en las elecciones para gobernador en julio de 2011? (SÍ) 
+¿Por quién votó usted? (LEER OPCIONES)     N     (%)
+----------------------------------------------------
+      Guillermo Anaya Llamas, PAN-UDC    211    (21) 
+Rubén Moreira, PRI-PVEM-PANAL-PPC-PSI    367    (36) 
+                                 Otro      0     (0) 
+                        No registrado     22     (2) 
+                                 Nulo     21     (2) 
+                              No votó    255    (25) 
+                                NS/NC    132    (13) 
+
+14 En general, ¿usted aprueba o desaprueba el trabajo que Rubén Moreira está haciendo 
+como Gobernador del estado? (INSISTIR): ¿APRUEBA/DESAPRUEBA mucho o algo?
+Aprueba mucho    Aprueba algo   Desaprueba algo   Desaprueba mucho    NS/NC 
+---------------------------------------------------------------------------
+       88 (9)        294 (29)          233 (23)           357 (35)   36 (4) 
+
+15 En general, ¿está satisfecho o insatisfecho con la manera en que marchan las cosas 
+en el estado? (INSISTIR: ¿Muy o algo?) (5=NS/NC)
+Muy satisfecho    Algo satisfecho    Algo satisfecho    Muy insatisfecho     NS/NC
+----------------------------------------------------------------------------------
+        52 (5)           329 (33)           318 (32)            297 (29)    12 (1) 
+
+16 En general, ¿usted aprueba o desaprueba el trabajo que Enrique Peña Nieto está 
+haciendo como Presidente de la República? (INSISTIR): ¿APRUEBA/DESAPRUEBA mucho o algo?
+Aprueba mucho    Aprueba algo   Desaprueba algo   Desaprueba mucho    NS/NC 
+---------------------------------------------------------------------------
+       72 (7)        199 (20)          184 (18)           531 (53)   22 (2) 
+
+17 ¿Cómo calificaría en estos momentos... (LEER):? muy bien, bien, mal o muy mal?
+
+a La situación económica del estado
+Muy bien      Bien       Mal    Muy mal   Ni bien ni mal    NS/NC 
+-----------------------------------------------------------------
+  10 (1)  164 (16)  319 (32)   330 (33)         182 (18)    3 (0) 
+
+b Su situación económica familiar
+Muy bien      Bien       Mal    Muy mal   Ni bien ni mal    NS/NC 
+-----------------------------------------------------------------
+  20 (2)  344 (34)  231 (23)   130 (13)         282 (28)    1 (0) 
+
+c La seguridad pública en la comunidad donde vive
+Muy bien      Bien       Mal    Muy mal   Ni bien ni mal    NS/NC 
+-----------------------------------------------------------------
+  33 (3)  290 (29)  277 (27)   223 (22)         177 (18)    8 (1) 
+
+18 Generalmente, ¿usted se considera priista, panista, perredista morenista? (INSISTIR): 
+¿Se considera muy o algo?
+       Priista        Panista       Perredista     Morenista
+     muy     algo    muy   algo    muy    algo     muy    algo   NS/NC    Otro  Ninguno
+---------------------------------------------------------------------------------------
+151 (15) 101 (10) 70 (7) 43 (4)  9 (1)   3 (0)  23 (2)  22 (2)   0 (0) 538 (53)  48 (5) 
+
+19 (TARJETA 1) En política la gente habla de “la izquierda” y “la derecha”. En general, 
+¿cómo colocaría usted sus puntos de vista en esta escala, donde 1 es izquierda y 10 es 
+derecha? También puede escoger un punto intermedio.
+       1      2      3      4        5      6      7      8      9       10    NS/NC 
+------------------------------------------------------------------------------------
+115 (11) 29 (3) 52 (5) 48 (5) 214 (21) 87 (9) 49 (5) 79 (8) 32 (3) 127 (13) 176 (17) 
+
+20 ¿Está usted a favor, en contra o le es indiferente la reelección consecutiva de 
+legisladores?
+ A favor  En contra  Le es indiferente   NS/NC 
+----------------------------------------------
+121 (12)   511 (51)           320 (32)  56 (6) 
+
+21 El 3 de abril iniciaron las campañas para renovar el Congreso del Estado. Si yo le 
+preguntara los nombres de los candidatos a diputado en este distrito, ¿usted me podría 
+decir todos los nombres, algunos nombres o no recuerda ningún nombre en este momento?
+Todos   Algunos  No recuerda  No contestó 
+-----------------------------------------
+9 (1)  144 (14)     783 (78)       72 (7) 
+
+22 Ahora piense por favor en los diputados locales actuales. Si yo le preguntara las 
+cosas que ha hecho su diputado por esta comunidad, ¿usted podría mencionarme muchas cosas, 
+algunas, diría que no hizo nada o no recuerda en este momento?
+Muchas   Algunas   No hizo nada   No recuerda    NS/NC
+------------------------------------------------------
+18 (2)  217 (22)       495 (49)      266 (26)   12 (1) 
+
+23 Si su actual diputado compitiera para buscar la reelección, ¿usted votaría por él 
+o no votaría por él?
+Sí votaría por él   No votaría por él      NS/NC 
+------------------------------------------------
+         156 (15)            731 (73)   121 (12) 
+
+24 Con base en el trabajo realizado por su actual diputado, ¿cree que merecería ser 
+reelecto en su cargo o no?
+      Sí        No        NC 
+----------------------------
+158 (16)  751 (75)   99 (10) 
+
+25 Le voy a leer unos nombres, para cada uno, ¿podría decirme si le es muy conocido, 
+algo conocido, poco o nada conocido?
+
+a Javier Díaz González     
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+      17 (2)   30 (3)   36 (4)        889 (88)   36 (4) 
+
+b Lily Gutiérrez Burciaga  
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+      14 (1)   34 (3)   29 (3)        895 (89)   36 (4) 
+
+c Georgina Cano Torralva   
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+      22 (2)   40 (4)   24 (2)        884 (88)   38 (4) 
+
+d Ana Isabel Durán         
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+      10 (1)   34 (3)   25 (2)        901 (89)   38 (4) 
+
+e Sonia Villareal          
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+      20 (2)   41 (4)   22 (2)        888 (88)   37 (4) 
+
+f Lariza Montiel           
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+      18 (2)   33 (3)   13 (1)        906 (90)   38 (4) 
+
+g Armando Pruneda          
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+       6 (1)   20 (2)   10 (1)        933 (93)   39 (4) 
+
+h Leonel Contreras Pámanes 
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+       6 (1)   25 (2)   25 (2)        912 (90)   40 (4) 
+
+i Florencio "Lencho" Siller
+Muy conocido     Algo     Poco   Nada conocido    NS/NC 
+-------------------------------------------------------
+       7 (1)   29 (3)   31 (3)        902 (89)   39 (4) 
+
+26 En los últimos 12 meses, ¿usted o alguien de su familia... (LEER)
+
+a Perdió su empleo o fuente de ingresos económicos?
+Sí, usted   Sí, un familiar   Sí, ambos        No     NS/NC 
+-----------------------------------------------------------
+ 141 (14)          212 (21)      17 (2)  635 (63)     3 (0) 
+
+b Fue víctima de algún delito o un asalto?
+Sí, usted   Sí, un familiar   Sí, ambos        No     NS/NC 
+-----------------------------------------------------------
+  97 (10)            93 (9)      20 (2)  796 (79)     2 (0) 
+
+c Tuvo que dar alguna mordida
+Sí, usted   Sí, un familiar   Sí, ambos        No     NS/NC 
+-----------------------------------------------------------
+  99 (10)            54 (5)      12 (1)  839 (83)     4 (0) 
+
+27 Por lo general, ¿cuánto se entera de las noticias por medio de... (LEER), 
+mucho, algo, poco o nada?
+
+a Televisión
+   Mucho       Algo       Poco       Nada      NS/NC 
+----------------------------------------------------
+413 (41)   242 (24)   228 (23)   123 (12)     2  (0) 
+
+b Radio
+   Mucho       Algo       Poco       Nada      NS/NC 
+----------------------------------------------------
+188 (19)   222 (22)   190 (19)   404 (40)     4  (0) 
+
+c Periódico
+   Mucho       Algo       Poco       Nada      NS/NC 
+----------------------------------------------------
+132 (13)   167 (17)   173 (17)   530 (53)     6  (1) 
+
+d Pláticas con gente
+   Mucho       Algo       Poco       Nada      NS/NC 
+----------------------------------------------------
+190 (19)   271 (27)   183 (18)   355 (35)     9  (1) 
+
+e Internet
+   Mucho       Algo       Poco       Nada      NS/NC 
+----------------------------------------------------
+274 (27)   149 (15)    99 (10)   474 (47)    12  (1) 
+
+f Redes sociales
+   Mucho       Algo       Poco       Nada      NS/NC 
+----------------------------------------------------
+278 (28)   153 (15)    82  (8)   482 (48)    13  (1) 
+
+28 ¿Utiliza Facebook?
+      Sí       No      NC
+-------------------------
+559 (55) 444 (44)   5 (0) 
+
+29 ¿Utiliza Twitter?
+      Sí       No      NC
+-------------------------
+138 (14) 868 (86)   2 (0) 
+
+30 ¿Tiene Smartphone o teléfono inteligente?
+      Sí       No      NC
+-------------------------
+562 (56) 441 (44)   5 (0) 
+
+31 ¿Usted o alguien en su hogar es beneficiario de... (LEER)?
+
+a Oportunidades/Prospera
+Sí, usted    Sí, un familiar     Sí, ambos           No       NS/NC
+-------------------------------------------------------------------
+   94 (9)            98 (10)        10 (1)     797 (79)       9 (1) 
+
+b Seguro Popular
+Sí, usted    Sí, un familiar     Sí, ambos           No       NS/NC
+-------------------------------------------------------------------
+ 162 (16)             84 (8)        67 (7)     688 (68)       7 (1) 
+
+c Algún programa social del gobierno del estado
+Sí, usted    Sí, un familiar     Sí, ambos           No       NS/NC
+-------------------------------------------------------------------
+ 120 (12)             65 (6)        11 (1)     802 (80)      10 (1) 
+
+32 Durante estas campañas electorales, ¿a usted o alguien en su hogar... (LEER)?
+
+a Le han dado algún obsequio los partidos o candidatos
+Sí, usted    Sí, un familiar     Sí, ambos           No       NS/NC
+-------------------------------------------------------------------
+ 110 (11)             67 (7)        25 (2)     803 (80)       3 (0) 
+
+b Ha asistido a eventos de los partidos o candidatos
+Sí, usted    Sí, un familiar     Sí, ambos           No       NS/NC
+-------------------------------------------------------------------
+ 135 (13)             52 (5)       22  (2)     796 (79)       3 (0) 
+
+33 Si los candidatos a la Presidencia de la República en 2018 fueran los siguientes, 
+¿por quién votaría usted? (LEER Y ROTAR)
+
+34 ¿Cuál es su opinión acerca de los siguientes personajes políticos: muy buena, 
+buena, mala, muy mala,... o no lo conoce suficiente para opinar? (LEER Y ROTAR NOMBRES)
+a Andrés Manuel López Obrador
+b Margarita Zavala
+c Miguel Ángel Osorio Chong
+d Humberto Moreira
+
+35 Juntando el dinero que usted y otros miembros de su familia ganan al mes, 
+¿diría que...? (LEER)
+                            Les alcanza bien    207    (21) 
+        Les alcanza con algunas dificultades    459    (46) 
+                              No les alcanza    238    (24) 
+No les alcanza y tienen grandes dificultades     99    (10) 
+                                       NS/NC      5     (0) 
+
+A ¿Hasta qué año o grado aprobó (pasó) en la escuela? ¿Cuál es su último grado de 
+estudios? [NS/NC=9]
+                           Ninguno    30    (3) 
+                    Hasta primaria   234   (23) 
+                        Secundaria   338   (34) 
+       Preparatoria o bachillerato   226   (22) 
+Normal/Carrera técnica o comercial    59    (6) 
+          Universidad sin terminar    36    (4) 
+             Universidad terminada    69    (7) 
+       Posgrado/Maestría/Doctorado    15    (1) 
+                             NS/NC     1    (0) 
+
+B ¿Cuál es su principal ocupación, a qué se dedica usted? (ANOTAR TEXTUAL)
+          Patrón/ Gerente/ Directivo Funcionario/ Empresario     7   (1) 
+                                               Profesionista    48   (5) 
+          Trabajos de oficina con cargo de jefe o supervisor     7   (1) 
+        Trabajador de oficina bajo supervisión (oficinistas)     9   (1) 
+                             Trabajador manual especializado    67   (7) 
+                         Trabajador manual semi-espicalizado   191  (19) 
+                          Trabajador manual no especializado    11   (1) 
+                                         Trabajador agrícola    27   (3) 
+       Comerciante: Ventas (cuando no menciona lo que vende)    56   (6) 
+                                          Vendedor ambulante     1   (0) 
+                                                    Empleado    99  (10) 
+                                                 Desempleado    37   (4) 
+                                        Jubilado/ Pensionado    63   (6) 
+                                        Estudiante/ Becarios    36   (4) 
+                                                 Ama de casa   343  (34) 
+                                          No tiene actividad     3   (0) 
+                                                 No contestó     3   (0) 
+
+C ¿De qué religión es usted? (LEER Y ROTAR)
+Católica   Cristiana/Evangélica/Protestante   Otra    NS/NC     Ateo
+---------------------------------------------------------------------
+ 735 (73)             119 (12)                8 (1)  99 (10)   47 (5) 
+
+D ¿Con qué frecuencia asiste usted a servicios religiosos? (LEER)
+    Más de una       Una vez   Una vez    Sólo ocasiones       Nunca,
+vez por semana    por semana    al mes        especiales   casi nunca   NS/NC
+-----------------------------------------------------------------------------
+    93  (9)        282  (28)  159 (16)         260  (26)     140  (14) 74 (7) 
+
+
+\end{verbatim}
+\end{scriptsize}
+
+\subsection{Survey questions}\label{s:tran}
 Thirteen items in the survey questionnaire involved reelection and name recognition (from question 20 to question 25.i) . We used questions 25.a--25.i to code our dependent variables. Responses much/some/little (\emph{mucho/algo/poco}) coded as 1 in the incumbent's name recognition indicator; 0 otherwise.
-
-* Add descriptives. 
-
-We reproduce the relevant items in the questionnaire in Spanish and their English translation here.
 
 \begin{multicols}{2}
 
@@ -602,74 +1142,74 @@ i Florencio ``Lencho'' Siller
 \end{verbatim}
 \end{scriptsize}
 
-\columnbreak
+% \columnbreak
 
-\begin{scriptsize}
-\begin{verbatim}
-20 ¿Está usted a favor, en contra o le 
-es indiferente la reelección consecutiva 
-de legisladores?
+% \begin{scriptsize}
+% \begin{verbatim}
+% 20 ¿Está usted a favor, en contra o le 
+% es indiferente la reelección consecutiva 
+% de legisladores?
 
-1) A favor 2) En contra
-3) Le es indiferente
-4) NS/NC
+% 1) A favor 2) En contra
+% 3) Le es indiferente
+% 4) NS/NC
 
-21 El 3 de abril iniciaron las campañas 
-para renovar el Congreso del Estado. Si yo 
-le preguntara los nombres de los candidatos 
-a diputado en este distrito, ¿usted me 
-podría decir todos los nombres, algunos 
-nombres o no recuerda ningún nombre en
-este momento?
+% 21 El 3 de abril iniciaron las campañas 
+% para renovar el Congreso del Estado. Si yo 
+% le preguntara los nombres de los candidatos 
+% a diputado en este distrito, ¿usted me 
+% podría decir todos los nombres, algunos 
+% nombres o no recuerda ningún nombre en
+% este momento?
 
-1) Todos 2) Algunos
-3) No recuerda
-4) No contestó
+% 1) Todos 2) Algunos
+% 3) No recuerda
+% 4) No contestó
 
-22 Ahora piense por favor en los diputados
-locales actuales. Si yo le preguntara las
-cosas que ha hecho su diputado por esta
-comunidad, ¿usted podría mencionarme muchas
-cosas, algunas, diría que no hizo nada o no
-recuerda en este momento? [5=NS/NC]
+% 22 Ahora piense por favor en los diputados
+% locales actuales. Si yo le preguntara las
+% cosas que ha hecho su diputado por esta
+% comunidad, ¿usted podría mencionarme muchas
+% cosas, algunas, diría que no hizo nada o no
+% recuerda en este momento? [5=NS/NC]
 
-1) Muchas
-2) Algunas
-3) No hizo nada
-4) No recuerda
+% 1) Muchas
+% 2) Algunas
+% 3) No hizo nada
+% 4) No recuerda
 
-23 Si su actual diputado compitiera para
-buscar la reelección, ¿usted votaría por
-él o no votaría por él?
+% 23 Si su actual diputado compitiera para
+% buscar la reelección, ¿usted votaría por
+% él o no votaría por él?
 
-1) Sí votaría por él
-2) No votaría por él
-3) NS/NC (NO LEER)
+% 1) Sí votaría por él
+% 2) No votaría por él
+% 3) NS/NC (NO LEER)
 
-24 Con base en el trabajo realizado por 
-suactual diputado, ¿cree que merecería 
-ser reelecto en su cargo o no?
+% 24 Con base en el trabajo realizado por 
+% suactual diputado, ¿cree que merecería 
+% ser reelecto en su cargo o no?
 
-[1=Sí; 2=No; 3=NC]
+% [1=Sí; 2=No; 3=NC]
 
-25 Le voy a leer unos nombres, para cada 
-uno, ¿podría decirme si le es muy conocido, 
-algo conocido, poco o nada conocido?
+% 25 Le voy a leer unos nombres, para cada 
+% uno, ¿podría decirme si le es muy conocido, 
+% algo conocido, poco o nada conocido?
 
-[1=Muy conocido; 2=Algo; 3=Poco; 
-4=Nada conocido; 5=NS/NC]
+% [1=Muy conocido; 2=Algo; 3=Poco; 
+% 4=Nada conocido; 5=NS/NC]
 
-a Javier Díaz González     
-b Lily Gutiérrez Burciaga  
-c Georgina Cano Torralva   
-d Ana Isabel Durán         
-e Sonia Villareal          
-f Lariza Montiel           
-g Armando Pruneda          
-h Leonel Contreras Pámanes 
-i Florencio ``Lencho'' Siller
-\end{verbatim}
-\end{scriptsize}
+% a Javier Díaz González     
+% b Lily Gutiérrez Burciaga  
+% c Georgina Cano Torralva   
+% d Ana Isabel Durán         
+% e Sonia Villareal          
+% f Lariza Montiel           
+% g Armando Pruneda          
+% h Leonel Contreras Pámanes 
+% i Florencio ``Lencho'' Siller
+% \end{verbatim}
+% \end{scriptsize}
 
 \end{multicols}
 
