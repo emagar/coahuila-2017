@@ -334,26 +334,26 @@ Since Coahuila offered few members with static ambition, we extend exploration t
 
 \section{The survey}
 
-\eric{This section needs more work.}
-
-We analyze a face-to-face survey from May 19--21, 2017 in Coahuila, two weeks before the state legislative election (concurrent with a gubernatorial and municipal races).\footnote{The survey was commissioned to Alejandro Moreno by \emph{El Financiero} newspaper (published May 25). A sample of 1,008 registered voters was interviewed in households. Urban/rural electoral secciones were stratified, then a random sample taken to select 72 points throughout the state where interviews took place. The 95-percent confidence interval of inferences has a $\pm3.1\%$ error. The non-response rate was 32\%.} The survey includes questions on name recognition inspired from \citet{cain.etal.1987}. We coded name recognition indicators for six incumbents in Table \ref{T:dsi} (all representing single-member districts). Three ran for reelection (static ambition) and three for election to municipal office (progressive ambition). We also coded indicators for three proportional-representation lawmakers who ran for municipal office. 
+We study the mass component of the personal vote with an original, face-to-face pre-election survey in Coahuila, two weeks ahead of polling for state deputies (concurrent with a gubernatorial and municipal races).\footnote{The survey was commissioned to Alejandro Moreno by \emph{El Financiero} newspaper (interviews were conducted from between May 19--21, 2017, published May 25). A sample of 1,008 registered voters was interviewed in person in households. Urban/rural electoral secciones were stratified, then a random sample taken to select 72 points throughout the state, obtaining 14 randomly-selected interviews  in each. The 95-percent confidence interval of inferences has a $\pm3.1\%$ error. The non-response rate was 32\%, which is standard across public opinion studies.} The survey includes a battery of questions on name recognition inspired from \citet{cain.etal.1987}. We coded name recognition indicators for six incumbents in Table \ref{T:dsi}, all single-member districts representatives. Three proportional-representation lawmakers, not analyzed, also ran for municipal office. Their names were also mentioned in the questionnaire. 
 
 %Encuesta en Coahuila realizada cara a cara en vivienda del 19 al 21 de mayo a 1,008 adultos con credencial para votar vigente. Las entrevistas se llevaron a cabo en 72 puntos de la entidad seleccionados probabilísticamente a partir del listado de secciones electorales del INE previamente estratificadas por criterio urbano-rural. Con un nivel de confianza de 95%, el margen de error de la encuesta es de +/- 3.1%. La tasa de rechazo a las entrevistas fue de 32%. “Los resultados reflejan las preferencias electorales y las opiniones de los encuestados al momento de realizar el estudio y son válidos para esa población y fechas específicas”. Se entrega copia del estudio y sus características metodológicas al Instituto Electoral de Coahuila.
 
-We instrumented name familiarity in an original survey as name recognition. In all cases, we relied on close-ended questions mentioning the incumbent's name while asking respondents how much they remembered it (see the appendix) to code nine dependent variables. An incumbent's name recognition indicator $\texttt{recognize}_i$ takes value 1 if respondent $i$ expressed remembering his/her name in any degree; 0 otherwise.
 
-Included all nine names: three incumbents with static ambition; three with progressive ambition (running for mayors); and three more with progressive ambition but who had been elected to the state assembly in proportional representation lists. How we coded the four areas. We measured how many respondents correctly remembered the name corresponding to the district's race. 
 
-(Stronger item would have respondents pick a name from the list, and complement with prior \emph{recall} version (``Could you name incumbent for me'', as Cain Ferejohn and Fiorina do.)
+We instrumented name familiarity as name \emph{recognition}. We relied on close-ended questions mentioning the six incumbents' names (along the names of the three unanalyzed PR members with progressive ambition), asking respondents how much they remembered each name. The appendix reports questionnaire item \#25, among others. We thus coded six dichotomous dependent variables, one per ambitious member. Respondents had four possible answers: the name is well-known (\emph{muy conocido}), somewhat known (\emph{algo conocido}), little known (\emph{poco conocido}), and unknown (\emph{nada conocido}). A member's name familiarity indicator $\texttt{recognize}_i$ takes value 1 if respondent $i$ gave a somewhat-known or a well-known answer; 0 otherwise. (An anternative coding, indicating recognition in any degree was also analyzed, with similar results.)\footnote{EMM: verify this claim}. Cain, Ferejohn, and Fionina also rely on name recall---capacity to say the deputy's name correctly---which we exclude due to questionnaire size constraints. We intend to rely on recall too in future studies. 
 
-No respondents registered in land areas gained by many districts had incumbents running for reelection in the survey. This is unfortunate and a serious limitation of our empirical study: by excluding sampling points in area $g$ that districts with an incumbent on the ballot gained, we cannot observe two of three separation scenarios in Table \ref{T:hyps}. Both scenarios involve relations with land $g$, and among them is the strongest prediction in row 4. This is a limitation due to the low frequency static ambition in the case study. Future research with survey, when static ambition becomes more frequent (as indeed happened in 2018 and 2021), will overcome this limitation more easily. If our survey can say little about separation and the relative size of effects empirically (the table's row 5 only), it still offers a view of total effects in the remainder scenarios, offering an interesting study of reelection among voters. 
 
-\eric{Descriptive statistics here.}
+
+Secciones electorales were used as stratified sampling points, yielding the geographic indicators needed to identify members' four redistricting areas of theoretical interest. No sampling took place in in land areas gained by any district whose incumbent ran for reelection. This is quite unfortunate and an obstacle of our empirical study: by excluding respondents in area $g$ that districts with an incumbent on the ballot gained, we cannot observe two of three separation scenarios in Table \ref{T:hyps}. And among unobserved scenarios involving land gained is the strongest prediction in row 4---predictions point in opposite directions. The very low prevalence of static ambition in Coahuila 2017 constitutes this obstacle. Future public opinion research, when static ambition becomes more prevalent (as indeed happened across the board in 2018 and 2021), will overcome this limitation with ease.
+
+\eric{move next paragraph to this section's closing, then elaborate theme in conclusion.}
+
+While unable to totally rule out the effect of campaigns, our survey reveals statistically significant and substantive total effects in name recognition consistent with the personal vote. This is an important finding. 
 
 We analyze name recognition with equation
 \begin{equation}
   \begin{split}
-\text{logit}(\texttt{recognize}_i) & =    \beta_0
+\text{logit}(\texttt{recognize}_i) & =   \beta_0
                                        + \beta_1\texttt{retained}_i
                                        + \beta_2\texttt{lost}_i
                                        + \beta_3\texttt{delivered}_i \\
@@ -366,6 +366,10 @@ We analyze name recognition with equation
   \end{split}
 \end{equation}
 The model includes two geographic indicators: $\texttt{retained}_i$ equals 1 if respondent $i$ is a voter registered in area $r$, 0 otherwise; and $\texttt{lost}_i$ equals 1 if respondent $i$ is a registered voter in area $l$, 0 otherwise. The geographic regressors are mutually-exclusive but not exhaustive, thus avoiding the dummy trap. The omitted category is for respondents in area $n$, so these indicators' coefficients are interpreted against it. The model also includes indicators for incumbent responsiveness ($\texttt{delivered}_i$ equals 1 if the respondent said the incumbent did something for the district, 0 otherwise), for interest in politics ($\texttt{interested}_i$ equals 1 if the respondent expressed interest in politics, 0 otherwise), for socioeconomic status ($\texttt{smartphone}_i$ equals 1 if the respondent said owning such device, 0 otherwise), and controls for partisanship ($\texttt{panista}_i$, $\texttt{priista}_i$, and $\texttt{morenista}_i$ equal 1 if the respondent self-identified with the party in question, 0 otherwise).
+
+% with the exception of handouts 
+We code all dichotomous variables in the model to indicate affirmative responses. So, as the few nulls among respondents' answers (see the Appendix, reporting frequencies for all survey questions) are among non-indicated values, we do not lose any subject in the estimation (i.e., $N=1008$).\footnote{So, for instance, we interpret five non-responses to the $\texttt{smartphone}$ question \#30 as not owning such device, coding it zero. We do likewise for dummies $\texttt{delivered}$ (twelve non-responses to question \#22) and $\texttt{interested}$ (two to question \#2). There were no non-responses to the party identification questions.} 
+% For $\texttt{handouts}_i$ (question \#32a), which are formally illegal, non-responses are not as straightforward. When the variable is included in the right side, three observations are lost. 
 
 Geographic controls test hypotheses. We hold three expectations: that $\texttt{retained}_i$'s regression coefficient is positive, that $\texttt{lost}_i$'s is positive, and that the first coefficient is larger than the second. Note that the equation excludes variable $\texttt{gained}_i$ (an indicator for area $g$). This is a weakness in our data and study. Random sampling of survey points produced no secciones in areas gained by legislative districts. This limitation shuts out the possibility to test some of the separation hypotheses. Future research designs should explicitly include all four geographical areas into consideration. 
 
@@ -511,9 +515,9 @@ Despite an incomplete research design, we uncover evidence of name recognition c
 \newpage
 \section{Appendix}
 
-\subsection{Descriptive statistics}
+\subsection{Descriptive statistics: survey}
 
-Unlike absolute frequencies In the summaries below, relative frequencies are parenthesized. All missing answers are reported (NS/NC = ``No Answer/Don't Know''), so totals add to 1,008 respondents for all survey questions. The summary for `Localidad' illustrates, then labels are omitted for economy. Section \ref{s:tran} includes an English translation of the survey questions about consecutive reelection. 
+Unlike absolute frequencies In the summaries below, relative frequencies are parenthesized (reporting percentages). All missing answers are reported (NS/NC = ``No Answer/Don't Know''), so totals add to 1,008 respondents for all survey questions. Percentages may not add to 100 exactly due to rounding. The summary for `Localidad' illustrates, afterwards labels are omitted for economy. Section \ref{s:tran} includes an English translation of the survey questions about consecutive reelection. 
 
 \begin{scriptsize}
 \begin{verbatim}
@@ -723,22 +727,21 @@ g Luis Horacio Salinas Valdez
   6 (1)    56 (6)     71 (7)     60 (6)    138 (14)   284 (28) 393 (39)  1008 (100) 
 
 8 ¿Si la elección para gobernador solamente fuera entre Guillermo Anaya y Miguel 
-Riquelme, ¿por quién votaría usted?                                      N   (%)
----------------------------------------------------------------------------------
-                    Guillermo Anaya del PAN-UDC-PPC-Encuentro Social   334   (33) 
-Miguel Ángel Riquelme del PRI-PVEM-PANAL- PSI-Partido Joven- PRC-PCP   314   (31) 
-                                                             Ninguno   273   (27) 
-                                                               NC/NC    87    (9) 
-                                                               Total  1008  (100)
+Riquelme, ¿por quién votaría usted?                          N   (%)
+--------------------------------------------------------------------
+                    Guillermo Anaya del PAN-UDC-PPC-PES   334   (33) 
+Miguel Ángel Riquelme del PRI-PVEM-PANAL-PSI-PJ-PRC-PCP   314   (31) 
+                                                Ninguno   273   (27) 
+                                                  NC/NC    87    (9) 
 
 9 ¿Quién cree que gane la elección para gobernador? (LEER)
-Guillermo Anaya del PAN  Miguel Ángel Riquelme del PRI    Otro      NS/NC
----------------------------------------------------------------------------
-           258     (26)                    487    (48)   0  (0)   263  (26) 
+Guillermo Anaya del PAN  Miguel Ángel Riquelme del PRI    Otro       NS/NC
+--------------------------------------------------------------------------
+               258 (26)                       487 (48)    0 (0)   263 (26) 
 
 10 De los siguientes asuntos que le voy a leer, dígame por favor cuál es el 
-más importante que debe atender el próximo gobernador del estado: (LEER)      
-                         N   (%)
+más importante que debe atender el próximo gobernador del estado: 
+(LEER)                   N   (%)
 --------------------------------
         Inseguridad    319  (32)
             Pobreza    193  (19)
@@ -933,32 +936,32 @@ mucho, algo, poco o nada?
 a Televisión
    Mucho       Algo       Poco       Nada      NS/NC 
 ----------------------------------------------------
-413 (41)   242 (24)   228 (23)   123 (12)     2  (0) 
+413 (41)   242 (24)   228 (23)   123 (12)      2 (0) 
 
 b Radio
    Mucho       Algo       Poco       Nada      NS/NC 
 ----------------------------------------------------
-188 (19)   222 (22)   190 (19)   404 (40)     4  (0) 
+188 (19)   222 (22)   190 (19)   404 (40)      4 (0) 
 
 c Periódico
    Mucho       Algo       Poco       Nada      NS/NC 
 ----------------------------------------------------
-132 (13)   167 (17)   173 (17)   530 (53)     6  (1) 
+132 (13)   167 (17)   173 (17)   530 (53)      6 (1) 
 
 d Pláticas con gente
    Mucho       Algo       Poco       Nada      NS/NC 
 ----------------------------------------------------
-190 (19)   271 (27)   183 (18)   355 (35)     9  (1) 
+190 (19)   271 (27)   183 (18)   355 (35)      9 (1) 
 
 e Internet
    Mucho       Algo       Poco       Nada      NS/NC 
 ----------------------------------------------------
-274 (27)   149 (15)    99 (10)   474 (47)    12  (1) 
+274 (27)   149 (15)    99 (10)   474 (47)     12 (1) 
 
 f Redes sociales
    Mucho       Algo       Poco       Nada      NS/NC 
 ----------------------------------------------------
-278 (28)   153 (15)    82  (8)   482 (48)    13  (1) 
+278 (28)   153 (15)    82  (8)   482 (48)     13 (1) 
 
 28 ¿Utiliza Facebook?
       Sí       No      NC
@@ -1007,12 +1010,16 @@ Sí, usted    Sí, un familiar     Sí, ambos           No       NS/NC
 33 Si los candidatos a la Presidencia de la República en 2018 fueran los siguientes, 
 ¿por quién votaría usted? (LEER Y ROTAR)
 
+[[NOT INCLUDED IN DATABASE???]]
+
 34 ¿Cuál es su opinión acerca de los siguientes personajes políticos: muy buena, 
 buena, mala, muy mala,... o no lo conoce suficiente para opinar? (LEER Y ROTAR NOMBRES)
 a Andrés Manuel López Obrador
 b Margarita Zavala
 c Miguel Ángel Osorio Chong
 d Humberto Moreira
+
+[[NOT INCLUDED IN DATABASE???]]
 
 35 Juntando el dinero que usted y otros miembros de su familia ganan al mes, 
 ¿diría que...? (LEER)
@@ -1063,10 +1070,69 @@ D ¿Con qué frecuencia asiste usted a servicios religiosos? (LEER)
 vez por semana    por semana    al mes        especiales   casi nunca   NS/NC
 -----------------------------------------------------------------------------
     93  (9)        282  (28)  159 (16)         260  (26)     140  (14) 74 (7) 
-
-
 \end{verbatim}
 \end{scriptsize}
+
+\subsection{Definitions and descriptive statistics: variables in the models}
+
+\begin{itemize}
+\item The $\texttt{recognize}$ variables (one for each of the six candidates analyzed) were coded with question 25 items. So $\texttt{recognizeJavier}_i$ equals 1 if respondent $i$ expressed much, some, or mild knowledge when told the name Javier Díaz González in item 25a; equals 0 otherwise. We proceeded likewise with items 25b (Lily), 25c (Gina), 25d (Ana Isabel), 25e (Sonia), and 25i (Lencho). 
+\item $\texttt{delivered}_i$, coded with question 22, equals 1 if respondent $i$ answered that his/her state deputy brough many or some things to the community; equals 0 otherwise. 
+\item $\texttt{interested}_i$, coded with question 2, equals 1 if respondent $i$ expressed much or some interest in politics; equals 0 otherwise.
+\item $\texttt{handout}_i$, coded with question 32a, equals 1 if respondent $i$ answered that a party or candidate handed her/him or someone in the family a present; equals 0 if the answwer was no.
+\item $\texttt{panista}_i$, coded with question 18, equals 1 if respondent $i$ answered strong or weak panista; equals 0 otherwise. $\texttt{priista}_i$, $\texttt{perredista}_i$, and $\texttt{morenista}_i$ coded likewise with the corresponding items. The reference category for these mutually exclusive indicators are respondents who identify with another party, with no party, or gave no answer.
+\item The geographic indicators were coded by mapping $\texttt{sección}$ to the father and son district maps.
+\end{itemize}
+
+% \begin{table}
+\scalebox{.75}{
+\begin{tabular}{c|rr|rr|rr|rr|rr|rr|r}
+\multicolumn{1}{c}{Variable} & 0 & \multicolumn{1}{r}{1} & $N$ \\ \hline
+$\texttt{delivered}$  & 773 & 235 & 1008 \\
+$\texttt{interested}$ & 627 & 381 & 1008 \\
+$\texttt{smartphone}$ & 446 & 562 & 1008 \\
+$\texttt{handout}$    & 803 & 202 & 1005 \\
+$\texttt{panista}$    & 895 & 113 & 1008 \\
+$\texttt{priista}$    & 756 & 252 & 1008 \\
+$\texttt{morenista}$  & 963 & 45  & 1008 \\ \\ [-1.8ex]
+ &\multicolumn{2}{r|}{Javier}&\multicolumn{2}{r|}{Lily}&\multicolumn{2}{r|}{Gina}&\multicolumn{2}{r|}{Lencho}&\multicolumn{2}{r|}{Sonia}&\multicolumn{2}{r|}{AnaIsabel}& \\
+&0&1&0&1&0&1&0&1&0&1&0&1&$N$\\
+$\texttt{recognize}$ (DV) & 925 & 83 & 931 & 77 & 922 & 86 & 941 & 67 & 925 & 83 & 939 & 69 & 1008 \\
+% $\texttt{recognizeLily}$ & 931 & 77 & 1008 \\
+% $\texttt{recognizeGina}$ & 922 & 86 & 1008 \\
+% $\texttt{recognizeLencho}$ & 941 & 67 & 1008 \\
+% $\texttt{recognizeSonia}$ & 925 & 83 & 1008 \\
+% $\texttt{recognizeAnaIsabel}$ & 939 & 69 & 1008 \\
+$\texttt{lost}$    & 994 & 14 & 1008 & & 1008 & & 966 & 42 & 1008 & & 994 &  14 & 1008 \\
+% $\texttt{lostLily}$      & 1008 && 1008  \\
+% $\texttt{lostGina}$      & 1008 && 1008 \\
+% $\texttt{lostLencho}$    & 966 & 42 & 1008 \\
+% $\texttt{lostSonia}$     & 1008 && 1008 \\
+% $\texttt{lostAnaIsabel}$ & 994 &  14 & 1008 \\
+$\texttt{retained}$    & 952 & 56 & 952 & 56 & 938 & 70 & 980 & 28 & 952 & 56 & 966 & 42 & 1008 \\
+% $\texttt{retainedLily}$      & 952 & 56 & 1008 \\
+% $\texttt{retainedGina}$      & 938 & 70 & 1008 \\
+% $\texttt{retainedLencho}$    & 980 & 28 & 1008 \\
+% $\texttt{retainedSonia}$     & 952 & 56 & 1008 \\
+% $\texttt{retainedAnaIsabel}$ & 966 & 42 & 1008 \\
+$\texttt{gained}$ (dropped)   & 1008 & & 1008 & & 1008 & & 1008 & & 1008 & & 1008 && 1008 \\
+% $\texttt{gainedLily}$      & 1008 && 1008 \\
+% $\texttt{gainedGina}$      & 1008 && 1008 \\
+% $\texttt{gainedLencho}$    & 1008 && 1008 \\
+% $\texttt{gainedSonia}$     & 1008 && 1008 \\
+% $\texttt{gainedAnaIsabel}$ & 1008 && 1008 \\
+$\texttt{nomans}$ (dropped)   &  70 & 938 &  56 & 952 &  70 & 938 &  70 & 938 &  56 & 952 &  56 & 952 & 1008  \\ \hline
+% $\texttt{nomanLily}$      &  56 & 952 & 1008 \\
+% $\texttt{nomanGina}$      &  70 & 938 & 1008 \\
+% $\texttt{nomanLencho}$    &  70 & 938 & 1008 \\
+% $\texttt{nomanSonia}$     &  56 & 952 & 1008 \\
+% $\texttt{nomanAnaIsabel}$ &  56 & 952 & 1008 \\
+\end{tabular}
+}
+% \caption{Variables in the models, frequencies} 
+% \label{T:desc} 
+% \end{table}
+
 
 \subsection{Survey questions}\label{s:tran}
 Thirteen items in the survey questionnaire involved reelection and name recognition (from question 20 to question 25.i) . We used questions 25.a--25.i to code our dependent variables. Responses much/some/little (\emph{mucho/algo/poco}) coded as 1 in the incumbent's name recognition indicator; 0 otherwise.
@@ -1265,7 +1331,5 @@ Log Likelihood & \multicolumn{1}{c}{-262.32} & \multicolumn{1}{c}{-231.34} & \mu
   \caption{Regression results. All models estimated with logit, standard errors in parentheses.} 
   \label{T:regs} 
 \end{sidewaystable} 
-
-
 
 \end{document}

@@ -251,22 +251,22 @@ library(plyr)
 dat$disn <- mapvalues(dat$Secc, from=disn$seccion, to=disn$disn2017)
 rm(disn)
 
-########################
-## fix vote intention ##
-########################
+################################################################
+## fix vote intention (splits NA into NR, nulo, no vote, etc) ##
+################################################################
 p5 <- c(2, 13, 13, 18, 20, 6, 20, 20, 2, 18, 20, 6, 2, 20, 20, 2, 20, 2, 18, 10, 1, 2, 6, 6, 1, 1, 18, 18, 18, 6, 20, 1, 18, 20, 19, 20, 20, 1, 6, 20, 2, 20, 20, 20, 19, 6, 19, 1, 20, 20, 20, 13, 20, 6, 20, 1, 15, 15, 2, 19, 1, 20, 2, 2, 13, 1, 2, 13, 2, 2, 2, 3, 2, 13, 20, 1, 2, 13, 2, 18, 15, 2, 2, 13, 13, 2, 20, 20, 2, 20, 20, 20, 20, 1, 13, 2, 2, 13, 1, 2, 2, 1, 20, 19, 13, 20, 2, 1, 18, 1, 1, 5, 2, 1, 13, 20, 1, 1, 2, 20, 13, 2, 2, 1, 2, 15, 20, 20, 20, 1, 13, 20, 13, 20, 2, 19, 1, 2, 1, 1, 13, 10, 10, 6, 2, 20, 20, 20, 20, 20, 20, 18, 1, 20, 20, 4, 20, 11, 2, 20, 5, 13, 1, 13, 20, 19, 2, 2, 13, 1, 13, 15, 20, 20, 19, 20, 20, 20, 1, 2, 20, 15, 2, 4, 13, 7, 2, 1, 19, 19, 20, 2, 20, 20, 6, 2, 1, 15, 13, 2, 19, 1, 2, 2, 20, 1, 1, 18, 2, 15, 13, 13, 13, 13, 2, 1, 13, 1, 15, 13, 1, 8, 1, 20, 15, 20, 13, 19, 2, 20, 2, 1, 19, 1, 2, 19, 13, 1, 13, 15, 4, 1, 20, 1, 4, 20, 2, 2, 1, 1, 1, 1, 1, 14, 1, 18, 1, 20, 1, 3, 2, 1, 1, 20, 1, 20, 18, 20, 2, 1, 16, 1, 2, 2, 2, 17, 19, 1, 1, 18, 2, 1, 18, 2, 1, 13, 19, 19, 19, 18, 18, 18, 2, 18, 1, 16, 19, 13, 18, 17, 2, 20, 2, 1, 6, 18, 18, 18, 18, 2, 7, 12, 18, 1, 18, 20, 13, 11, 15, 17, 2, 13, 19, 20, 16, 16, 1, 19, 18, 2, 1, 3, 2, 19, 17, 1, 13, 1, 18, 2, 19, 13, 15, 6, 16, 13, 19, 19, 2, 13, 2, 18, 18, 2, 18, 2, 1, 15, 1, 3, 1, 2, 18, 1, 19, 2, 2, 19, 16, 1, 20, 15, 20, 2, 2, 18, 18, 2, 2, 19, 19, 15, 17, 5, 13, 19, 2, 1, 1, 3, 20, 2, 2, 7, 2, 4, 2, 1, 13, 2, 18, 18, 2, 2, 1, 18, 5, 18, 13, 1, 20, 2, 20, 6, 2, 1, 19, 19, 1, 19, 13, 13, 1, 13, 2, 20, 2, 4, 2, 19, 18, 18, 1, 20, 1, 1, 13, 1, 2, 13, 13, 1, 1, 1, 2, 18, 1, 2, 2, 7, 18, 18, 2, 18, 18, 1, 3, 2, 18, 2, 2, 7, 18, 2, 1, 20, 13, 9, 18, 20, 6, 20, 12, 2, 2, 2, 20, 2, 1, 18, 10, 2, 7, 1, 2, 1, 19, 18, 2, 2, 1, 2, 1, 10, 20, 20, 14, 15, 2, 2, 13, 18, 10, 2, 20, 13, 3, 1, 20, 19, 2, 13, 2, 2, 13, 20, 12, 8, 1, 13, 2, 2, 1, 18, 2, 2, 2, 2, 11, 2, 10, 1, 1, 18, 15, 18, 2, 18, 13, 12, 14, 18, 13, 2, 2, 20, 18, 1, 18, 2, 20, 15, 20, 2, 1, 18, 18, 2, 18, 13, 2, 13, 13, 2, 18, 13, 18, 2, 2, 2, 2, 15, 2, 20, 20, 15, 2, 13, 2, 15, 2, 2, 19, 1, 5, 1, 2, 20, 20, 20, 20, 2, 2, 14, 1, 1, 18, 1, 18, 13, 18, 18, 20, 20, 2, 20, 2, 1, 1, 2, 2, 13, 1, 2, 3, 15, 20, 20, 19, 18, 5, 20, 13, 2, 2, 2, 2, 20, 15, 13, 13, 1, 2, 18, 13, 2, 7, 2, 1, 20, 20, 18, 20, 2, 1, 13, 5, 1, 2, 20, 13, 19, 2, 13, 13, 20, 1, 2, 20, 1, 2, 5, 20, 20, 13, 20, 13, 15, 2, 20, 13, 2, 19, 15, 1, 16, 1, 2, 15, 1, 20, 15, 20, 19, 19, 16, 2, 2, 14, 13, 1, 18, 2, 2, 19, 20, 1, 1, 1, 19, 15, 2, 2, 19, 1, 2, 1, 2, 15, 1, 20, 1, 20, 2, 1, 19, 1, 2, 2, 13, 18, 1, 2, 2, 1, 2, 1, 1, 13, 1, 15, 20, 15, 3, 15, 13, 15, 15, 15, 2, 20, 20, 16, 5, 2, 2, 19, 2, 20, 20, 19, 20, 20, 1, 15, 3, 15, 15, 1, 20, 5, 1, 1, 1, 1, 20, 1, 2, 1, 20, 2, 1, 1, 18, 5, 18, 20, 2, 2, 18, 2, 1, 1, 18, 2, 18, 13, 1, 2, 2, 15, 20, 1, 18, 2, 13, 2, 20, 18, 8, 1, 4, 18, 1, 1, 2, 2, 20, 1, 2, 2, 1, 14, 4, 20, 1, 2, 2, 20, 20, 20, 1, 2, 1, 1, 1, 2, 2, 20, 13, 20, 5, 20, 2, 20, 2, 1, 2, 1, 1, 20, 19, 2, 20, 20, 2, 5, 2, 16, 5, 20, 20, 13, 4, 13, 19, 2, 2, 20, 2, 2, 1, 5, 1, 1, 13, 2, 20, 1, 20, 20, 18, 15, 20, 1, 1, 2, 2, 1, 13, 2, 9, 18, 2, 20, 20, 2, 1, 13, 20, 13, 2, 20, 2, 18, 13, 4, 2, 13, 4, 20, 2, 19, 18, 1, 13, 4, 13, 16, 13, 1, 13, 13, 1, 20, 20, 20, 19, 1, 20, 1, 3, 1, 20, 13, 1, 2, 2, 4, 20, 4, 20, 18, 4, 18, 20, 13, 7, 20, 16, 1, 20, 20, 2, 10, 2, 13, 1, 1, 1, 1, 1, 2, 2, 20, 20, 8, 3, 13, 15, 15, 2, 1, 14, 3, 1, 2, 20, 20, 2, 1, 2, 13, 1, 1, 1, 2, 1, 20, 2, 3, 13, 1, 2, 15, 2, 2, 1, 18, 20, 20, 20, 20, 20, 2, 1, 10, 2, 1, 13, 1, 18, 5, 1, 2, 3, 2, 15)
 dat$p5 <- factor(p5, levels=1:20, labels=c("Guillermo Anaya, PAN", "Miguel A. Riquelme,PRI", "Mary T. Guajardo, PRD", "José A. Pérez, PT", "Miguel A. Riquelme, PVEM", "Guillermo Anaya, UDC", "Miguel A. Riquelme, PANAL", "Miguel A. Riquelme, PSI", "Guillermo Anaya, PPC", "Miguel A. Riquelme, Partido Jóven", "Miguel A. Riquelme, PRC", "Miguel A. Riquelme, PCP", "Armando Guadiana, Morena", "Guillermo Anaya, Encuentro Social", "Javier Guerrero, Independiente", "Luis Horacio Salinas, Independiente", "No registrado", "Nulo", "Ninguno", "NS/NC"))
 rm(p5)
 
-###############################
-## fix dichot vote intention ##
-###############################
+#######################################################################
+## fix dichot vote intention (splits NA into NR, nulo, no vote, etc) ##
+#######################################################################
 p8 <- c(2, 3, 1, 4, 1, 1, 1, 4, 2, 4, 4, 1, 2, 4, 4, 1, 4, 2, 4, 2, 1, 2, 1, 1, 1, 1, 3, 1, 4, 1, 4, 1, 4, 4, 3, 4, 1, 1, 1, 3, 2, 3, 1, 1, 3, 1, 4, 1, 3, 4, 1, 2, 1, 1, 2, 1, 3, 2, 1, 3, 1, 4, 1, 2, 3, 1, 2, 3, 2, 2, 2, 3, 2, 3, 3, 1, 2, 3, 2, 3, 3, 2, 2, 3, 3, 4, 4, 3, 2, 3, 3, 1, 1, 1, 3, 2, 2, 1, 1, 2, 2, 1, 4, 3, 3, 3, 2, 1, 3, 1, 1, 1, 2, 1, 3, 4, 1, 1, 2, 3, 3, 2, 2, 1, 2, 1, 4, 2, 2, 1, 1, 4, 1, 4, 2, 3, 1, 2, 1, 1, 1, 1, 2, 1, 2, 4, 4, 4, 4, 3, 4, 2, 1, 3, 1, 1, 2, 2, 2, 4, 2, 1, 1, 3, 3, 3, 2, 2, 1, 3, 1, 1, 2, 3, 1, 4, 3, 3, 1, 1, 3, 3, 2, 1, 3, 1, 2, 1, 2, 2, 1, 2, 4, 4, 1, 1, 1, 4, 3, 2, 3, 1, 2, 2, 4, 1, 1, 3, 2, 3, 3, 1, 3, 3, 2, 1, 3, 4, 1, 3, 1, 3, 1, 1, 1, 4, 3, 3, 2, 3, 2, 1, 3, 1, 2, 3, 3, 1, 1, 1, 3, 1, 4, 1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 3, 1, 3, 1, 2, 1, 3, 3, 1, 1, 4, 1, 4, 3, 3, 2, 1, 3, 1, 2, 2, 2, 1, 3, 1, 1, 2, 2, 1, 3, 1, 1, 3, 3, 1, 2, 1, 1, 2, 2, 1, 1, 3, 2, 3, 3, 4, 2, 2, 2, 1, 1, 3, 3, 3, 3, 2, 2, 3, 1, 1, 3, 4, 3, 2, 3, 2, 2, 1, 3, 2, 3, 3, 1, 3, 3, 2, 2, 3, 2, 3, 3, 1, 1, 1, 3, 2, 3, 3, 3, 1, 2, 2, 2, 3, 3, 3, 2, 3, 3, 2, 3, 2, 1, 3, 4, 3, 1, 2, 4, 1, 3, 2, 2, 3, 1, 1, 3, 1, 3, 2, 2, 3, 3, 2, 2, 1, 4, 1, 3, 2, 2, 3, 2, 1, 1, 2, 4, 2, 2, 1, 2, 1, 2, 1, 2, 2, 2, 4, 2, 2, 1, 3, 3, 3, 1, 1, 4, 2, 4, 1, 2, 1, 3, 1, 1, 3, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 1, 3, 3, 3, 3, 2, 3, 3, 3, 1, 1, 3, 2, 3, 1, 2, 1, 2, 3, 4, 1, 1, 2, 1, 2, 2, 1, 2, 2, 2, 3, 2, 1, 3, 2, 1, 2, 3, 3, 2, 1, 2, 2, 2, 2, 2, 1, 3, 1, 3, 3, 1, 2, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 2, 1, 2, 1, 1, 3, 2, 1, 2, 2, 3, 4, 2, 3, 1, 2, 2, 2, 1, 3, 2, 2, 2, 1, 3, 2, 3, 1, 1, 2, 3, 3, 2, 3, 1, 2, 1, 3, 3, 2, 2, 4, 3, 1, 3, 2, 3, 1, 1, 2, 1, 3, 1, 2, 3, 1, 2, 3, 3, 2, 3, 1, 3, 2, 2, 2, 2, 1, 2, 4, 1, 1, 2, 1, 2, 1, 1, 2, 3, 1, 2, 1, 2, 3, 3, 3, 4, 2, 2, 1, 1, 2, 3, 2, 3, 2, 3, 3, 1, 1, 2, 3, 1, 1, 1, 2, 2, 3, 1, 2, 2, 3, 2, 4, 1, 3, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 3, 1, 4, 4, 3, 2, 2, 2, 1, 1, 3, 3, 4, 4, 1, 3, 2, 2, 4, 4, 3, 3, 2, 3, 1, 3, 1, 2, 2, 1, 2, 2, 4, 2, 3, 1, 3, 2, 1, 4, 3, 2, 4, 3, 1, 3, 1, 2, 1, 1, 4, 1, 3, 3, 1, 3, 2, 2, 1, 1, 1, 1, 2, 1, 3, 2, 1, 1, 1, 1, 3, 2, 2, 3, 1, 2, 1, 2, 4, 1, 3, 1, 3, 2, 1, 3, 1, 2, 2, 2, 3, 3, 2, 2, 1, 2, 1, 1, 1, 1, 3, 4, 1, 1, 3, 1, 3, 1, 3, 2, 4, 3, 1, 2, 2, 2, 3, 2, 4, 4, 4, 3, 1, 1, 1, 1, 3, 3, 1, 3, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 3, 2, 3, 2, 3, 3, 2, 1, 3, 2, 2, 1, 1, 3, 3, 3, 1, 2, 2, 1, 4, 2, 3, 2, 3, 2, 4, 3, 2, 1, 2, 4, 1, 1, 2, 2, 3, 1, 2, 2, 1, 1, 3, 3, 1, 2, 2, 3, 2, 3, 1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 2, 3, 2, 3, 1, 2, 3, 2, 1, 1, 3, 2, 1, 1, 4, 2, 2, 3, 2, 3, 3, 3, 1, 3, 3, 2, 2, 3, 2, 2, 1, 4, 1, 1, 3, 2, 3, 1, 2, 3, 3, 3, 2, 1, 2, 2, 2, 1, 1, 2, 2, 1, 2, 4, 3, 2, 1, 3, 3, 1, 2, 4, 2, 2, 1, 2, 2, 3, 3, 3, 2, 3, 3, 1, 1, 3, 3, 3, 1, 1, 3, 3, 1, 1, 3, 3, 3, 1, 3, 1, 2, 2, 4, 3, 1, 4, 2, 3, 2, 1, 2, 3, 1, 4, 3, 3, 2, 3, 3, 1, 3, 3, 2, 2, 2, 1, 1, 2, 4, 4, 1, 2, 2, 3, 3, 2, 1, 2, 3, 3, 2, 1, 1, 1, 1, 2, 4, 4, 2, 1, 4, 2, 1, 4, 1, 2, 1, 2, 2, 3, 2, 1, 2, 3, 2, 1, 1, 1, 4, 3, 3, 1, 3, 2, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 3, 2, 1)
 dat$p8 <- factor(p8, levels=1:4, labels=c("Guillermo Anaya del PAN-UDC-PPC-Encuentro Social", "Miguel Ángel Riquelme del PRI-PVEM-PANAL- PSI-Partido Joven- PRC-PCP", "Ninguno", "NS/NC"))
 rm(p8)
 
-
 # dummies de partido
+# NS/NC taken as not having the party's id
 tmp <- as.numeric(dat$p18) # quita factor
 dat$dpan <- as.numeric(tmp==3 | tmp==4)
 dat$dpri <- as.numeric(tmp==1 | tmp==2)
@@ -276,55 +276,73 @@ dat$dindep <- as.numeric(tmp==10 | tmp==11)
 table(dat$dpan)
 
 # dummy de que diputado ha hecho algo
+# NS/NC taken as not having delivered
 tmp <- as.numeric(dat$p22) # quita factor
 dat$dhaHecho <- as.numeric(tmp==1 | tmp==2)
 table(as.numeric(dat$p5))
 
 # dummy de interés
+# NS/NC taken as no interest
 tmp <- as.numeric(dat$p2) # quita factor
 dat$dinteresaPol <- as.numeric(tmp==1 | tmp==2)
+
+# dummy de conocimiento
+# NS/NC taken as not knowledgeable
 tmp <- as.numeric(dat$p3) # quita factor
 dat$dsabeFecha <- as.numeric(tmp==1)
 
 # a favor reeleccion
+# NS/NC taken as against reelection
 tmp <- as.numeric(dat$p20) # quita factor
 dat$dfavorReel <- as.numeric(tmp==1)
 
 # name recognition
+# NS/NC taken as no recall
 tmp <- as.numeric(dat$p21) # quita factor
 dat$drecuerda <- as.numeric(tmp==1 | tmp==2)
 
 # conoce a Javier Díaz González
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25a) # quita factor
 dat$dconoceJavier <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Lily Gutiérrez
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25b) # quita factor
 dat$dconoceLily <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Georgina Cano
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25c) # quita factor
 dat$dconoceGina <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Ana Isabel Durán
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25d) # quita factor
 dat$dconoceAnaIsabel <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Sonia Villarreal
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25e) # quita factor
 dat$dconoceSonia <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Lariza Montiel
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25f) # quita factor
 dat$dconoceLariza <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Armando Pruneda
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25g) # quita factor
 dat$dconoceArmando <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Leonel Contreras
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25h) # quita factor
 dat$dconoceLeonel <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 # conoce a Lencho Siller
+# NS/NC taken as no name recognition
 tmp <- as.numeric(dat$p25i) # quita factor
 dat$dconoceLencho <- as.numeric(tmp==1 | tmp==2 | tmp==3)
 
 # recibido obsequio
+# NS/NA here taken as NA
 tmp <- as.numeric(dat$p32a) # quita factor
 dat$drecibidoObsequio <- as.numeric(tmp==1 | tmp==2 | tmp==3)
+dat$drecibidoObsequio[tmp==5] <- NA
 
 # lee mapa electoral
 mapa <- read.csv("../../../redistrict/ife.ine/mapasComparados/loc/coaLoc.csv", stringsAsFactors = FALSE)
@@ -607,6 +625,7 @@ dat$drpMun <- dat$dconservadoLariza + dat$dconservadoArmando + dat$dconservadoLe
 table(dat$dincumbDip)
 
 # tiene smartphone
+# NS/NC taken as no smartphone
 tmp <- as.numeric(dat$p30) # quita factor
 dat$dsmartPh <- as.numeric(tmp==1)
 
@@ -960,8 +979,6 @@ for (i in 1:9){
 ##   geom_line(aes(colour = factor(dconservado)), size=1)
 ## #dev.off()
 
-head(sc)
-
 ########################
 # simulations end here #
 ########################
@@ -1057,4 +1074,44 @@ with(dat, tab.ar(pB))
 with(dat, tab.ar(pC))
 with(dat, tab.ar(pD))
 #with(dat, tab.ar(Ponderador))
+
+# summarize manipulated variables in model
+mytab(dat$dhaHecho, rl="no")
+mytab(dat$dinteresaPol, rl="no")
+mytab(dat$dsmartPh, rl="no")
+mytab(dat$dpan, rl="no")
+mytab(dat$dpri, rl="no")
+mytab(dat$dmorena, rl="no")
+mytab(dat$drecibidoObsequio, rl="no")
+
+mytab(dat$dconoceJavier, rl="no")
+mytab(dat$dconoceLily, rl="no")
+mytab(dat$dconoceGina, rl="no")
+mytab(dat$dconoceLencho, rl="no")
+mytab(dat$dconoceSonia, rl="no")
+mytab(dat$dconoceAnaIsabel, rl="no")
+mytab(dat$dperdidoJavier, rl="no")
+mytab(dat$dconservadoJavier, rl="no")
+mytab(dat$dadquiridoJavier, rl="no")
+mytab(dat$dhuizacheJavier, rl="no")
+mytab(dat$dperdidoLily, rl="no")
+mytab(dat$dconservadoLily, rl="no")
+mytab(dat$dadquiridoLily, rl="no")
+mytab(dat$dhuizacheLily, rl="no")
+mytab(dat$dperdidoGina, rl="no")
+mytab(dat$dconservadoGina, rl="no")
+mytab(dat$dadquiridoGina, rl="no")
+mytab(dat$dhuizacheGina, rl="no")
+mytab(dat$dperdidoLencho, rl="no")
+mytab(dat$dconservadoLencho, rl="no")
+mytab(dat$dadquiridoLencho, rl="no")
+mytab(dat$dhuizacheLencho, rl="no")
+mytab(dat$dperdidoSonia, rl="no")
+mytab(dat$dconservadoSonia, rl="no")
+mytab(dat$dadquiridoSonia, rl="no")
+mytab(dat$dhuizacheSonia, rl="no")
+mytab(dat$dperdidoAnaIsabel, rl="no")
+mytab(dat$dconservadoAnaIsabel, rl="no")
+mytab(dat$dadquiridoAnaIsabel, rl="no")
+mytab(dat$dhuizacheAnaIsabel, rl="no")
 
