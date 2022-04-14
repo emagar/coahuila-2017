@@ -985,9 +985,9 @@ for (i in 1:9){
 
 
 
-#########################
-## q-by-q descriptives ##
-#########################
+#################################
+## quest-by-quest descriptives ##
+#################################
 source("~/Dropbox/data/useful-functions/table-abs-rel-together.r") # imports function tab.ar
 mytab <- function(x, rd=0, rl="no"){
     if (rl=="no")  y <-       table(x, useNA="ifany")
@@ -1115,3 +1115,108 @@ mytab(dat$dconservadoAnaIsabel, rl="no")
 mytab(dat$dadquiridoAnaIsabel, rl="no")
 mytab(dat$dhuizacheAnaIsabel, rl="no")
 
+#####################
+## DV descriptives ##
+#####################
+
+# statewide
+mean(dat$dconoceJavier)
+mean(dat$dconoceLily)
+mean(dat$dconoceGina)
+mean(dat$dconoceLencho)
+mean(dat$dconoceSonia)
+mean(dat$dconoceAnaIsabel)
+mean(dat$dconoceArmando)
+mean(dat$dconoceLariza)
+mean(dat$dconoceLeonel)
+# father U son
+mean(dat$dconoceJavier   [dat$dhuizacheJavier==0])
+mean(dat$dconoceLily     [dat$dhuizacheLily==0])
+mean(dat$dconoceGina     [dat$dhuizacheGina==0])
+mean(dat$dconoceLencho   [dat$dhuizacheLencho==0])
+mean(dat$dconoceSonia    [dat$dhuizacheSonia==0])
+mean(dat$dconoceAnaIsabel[dat$dhuizacheAnaIsabel==0])
+mean(dat$dconoceArmando  [dat$dhuizacheArmando==0])
+mean(dat$dconoceLariza   [dat$dhuizacheLariza==0])
+mean(dat$dconoceLeonel   [dat$dhuizacheLeonel==0])
+# father
+mean(dat$dconoceJavier   [dat$dperdidoJavier==1    | dat$dconservadoJavier==1])
+mean(dat$dconoceLily     [dat$dperdidoLily==1      | dat$dconservadoLily==1])
+mean(dat$dconoceGina     [dat$dperdidoGina==1      | dat$dconservadoGina==1])
+mean(dat$dconoceLencho   [dat$dperdidoLencho==1    | dat$dconservadoLencho==1])
+mean(dat$dconoceSonia    [dat$dperdidoSonia==1     | dat$dconservadoSonia==1])
+mean(dat$dconoceAnaIsabel[dat$dperdidoAnaIsabel==1 | dat$dconservadoAnaIsabel==1])
+mean(dat$dconoceArmando  [dat$dperdidoArmando==1   | dat$dconservadoArmando==1])
+mean(dat$dconoceLariza   [dat$dperdidoLariza==1    | dat$dconservadoLariza==1])
+mean(dat$dconoceLeonel   [dat$dperdidoLeonel==1    | dat$dconservadoLeonel==1])     
+# son
+mean(dat$dconoceJavier   [dat$dadquiridoJavier==1    | dat$dconservadoJavier==1])
+mean(dat$dconoceLily     [dat$dadquiridoLily==1      | dat$dconservadoLily==1])
+mean(dat$dconoceGina     [dat$dadquiridoGina==1      | dat$dconservadoGina==1])
+mean(dat$dconoceLencho   [dat$dadquiridoLencho==1    | dat$dconservadoLencho==1])
+mean(dat$dconoceSonia    [dat$dadquiridoSonia==1     | dat$dconservadoSonia==1])
+mean(dat$dconoceAnaIsabel[dat$dadquiridoAnaIsabel==1 | dat$dconservadoAnaIsabel==1])
+mean(dat$dconoceArmando  [dat$dadquiridoArmando==1   | dat$dconservadoArmando==1])
+mean(dat$dconoceLariza   [dat$dadquiridoLariza==1    | dat$dconservadoLariza==1])
+mean(dat$dconoceLeonel   [dat$dadquiridoLeonel==1    | dat$dconservadoLeonel==1])
+# N father
+table(dat$dperdidoJavier==1    | dat$dconservadoJavier==1)   
+table(dat$dperdidoLily==1      | dat$dconservadoLily==1)     
+table(dat$dperdidoGina==1      | dat$dconservadoGina==1)     
+table(dat$dperdidoLencho==1    | dat$dconservadoLencho==1)   
+table(dat$dperdidoSonia==1     | dat$dconservadoSonia==1)    
+table(dat$dperdidoAnaIsabel==1 | dat$dconservadoAnaIsabel==1)
+table(dat$dperdidoArmando==1   | dat$dconservadoArmando==1)  
+table(dat$dperdidoLariza==1    | dat$dconservadoLariza==1)   
+table(dat$dperdidoLeonel==1    | dat$dconservadoLeonel==1)
+# N son
+table(dat$dadquiridoJavier==1    | dat$dconservadoJavier==1)   
+table(dat$dadquiridoLily==1      | dat$dconservadoLily==1)     
+table(dat$dadquiridoGina==1      | dat$dconservadoGina==1)     
+table(dat$dadquiridoLencho==1    | dat$dconservadoLencho==1)   
+table(dat$dadquiridoSonia==1     | dat$dconservadoSonia==1)    
+table(dat$dadquiridoAnaIsabel==1 | dat$dconservadoAnaIsabel==1)
+table(dat$dadquiridoArmando==1   | dat$dconservadoArmando==1)  
+table(dat$dadquiridoLariza==1    | dat$dconservadoLariza==1)   
+table(dat$dadquiridoLeonel==1    | dat$dconservadoLeonel==1)
+
+# n
+mean(dat$dconoceJavier   [dat$dhuizacheJavier==1])
+mean(dat$dconoceLily     [dat$dhuizacheLily==1])
+mean(dat$dconoceGina     [dat$dhuizacheGina==1])
+mean(dat$dconoceLencho   [dat$dhuizacheLencho==1])
+mean(dat$dconoceSonia    [dat$dhuizacheSonia==1])
+mean(dat$dconoceAnaIsabel[dat$dhuizacheAnaIsabel==1])
+mean(dat$dconoceArmando  [dat$dhuizacheArmando==1])
+mean(dat$dconoceLariza   [dat$dhuizacheLariza==1])
+mean(dat$dconoceLeonel   [dat$dhuizacheLeonel==1])
+# l
+mean(dat$dconoceJavier   [dat$dperdidoJavier==1])
+mean(dat$dconoceLily     [dat$dperdidoLily==1])
+mean(dat$dconoceGina     [dat$dperdidoGina==1])
+mean(dat$dconoceLencho   [dat$dperdidoLencho==1])
+mean(dat$dconoceSonia    [dat$dperdidoSonia==1])
+mean(dat$dconoceAnaIsabel[dat$dperdidoAnaIsabel==1])
+mean(dat$dconoceArmando  [dat$dperdidoArmando==1])
+mean(dat$dconoceLariza   [dat$dperdidoLariza==1])
+mean(dat$dconoceLeonel   [dat$dperdidoLeonel==1])
+# r
+mean(dat$dconoceJavier   [dat$dconservadoJavier==1])
+mean(dat$dconoceLily     [dat$dconservadoLily==1])
+mean(dat$dconoceGina     [dat$dconservadoGina==1])
+mean(dat$dconoceLencho   [dat$dconservadoLencho==1])
+mean(dat$dconoceSonia    [dat$dconservadoSonia==1])
+mean(dat$dconoceAnaIsabel[dat$dconservadoAnaIsabel==1])
+mean(dat$dconoceArmando  [dat$dconservadoArmando==1])
+mean(dat$dconoceLariza   [dat$dconservadoLariza==1])
+mean(dat$dconoceLeonel   [dat$dconservadoLeonel==1])     
+# g
+mean(dat$dconoceJavier   [dat$dadquiridoJavier==1])
+mean(dat$dconoceLily     [dat$dadquiridoLily==1])
+mean(dat$dconoceGina     [dat$dadquiridoGina==1])
+mean(dat$dconoceLencho   [dat$dadquiridoLencho==1])
+mean(dat$dconoceSonia    [dat$dadquiridoSonia==1])
+mean(dat$dconoceAnaIsabel[dat$dadquiridoAnaIsabel==1])
+mean(dat$dconoceArmando  [dat$dadquiridoArmando==1])
+mean(dat$dconoceLariza   [dat$dadquiridoLariza==1])
+mean(dat$dconoceLeonel   [dat$dadquiridoLeonel==1])
