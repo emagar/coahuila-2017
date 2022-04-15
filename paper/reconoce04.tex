@@ -302,7 +302,7 @@ With simple logic, we distinguish effects of campaigns and incumbency on name fa
       & effect   & effect     &  effect  \\ \hline
     \\ [-1.2ex]
     1 & $r=g$    & $r>g$      &  $r>g$   \\
-    2 & $r>l$    & $r>l$      &  $r>l$   \\
+    2 & $r>l$    & $r=l$      &  $r>l$   \\
     3 & $r>n$    & $r>n$      &  $r>n$   \\
     4 & $l<g$    & $l>g$      &  $l~?~g$ \\ % \overset{?}{>}
     5 & $l=n$    & $l>n$      &  $l>n$   \\
@@ -313,9 +313,9 @@ With simple logic, we distinguish effects of campaigns and incumbency on name fa
 
 This generates somewhat different predictions summarized in Table \ref{T:hyps}. The quantity of interest is the expected probability that a respondent picked at random among voters registered in one of the four lands is familiar with the candidate's name. Campaign effects in name familiarity, if any, occur throughout the district (i.e., the son $r \cup g$), with negligible spillover beyond its borders. There is therefore no ground to expect a difference in name familiarity inside the district (which the table reports as $r=g$), but there is ground to expect such difference between the district and the rest. Expectations from the table's campaign column boil down to $l=n<r=g$. %but a difference will be manifest between either $r$ or $g$ and either $l$ or $n$
 
-Incumbent name familiarity, if any, takes place in the reunion of father and son district areas---with varying intensities. While retained land $r$ experienced a full three-year term of constituency service, gained land $g$ only received the member's attention with knowledge that it would be part of the new district. Cultivating a personal vote requires time, so we expect higher name familiarity in land $r$ than in land $g$ ($r>g$ in the table). Likewise, the incumbent with finite effort stopped servicing land $l$ when it became certain it would be lost to redistricting, so we again expect $r>l$. And with the period between new map publication and the next election small relative to the time the incumbent spent servicing the parent district, we also expect $l>g$ in name familiarity. Expectations from the incumbency column in the table boil down to $n<g<l<r$. % But as those periods even-up, a clear expectation no longer arises, hence the question mark in the table---in Coahuila, sons' maps were announced about two-thirds into members' terms. 
+Incumbent name familiarity, if any, takes place in the reunion of father and son district areas---with varying intensities. While retained land $r$ experienced a full three-year term of constituency service, gained land $g$ only received the member's attention with knowledge that it would be part of the new district. Cultivating a personal vote requires time, so we expect higher name familiarity in land $r$ than in land $g$ ($r>g$ in the table). Likewise, the incumbent with finite effort stopped servicing land $l$ when it became certain it would be lost to redistricting. But the investment made in lost land does not wear off immediately, so we expect $r=l$. And with the period between new map publication and the next election small relative to the time the incumbent spent servicing the parent district, we also expect $l>g$ in name familiarity. Expectations from the incumbency column in the table boil down to $n<g<l=r$. % But as those periods even-up, a clear expectation no longer arises, hence the question mark in the table---in Coahuila, sons' maps were announced about two-thirds into members' terms. 
 
-Note that in table rows 2, 3, and 6, campaign and incumbency expectations on name familiarity are identical. Comparison of land areas in those rows offers no element to separate effects: detecting a signal, it must me attributed to the total effect, reported in the third column. But expectations in rows 1, 4, and 5 are contradictory, so an empirical relationship discriminates theoretical effects. Row 4 is the clearest: observing $l<g$ among respondents implies a campaign effect in name recognition larger than the incumbency effect; observing $l>g$, an incumbency larger in relative size. 
+Note that in table rows 3 and 6 campaign and incumbency expectations on name familiarity are identical. Comparison of land areas in those rows offers no element to separate effects: detecting a signal, it must me attributed to the total effect, reported in the third column. But expectations in rows 1, 2, 4, and 5 are contradictory, so an empirical relationship discriminates theoretical effects. Row 4 is the starkest: observing $l<g$ among respondents implies a campaign effect in name recognition larger than the incumbency effect; observing $l>g$, an incumbency larger in relative size. 
 
 Since Coahuila offered few members with static ambition, we extend exploration to members with progressive ambition too. These are three deputies who sought municipal office. The trick for analysis is to make the target municipality's territory into a counterfactual son district. Identifying the corresponding $l$, $r$, $g$, and $n$ distinct lands is trivial. But the important element of surprise in redistricting is absent: members know what ``son district'' (i.e., municipality) their progressive ambition points towards, and can therefore cultivate a personal vote \emph{ex-ante} \citep{lucardi.micozzi.Career-argentina.2016}. Comparability with static ambition is thus not ideal, but offers additional perspective.
 
@@ -333,8 +333,6 @@ Since Coahuila offered few members with static ambition, we extend exploration t
 %% \end{table}
 
 \section{The survey}
-
-
 
 We study the mass component of the personal vote with an original, face-to-face pre-election survey in Coahuila, two weeks ahead of polling for state deputies (concurrent with a gubernatorial and municipal races).\footnote{The survey was commissioned to Alejandro Moreno by \emph{El Financiero} newspaper \citep[interviews were conducted from between May 19--21, 2017, published May 25, ][]{moreno-coah.2017}. A sample of 1,008 registered voters was interviewed in person in households. Urban/rural electoral secciones were stratified, then a random sample taken to select 72 points throughout the state, obtaining 14 randomly-selected interviews  in each. The 95-percent confidence interval of inferences has a $\pm3.1\%$ error. The non-response rate was 32\%, which is standard across public opinion studies.} The survey includes a battery of questions on name familiarity inspired from \citet{cain.etal.1987}. We coded indicators for six single-member district representatives listed in Table \ref{T:dsi}.  
 
@@ -400,15 +398,15 @@ We instrumented name familiarity as name \emph{recognition}. We relied on close-
     Incumbent   & municipio   &  $l$ & $r$ & $g$& $n$   & statewide & father & son  \\ \hline \\[-1.8ex] 
   %  \mc{9}{l}{~~A. \emph{Static ambition (SMD$\rightarrow$SMD)}} \\ \hdashline
     \mc{9}{l}{~~A. Static ambition} \\ \hdashline
-  Javier PRI    & Saltillo    &  14 &  56 &  0  & 938 &  0.082      &  0.286  & 0.304 \\
-  Lily PRI      & R. Arispe   &   0 &  56 &  0  & 952 &  0.076      &  0.393  & 0.393 \\
-  Gina PRI      & Acuña       &   0 &  70 &  0  & 938 &  0.085      &  0.729  & 0.729 \\
+  Javier Díaz González    & Saltillo    &  14 &  56 &  0  & 938 &  0.082      &  0.286  & 0.304 \\
+  Lily Gutiérrez Burciaga & R. Arispe   &   0 &  56 &  0  & 952 &  0.076      &  0.393  & 0.393 \\
+  Gina Cano Torralva      & Acuña       &   0 &  70 &  0  & 938 &  0.085      &  0.729  & 0.729 \\
   \\[-1.8ex] 
   %  \mc{9}{l}{~~B. \emph{Progressive ambition (SMD$\rightarrow$municipio)}} \\ \hdashline
     \mc{9}{l}{~~B. Progressive ambition} \\ \hdashline
-  Lencho PRI    & Frontera    &  42 &  28 &  0  & 938 &  0.066      &  0.300  & 0.500 \\
-  Sonia PRI     & P. Negras   &   0 &  56 &  0  & 952 &  0.082      &  0.518  & 0.518 \\
-  AnaIsabel PRI & San Pedro   &  14 &  42 &  0  & 952 &  0.068      &  0.589  & 0.738 \\ 
+  Lencho Siller           & Frontera    &  42 &  28 &  0  & 938 &  0.066      &  0.300  & 0.500 \\
+  Sonia Villarreal Pérez  & P. Negras   &   0 &  56 &  0  & 952 &  0.082      &  0.518  & 0.518 \\
+  Ana Isabel Durán Piña   & San Pedro   &  14 &  42 &  0  & 952 &  0.068      &  0.589  & 0.738 \\ 
   % \\[-1.8ex]
   %   \mc{9}{l}{~~C. \emph{Progressive ambition (PR$\rightarrow$municipio)}} \\ \hdashline
   % Armando PAN   & Frontera    & 966 &  42 &  0  &   0 &  0.036      & 0.036   & 0.095 \\
@@ -421,7 +419,7 @@ We instrumented name familiarity as name \emph{recognition}. We relied on close-
 
 At about 7 to 8 out of 100 interviewees, statewide name recognition averages are both low and invariant across members (the right columns of Table \ref{T:terrenos} report dependent variables' means). But restricting attention to respondents in members' districts only brings a striking hike in name recognition, of at least 3.5 times higher than statewide for Javier Díaz González, and as much as 11 times higher than statewide for Ana Isabel Durán Piña (in the municipality to which her progressive ambition pointed to). Is this an incumbency effect? 
 
-Since secciones electorales were used as stratified sampling points, producing geographic indicators to identify members' four redistricting areas of theoretical interest was trivial. As Table \ref{T:terrenos} reports in middle columns, no sampling took place in land areas gained by any district whose incumbent ran for reelection (column $g$ reports zeroes only). This is unfortunate and an obstacle to our empirical study: excluding respondents in district areas gained by incumbent on the ballot precludes observing two of three separation scenarios in Table \ref{T:hyps}. And among unobserved scenarios is the strongest prediction divergence---predictions in row 4 point in opposite directions. The extremely low prevalence of static ambition in Coahuila 2017 constitutes this obstacle. More prevalent static ambition, as indeed happened across the board in 2018 and 2021, will overcome this limitation with more ease.
+Since secciones electorales were used as stratified sampling points, producing geographic indicators to identify members' four redistricting areas of theoretical interest is trivial. As Table \ref{T:terrenos} reports in middle columns, no sampling took place in land areas gained by any district whose incumbent ran for reelection (column $g$ reports zeroes only). This is unfortunate and an obstacle to our empirical study: excluding respondents in district areas gained by incumbent on the ballot precludes observing two of four separation scenarios in Table \ref{T:hyps}. And among unobserved scenarios is the strongest prediction divergence---predictions in row 4 point in opposite directions. The extremely low prevalence of static ambition in Coahuila 2017 constitutes this obstacle. More prevalent static ambition, as indeed happened across the board in 2018 and 2021, will overcome this limitation with more ease.
 
 We analyze predictors of name recognition with equation
 \begin{equation*}
@@ -490,28 +488,33 @@ We code all dichotomous variables in the model to indicate responses in the affi
 \begin{table}
 \centering
   \begin{tabular}{lrrr}
-                          & \multicolumn{3}{c}{Hypothesis} \\
-  Member                  & $r>n$ & $l>n$ & $r>l$ \\ \hline
+                          & \multicolumn{3}{c}{Hypotheses} \\
+                          & total & incumbency & incumbency \\ [-0.5ex] 
+                          & effect& effect     & effect \\  [-0.5ex] 
+                          & $r>n$ & $l>n$ & $r = l$ \\ [-0.5ex] 
+  Member                  & \footnotesize{(one-tailed)} & \footnotesize{(one-tailed)} & \footnotesize{(two-tailed)} \\ \hline \\[-1.8ex]
   \multicolumn{4}{l}{\textbf{~~~Static ambition}} \\
-1 Javier Díaz González    & \color{green}{$<.001$} & \color{green}{$.029$} & \color{red}{$.221$} \\
+1 Javier Díaz González    & \color{green}{$<.001$} & \color{green}{$.029$} & \color{green}{$.442$} \\
 2 Lily Gutiérrez Burciaga & \color{green}{$<.001$} & ---    & --- \\
-3 Gina Cano Torralva      & \color{green}{$<.001$} & ---    & --- \\
+3 Gina Cano Torralva      & \color{green}{$<.001$} & ---    & --- \\ \\[-1.8ex]
   \multicolumn{4}{l}{\textbf{~~~Progressive ambition}} \\
-4 Lencho Siller           & \color{green}{$<.001$} & \color{green}{$.003$} & \color{green}{$.001$} \\
+4 Lencho Siller           & \color{green}{$<.001$} & \color{green}{$.003$} & \color{red}{$.002$} \\
 5 Sonia Villarreal Pérez  & \color{green}{$<.001$} & ---    & --- \\
-6 Ana Isabel Durán Piña   & \color{green}{$<.001$} & \color{green}{$.036$} & \color{green}{$<.001$} \\
+6 Ana Isabel Durán Piña   & \color{green}{$<.001$} & \color{green}{$.036$} & \color{red}{$<.001$} \\
 %   \multicolumn{4}{l}{\textbf{~~~PR, progressive ambition}} \\
 % 7 Armando Pruneda Valdez  & \color{green}{$.030$}  & ---    & --- \\
 % 8 Lariza Montiel Luis     & \color{red}{$.385$}    & ---    & --- \\
 % 9 Leonel Contreras Pámanes& \color{green}{$<.001$} & ---    & --- \\
-    \hline
+\\[-1.8ex] \hline
 \end{tabular}
-\caption{Hypothesis tests. Cells report one-tailed p-values. The top-right cell, for instance, indicates that the null associated to model 1's $r>l$ hypothesis can only be rejected at the .221 level, way above the conventional .05 confidence level. Columns 1 and 2 test that coefficients of $\texttt{retained}$ and $\texttt{lost}$ are positive, column 3 that $\texttt{retained}$'s coefficient is greater than $\texttt{lost}$'s (LR test).}\label{T:hyp-tests}
+\caption{Hypothesis tests. Cells report p-values. Columns 1 and 2 respectively test that coefficients for $\texttt{retained}$ and $\texttt{lost}$ are positive, column 3 that $\texttt{retained}$'s coefficient equals $\texttt{lost}$'s (a likelihood-ratio test). Green indicates statistical evidence for incumbency effects, red lack thereof---note that column 3's incumbency hypothesis involves equality, so the aim here is to \emph{not} reject.}\label{T:hyp-tests}
 \end{table}
 
-Geographic controls test hypotheses. We have three expectations: that $\texttt{lost}_i$'s regression coefficient is positive ($\beta_1>0$, testing $l>n$); that $\texttt{retained}_i$'s is positive too ($\beta_2>0$, testing $r>n$); and that the latter is larger than the former ($\beta_2>\beta_1$, testing $r>l$). Predictions $r>n$ and $r>l$, common to both effects in Table \ref{T:hyps}, test total effects. Owing to incumbency only, confirmation that $\texttt{lost}_i$ gets a positive coefficient, is separating evidence. The Appendix reports full regression estimates. We here summarize relevant hypothesis tests only in Table \ref{T:hyp-tests}. Most clear the test. But many missing to be confident that effects are from incumbent and not campaign.
+Geographic controls test hypotheses. We have three expectations: that $\texttt{lost}_i$'s regression coefficient is positive ($\beta_1>0$, testing $l>n$); that $\texttt{retained}_i$'s is positive too ($\beta_2>0$, testing $r>n$); and that the latter is larger than the former ($\beta_2>\beta_1$, testing $r>l$). Predictions $r>n$ and $r>l$, common to both effects in Table \ref{T:hyps}, test total effects. Owing to incumbency only, confirmation that $\texttt{lost}_i$ gets a positive coefficient, is separating evidence. The Appendix reports full regression estimates. We here summarize relevant hypothesis tests only in Table \ref{T:hyp-tests}.
 
-We illustrate results through simulation in Figure \ref{f:sims}. 
+We discuss static ambition members first. Column 1 reports total effects tests. Members clear all tests at standard levels of statistical confidence. Columns 2 and 3 report incumbency effects hypothesis tests. Only Javier Díaz González, with respondents in lost area, is candidate for the separating tests, clearing both at standard levels. Note that the incumbency test in column 3 involves \emph{not} rejecting the (usually null) hypothesis that $r=l$. With a p-value of .442, it is not rejectable at standard levels of confidence. While greater in area that the district lost (and, per column 1, in area retained) compared to area that was never in the district, name familiarity is statistically indistiguishable in areas $l$ and $r$, as expected by the personal vote. 
+
+Progressive ambition tests further illuminate. Tests about retained and lost land relative to no-man's land clear the hurdle. But the expectation that name recognition in $r$ and $l$ be equal is not filfilled. Keep in mind that retained land, in this case, is the municipality where the member eventually ran for office---which intersects the father district without exception. As said, if nomination was possibly uncertain (unlike static ambition types), members who aimed at municipal office knew ex-ante where they had to cultivate a personal vote. And indeed the hypothesis that name recognition in the ``retained'' municipality and lost land is equal can be statistically rejected \citep[cf.][]{lucardi.micozzi.Career-argentina.2016}. These results must be taken with a grain of salt, but evidence adds favorably for incumbency effects.  
 
 % \begin{sidewaysfigure}
 %   \centering
@@ -559,26 +562,21 @@ We illustrate results through simulation in Figure \ref{f:sims}.
 \definecolor{MidnightBlue}{rgb}{0.48, 0.41, 0.93}
 \definecolor{LimeGreen}{rgb}{0.2, 0.8, 0.2}
 \definecolor{Salmon}{rgb}{1.0, 0.55, 0.41}
-\begin{large}
-
 \begin{tabular}{|rc|}
   \hline \multicolumn{2}{|c|}{\textbf{Hypotheses}:} \\
-  incumbency & \textcolor{MidnightBlue}{$n$} $<$ \textcolor{LimeGreen}{$l$} $<$ \textcolor{Salmon}{$r$} \\
+  incumbency & \textcolor{MidnightBlue}{$n$} $<$ \textcolor{LimeGreen}{$l$} $=$ \textcolor{Salmon}{$r$} \\
   campaign   & \textcolor{MidnightBlue}{$n$} $=$ \textcolor{LimeGreen}{$l$} $<$ \textcolor{Salmon}{$r$} \\ \hline
 \end{tabular}
-\end{large}
-\caption{The probability of name recognition (x-axis). We portray simulations with Bayesian versions of regression models. The violet density is for respondents in area $n$, the green (when applicable) for respondents in area $l$, and the pink for respondents in area $r$. Incumbency leads to expect the purple to lie to the left, the pink to the right, the green between them, with clear gaps between them. All other controls held constant to represent a PAN-identifier with a smartphone, who said the incumbent has delivered but is uninterested in politics.}\label{f:sims}
+\caption{The probability of name recognition (x-axis). Simulations generated with Bayesian estimations of regression models. The violet density is for respondents in area $n$, the green (when applicable) for respondents in area $l$, and the pink for respondents in area $r$. Incumbency leads to expect the purple to lie to the left, the pink to the right, the green between them, with clear gaps between them. All other controls held constant to represent a PAN-identifier with a smartphone, who said the incumbent has delivered but is uninterested in politics.}\label{f:sims}
 \end{figure}
 
-\eric{move next paragraph to this section's closing, then elaborate theme in conclusion.}
+Simulations reveal effects neatly in Figure \ref{f:sims}. The curves are posterior probabilities of name recognition from a Bayesian re-estimation of the logit models. Colored densities hold predictors constant except redistricting areas dummies. A gap is expected, and observed across the board, between the violet and pink densities, corresponding respectively to voters in low-probability area $n$ and higher-probability area $r$. Incumbency hypotheses expect the green density, for voters in area $l$, to overlap with the right-side density, campaign hypotheses with the left-side density. Plots show how separation is not as clear cut as statistically significant results might otherwise suggest. There is substantive overlap of green and pink in Javier Díaz González's case, but the green--violet overlap is important too. Plots also reveal that, among the progressively ambitious, green overlaps much more with violet than pink. Throughout their terms, State Deputies Lencho Siller and Ana Isabel Durán Piña seem to have devoted a good deal of effort servicing the municipalities they ran in---the ``retained'' parts---hence the name recognition hike relative to district ``lost''.
 
-While unable to totally rule out the effect of campaigns, our survey reveals statistically significant and substantive total effects in name recognition consistent with the personal vote. This is an important finding. 
+\eric{next paragraph to conclusion}
 
-
+If unable to totally rule out the effect of campaigns, our survey does reveal statistically significant and substantive total effects in name recognition consistent with the personal vote. This is an important finding. 
 
 \section{Conclusion}
-
-\eric{Forthcoming}
 
 Despite an incomplete research design, we uncover evidence of name recognition consistent with the electoral connection model in Coahuila. Will make sure to sample respondents in $g$ in future work, in order to compare contradictory expectations between campaign and incumbency effects.  
 
