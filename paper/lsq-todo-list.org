@@ -1,0 +1,10 @@
+- [X] The manuscript (including notes, references, table/figure titles, and appendices but excluding the title page and any supplementary materials not for publication) should not exceed 10,000 words, and the actual word count should be provided on the title page.
+- [X] Manuscripts can be uploaded either as a single document (containing the main text, tables and figures), or with figures and tables provided as separate files. Should your manuscript reach revision stage, figures and tables must be provided as separate files.  LSQ allows author(s) to submit their manuscripts formatted in Microsoft Word.
+- [X] Include a 150-word abstract.
+- [ ] Please submit an author biography not to exceed 100 words. 
+- [X] Double-space the body of the manuscript. The abstract, appendices, notes, and references may be single-spaced.
+- [X] Use a typeface of at least 12 pt. The manuscript should be left justified with margins of at least 1 inch.
+- [X] Notes should appear as footnotes.
+- [X] References should appear at the end of the manuscript and should conform to APSA style. All works cited in the text must be fully referenced at the end of the manuscript.
+- [X] Tables/figures should be placed at the relevant point in the body of the manuscript  
+- [ ] For revisions, a response to reviewer comments file is required. This file can be uploaded in, or attached to, the Authors Response, uploaded as separate file in the file upload area, OR included at the start of the main manuscript document. This file needs to respond to all reviewer comments and be completely blinded        

@@ -1,0 +1,10 @@
+Dear editor,
+
+Attached please find a manuscript examining candidate name recognition among Mexican voters. It is a rare attempt to study the effects of incumbency with survey research outside the United States. We build upon work by Cain, Ferejohn and Fiorina, Cox and McCubbins, Langston, and Morgenstern, among others. We hope that you will find it of interest for readers of the Legislative Studies Quarterly.
+
+Sincerely yours,
+
+Eric Magar (corresponding author)
+
+
+We investigate candidate name recognition in races for the state of Coahuila assembly in 2017. Name familiarity has been associated with efforts by representatives to cultivate a personal vote among constituents towards reelection. We exploit redistricting prior to these races to distinctly identify differentials in name familiarity attributable to incumbency, but not to campaigns---which also effect name familiarity and occur simultaneously. Despite our instrument's failure, due to few incumbents on the ballot, to include sufficient sampling points for a full separation of these effects, we detect significant shifts in name recognition in accordance with theoretical expectations. Survey evidence of the first election held after Mexico recently dropped single-term limits suggests that static ambitious lawmakers solidified their electoral connection.
