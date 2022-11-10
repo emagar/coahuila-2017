@@ -1,0 +1,58 @@
+#+TITLE: Referee reports LSQ submission reconoce04
+#+DATE: <2022-09-20 Tue>
+
+Rejected by LSQ
+
+Legislative Studies Quarterly: LSQ-07-2022-0062
+
+The Personal Vote in Mexico: Separating Incumbency and Campaign Effects with Survey Evidence
+
+* Reviewer: 1
+** 
+This article is innovative in using redistricting to test incumbency and campaign effects.  The survey measuring candidate name recognition in the different subsectors of the old and new districts is innovative and holds promise in helping to tease out the differences between the two effects.  The different effects, however, are not clearly articulated and the data does not include some of the key subsectors of the districts.  As a result, one of the main tests is between voters currently ( R)  or formerly (l) in the candidates district with those who are unrelated (N).  It is little surprise that voter recognition is low where the candidate is unconnected. Still, the comparison of R & L is potentially interesting, but the authors have, to my mind, not sufficiently explained the campaign vs incumbency hypotheses.  Some of the theory, further, is unconnected to the empirical analysis.
+** 
+The authors campaign hypothesis is that L<R, while the incumbency  hypothesis is L=R.  I do agree that campaigns should produce an effect where  R>L,  but I found the authors’ explanation hard to follow.  Still, I think it could be explained simply is that name recognition in R>L because R gets the benefit of campaign + incumbency while L only gets incumbency, and that for just part of the term.   Stated in this way the theoretical result is somewhat trivial, but the measurement might still be quite valuable.
+** 
+Two key descriptive concerns are that the paper does not report when the survey was taken in relation to the election, nor when the redistricting occurred.  If the legislator worked on constituency service throughout the (3-year) term, and redistricting occurred just before the election, then the incumbency should produce similar name recognition throughout the territory.  But if redistricting occurred earlier, then incumbency would have more limited effects.
+** 
+While it would not be pertinent for a study of a single election in one state, the timing of the redistricting could be a useful variable. If the legislator knows early in the term about the redistricting, then constituency service, as well as the later campaigning would focus on R and not L.  But if the districts are drawn later, then the incumbency and campaigning effects would still be similar.
+** 
+Another suggestion is that the authors rethink the incumbency effect.  Traditional studies measure the incumbency effect relative to challengers or against co-partisans who are not incumbents (see 1990s-era paper by Gelman and King, which uses a simple regression and codes for incumbency status).  In the current paper incumbency and campaigning are intertwined, so the authors are measuring the added benefit of a campaign on top of a baseline name recognition that is owed to a previous campaign plus incumbency effects. Again, the authors are thus measuring what the new campaign adds.  Note too that the measure is interesting in terms of the decay of name recognition. Each incumbent won at time t-1, thus showing that the recognition is considerably higher at time t is useful.
+** 
+It is unfortunate that the authors’ data does not include all potential areas of the redistricting, and they only have data on L in 3 districts.  As a result, the finding about how much campaigning adds to the name recognition is only supported by data on two of three districts.  It is perhaps noteworthy that these two districts are both where the candidate sought new offices (progressive ambition), but we cannot draw a statistically valid conclusion about that from 3 cases.
+** 
+There is no data on G, which is unfortunate since it could help distinguish the effects. It is also somewhat worrying that there were only 14 respondents in two of the three L categories.  Finally, N is not carefully defined;  while presumably the surveys are all within the state, “no man’s land” could be an area close to the district or somewhere much further away. 
+** 
+A final note is that I found the empirical section somewhat detached from the introductory discussion.  After reading about the “party lock” I had thought that the paper would focus on this important aspect of Mexican elections.  The issue, however, does not appear in the empirical part of the paper.
+** 
+In sum, I found the division of districts into their pre- and post-redistricting components very interesting, especially when matched with surveys that are coded according to those borders.  The data, however, was insufficient to test the most interesting hypotheses, and the theory was underdeveloped in relation to the empirics.
+
+* Reviewer: 2
+** 
+I thank the authors for the opportunity to read this manuscript, I have to recommend rejection, because the changes that I suggest are both substantial and extended. It is my hope that the authors find my suggestions helpful for future revisions of this manuscript.
+** 
+In the introduction of the paper, it is not entirely clear what the research question/the goal is. The authors state that they aim to investigate voters’ familiarity with state assembly representatives in the state of Coahuila, in northern Mexico. Do they attempt to compare the level of familiarity before and after the right to get reelected was approved? However, at the beginning of the article, it seems that the goal is to tackle the effects of changes in reelection rules. Immediately afterwards, the authors state that they aim to study familiarity. I suggest clarifying the main goal of the article in the introduction. It is also important to answer the “so what” question in this section. For instance, why is familiarity relevant? To what extent does it predict voting decisions? Is there any literature on this topic? Why is so important to distinguish personal vote from campaign effects?
+** 
+Tables 1 and 2 do not contribute to the understanding of the context. Since the legislature under study is subnational (state level), I suggest presenting/describing a context focusing on this level of government. Furthermore, a careful justification on why the authors chose Coahuila as a relevant case to analyze familiarity would be helpful for understanding the advantages of their research design. Is redistricting a phenomenon only affecting Coahuila? How was the redistricting in Coahuila? Is it a unique case? Are there other similar cases?
+Furthermore, it is not surprising that familiarity with incumbents or specific politicians would change as redistricting occurs. Overall, the theoretical section remains underdeveloped.  The authors should offer some theoretical explanations about changes in familiarity on the basis of the key independent variable (that is, changes in reelection rules or in redistricting). Perhaps media attention to the incumbents and flows of information to constituents might help understand the effects of redistricting on familiarity.
+** 
+The presentation and analysis of the empirical section also remains underdeveloped. What is the theoretical justification for the control variables? Moreover, it would also be advisable that the authors could take into account two points in time (i.e. panel survey?) to identify convincingly the effects of either changes in redistricting (before and after).  Is this possible?
+** DONE 
+   CLOSED: [2022-11-01 Tue 18:11]
+Finally, the construction of sentences requires revision. For instance, the authors present this sentence: “Hence members’ preference for particularistic goods,” which seems to be an incomplete statement. In addition, parts of the text remain confusing and hard to be read. For instance: “Or are voters familiar simply because of the campaign itself, which happens simultaneously and inevitably if the incumbent in on the ballot?” This final example needs clarification for the standard reader.
+* Reviewer 3
+** 
+This manuscript studies the effects of incumbency advantage and campaign effects in a state assemby election in the state of Coahuila in northern Mexico in 2017. Studies of this nature face the difficult task of disentangling respondents’ potential name recognition as the result of incumbency effects from efforts to cultivate the personal vote by politicians. The authors exploit an interesting event – removal of single-term limits in Mexico – to partition the effects of incumbency (because politicians may now represent different districts) from the personal vote. The authors use a face- to-face survey to find evidence that some of the name recognition is the result of the personal vote.
+** 
+I have a few comments listed below because I generally support the manuscript and I hope that these comments will help the authors as they continue to revise.
+** Comments
+*** 
+The authors assume that the removal of the single-term limit will increase the incentives for politicians to cultivate a personal vote, and they claim to see that name recognition arises to a higher degree in areas that remained within the district after redistricting. I think the argu- ment would be on a more solid foundation if the authors were to point to other (descriptive) evidence that shows that leaders had relatively low level of name recognition prior to the removal of term limits.
+*** 
+The authors should be commended for their clear and concise descriptions of a few rela- tively complex topics (such as the simulations and Figure 1). However, I have a couple of comments that would improve the flow and impact of the manuscript.
+**** 
+(a) Table 4 is quite confusing. This is a surprise because the text clearly describes the expectations for name familiarity related to campaign effects and incumbency on page 14. I read through the section a number of times and I still have no idea what the different rows represent in Table 4. This should either be reformatted to match the verbal description or removed.
+**** 
+(b) The manuscript would benefit greatly from a professional proofreading by a native English speaker. In particular, the authors use a number of synonyms throughout that slightly change the meaning of sentences which makes it difficult to follow along.
+*** 
+I’m concerned that the survey construction significantly limits the strength of the empirical test. Isn’t it a problem that the stratified sampling points remove those areas that are gained in redistricting? How can the authors provide a complete test of the expectations in Table 4 without having name familiarity data from those locations? Is it a problem that in two of the three incumbents in the Static Ambition category don’t have any respondents who were in areas lost? Are there actually enough residents in these areas to produce reliable estimates that the reader can believe?
